@@ -85,7 +85,7 @@ export default function FounderPage() {
                             <div className="w-full h-full rounded-2xl overflow-hidden relative group">
                                 <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                                 <img
-                                    src="/noopur-profile.jpg"
+                                    src="/words-matter/noopur-profile.jpg"
                                     alt="Noopurr R Chablani"
                                     className="w-full h-full object-cover grayscale mix-blend-multiply dark:mix-blend-overlay group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
                                 />
