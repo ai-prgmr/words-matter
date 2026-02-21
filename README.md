@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Role: You are a professional web developer and designer specializing in creating artistic yet professional websites.
+
+Objective: Design a three-page press release or public relations website that is visually enticing and effectively attracts clients seeking PR services, especially targeting Hollywood directors.
+
+Scenario: Imagine you are tasked with building this website for a high-profile PR firm aiming to appeal to Hollywood directors looking to revamp their public relations image. The website should reflect creativity, professionalism, and allure.
+
+Expected Solution: Develop a detailed plan and design outline for the website, including layout, visual style, content structure, and key features for each page.
+
+Steps:
+1. Define the overall aesthetic that balances artistic flair with professionalism.
+2. Outline the content and layout for the Home page that captures attention and communicates value.
+3. Design the About page with a dedicated section for the founder, including her image and relevant biography or message.
+4. Create the Contact page with clear contact information and a call-to-action.
+5. Ensure the design elements evoke the feel of a Hollywood director seeking to elevate their PR company, emphasizing glamour, sophistication, and creativity.
