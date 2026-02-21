@@ -1,3 +1,4 @@
+export const dynamic = 'force-static'
 import { MetadataRoute } from 'next';
 import { blogPosts } from './blog/page';
 import { caseStudies } from './case-studies/page';
