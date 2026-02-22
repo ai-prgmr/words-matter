@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ModeToggle } from "./mode-toggle";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +43,7 @@ export default function Header() {
                                 {link.name}
                             </Link>
                         ))}
+                        <ModeToggle />
                     </nav>
 
                     {/* Mobile Menu Button */}
