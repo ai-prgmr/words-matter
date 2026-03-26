@@ -62,7 +62,7 @@ const advisorsData = [
     },
     {
         name: "Vikram Sinha",
-        image: "/words-matter/advisor/vikram-sinha.jpeg",
+        image: "/words-matter/advisor/Vikram-sinha.jpeg",
         description: "Architect of visual impact, transforming complex ideas into compelling brand films.",
         link: "#"
     },
