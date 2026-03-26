@@ -16,13 +16,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
     return {
         title: `${service.title} | Words Matter`,
-        description: service.desc,
+        description: service.shortDesc,
         alternates: {
             canonical: `/services/${slug}`,
         },
         openGraph: {
             title: `${service.title} | Words Matter`,
-            description: service.desc,
+            description: service.shortDesc,
             url: `https://wordsmatter.in/services/${slug}`,
             type: "website",
         }
@@ -41,7 +41,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         "@context": "https://schema.org",
         "@type": "Service",
         "name": service.title,
-        "description": service.desc,
+        "description": service.shortDesc,
         "provider": {
             "@type": "Organization",
             "name": "Words Matter"
@@ -49,15 +49,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     };
 
     return (
-        <article className="min-h-screen pt-32 pb-24 px-6 md:px-12 relative overflow-hidden bg-background-light dark:bg-background-dark">
+        <article className="min-h-screen pt-48 pb-24 px-6 md:px-12 relative overflow-hidden bg-white dark:bg-background-dark">
             <Script
                 id={`service-${service.slug}-jsonld`}
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-
-            {/* Background glow effects */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-primary dark:bg-primary/20 rounded-full blur-[150px] opacity-20 pointer-events-none mix-blend-normal"></div>
 
             <div className="max-w-4xl mx-auto relative z-10">
                 <Link href="/services" className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:text-charcoal dark:hover:text-white transition-colors mb-16 group">
@@ -74,39 +71,22 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                         {service.title}
                     </h1>
                     <p className="text-2xl md:text-3xl font-serif italic text-gray-500 dark:text-gray-400 leading-relaxed max-w-3xl">
-                        "{service.desc}"
+                        "{service.shortDesc}"
                     </p>
                 </header>
 
                 <div className="prose prose-lg dark:prose-invert prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline max-w-none mt-16 pt-16 border-t border-gray-200 dark:border-gray-800">
                     <h2 className="text-3xl">Strategic Integration</h2>
-                    <p>
-                        At Words Matter, our approach to <strong>{service.title.toLowerCase()}</strong> is intrinsically woven into our broader framework of perception architecture. We do not view communications tactically, but strategically—ensuring that every message deployed reinforces your overarching narrative arc.
-                    </p>
-                    <p>
-                        This means transitioning away from traditional, reactive models and moving towards a proactive, highly controlled ecosystem. Whether maneuvering through complex industry shifts or redefining personal equity, the methodology behind {service.title.toLowerCase()} remains anchored in precision, discretion, and unyielding impact.
+                    <p className="whitespace-pre-wrap leading-relaxed">
+                        {service.longDesc}
                     </p>
 
-                    <h3 className="text-2xl mt-12 mb-6">Execution Pillars</h3>
-                    <ul className="space-y-4 my-8 list-none pl-0">
-                        <li className="flex items-start">
-                            <span className="material-icons text-primary mr-4 mt-1">check_circle</span>
-                            <span><strong>Targeted Architecture:</strong> Mapping stakeholders and identifying high-leverage intervention points.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <span className="material-icons text-primary mr-4 mt-1">check_circle</span>
-                            <span><strong>Message Control:</strong> Developing unshakeable core narratives immune to external volatility.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <span className="material-icons text-primary mr-4 mt-1">check_circle</span>
-                            <span><strong>Discreet Deployment:</strong> Utilizing our deep-rooted global network for precision placement and sentiment shaping.</span>
-                        </li>
-                    </ul>
+
                 </div>
 
                 <div className="mt-24 pt-16 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row items-center justify-between gap-8">
                     <h4 className="text-2xl font-serif italic text-charcoal dark:text-white m-0">Require strategic counsel?</h4>
-                    <Link href="/contact" className="group flex items-center justify-center px-8 py-4 bg-primary text-white font-bold uppercase tracking-[0.2em] text-xs hover:bg-blue-700 transition-colors rounded-full shrink-0">
+                    <Link href="/contact" className="group flex items-center justify-center px-8 py-4 bg-transparent border border-gray-200 dark:border-gray-800 text-charcoal dark:text-white font-bold uppercase tracking-[0.2em] text-xs hover:border-black dark:hover:border-white transition-colors rounded-full shrink-0">
                         <span>Initiate Dialogue</span>
                         <span className="material-icons ml-3 text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </Link>

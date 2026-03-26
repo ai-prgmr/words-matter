@@ -49,18 +49,12 @@ export default function CaseStudiesListing() {
     };
 
     return (
-        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden">
+        <div className="min-h-screen pt-28 md:pt-32 pb-20 px-6 md:px-12 mt-10 relative overflow-hidden bg-white dark:bg-background-dark">
             <Script
                 id="case-studies-jsonld"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-
-            {/* Abstract Background Orbs */}
-            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none flex justify-center items-start">
-                <div className="absolute top-1/4 right-[20%] w-120 md:w-160 h-120 md:h-160 bg-blue-800 dark:bg-blue-900 rounded-full filter blur-[100px] opacity-20 mix-blend-normal"></div>
-                <div className="absolute bottom-1/4 left-[10%] w-100 md:w-140 h-100 md:h-140 bg-zinc-400 dark:bg-zinc-800 rounded-full filter blur-[120px] opacity-20 mix-blend-normal"></div>
-            </div>
 
             <div className="max-w-7xl mx-auto relative z-10 w-full">
                 {/* Header Section */}

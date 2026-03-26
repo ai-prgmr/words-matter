@@ -17,12 +17,41 @@ export const metadata: Metadata = {
 };
 
 export const servicesData = [
-    { slug: "media-relations", id: "01", title: "Media Relations", desc: "Crafting precise dialogue between your brand and the world’s most influential voices. We don't just pitch; we orchestrate conversation." },
-    { slug: "crisis-management", id: "02", title: "Crisis Management", desc: "Silence is not always golden. Navigating turbulence with calculated transparency and strategic composure to protect your legacy." },
-    { slug: "digital-strategy", id: "03", title: "Digital Strategy", desc: "Beyond the algorithm. Curating an online presence that feels organic, authoritative, and undeniably human in a digital landscape." },
-    { slug: "executive-positioning", id: "04", title: "Executive Positioning", desc: "Elevating key leadership profiles to establish industry authority, visionary status, and personal brand equity." },
-    { slug: "media-diplomacy", id: "05", title: "Media Diplomacy", desc: "Curating high-value, discreet relationships with top-tier journalists, editorial boards, and industry gatekeepers." },
-    { slug: "impact-and-advocacy", id: "06", title: "Impact & Advocacy", desc: "Aligning corporate initiatives with genuine social impact to build an authentic, purpose-driven legacy." }
+    {
+        slug: "corporate-pr",
+        id: "01",
+        title: "Corporate PR",
+        shortDesc: "Bridging the gap between corporate vision and public perception through expert media and executive curation.",
+        longDesc: "Our Corporate PR suite is built on the foundation of narrative architecture and authority positioning. We move beyond simple visibility to strategically manage your organization’s reputation through high-level media relations and bespoke press strategies. By aligning your core messaging with overarching business objectives, we ensure your brand story remains consistent and compelling across all platforms. Our executive profiling and speech-writing services are designed to transform leadership into thought leadership, enabling executives to communicate with the clarity, confidence, and influence required in today’s competitive landscape."
+    },
+    {
+        slug: "reputation-management",
+        id: "02",
+        title: "Reputation Management",
+        shortDesc: "Safeguarding your most valuable asset through crisis precision and stakeholder synergy",
+        longDesc: "In the realm of Reputation Management, we provide the strategic foresight necessary to safeguard and enhance your market standing. We specialize in reputational resilience, offering expert crisis communications to navigate complex challenges while protecting your brand’s integrity. Through sophisticated stakeholder perception mapping, we decode audience sentiment to craft tailored communication strategies that foster deep-seated trust and loyalty. By distilling your mission into a coherent brand narrative, we ensure your story is a powerful, proactive tool for long-term growth and stability."
+    },
+    {
+        slug: "image-management",
+        id: "03",
+        title: "Image Management",
+        shortDesc: "Refining the personal brand through precise digital curation and executive presence.",
+        longDesc: "Our Image Management services are designed for the precise curation of your professional persona. We view personal branding as a strategic asset, meticulously aligning your unique strengths with your career aspirations. This expertise extends to high-touch digital presence curation and specialized LinkedIn Management, where we optimize your profile and content to build powerful, authentic connections. Whether in digital spaces or real-world forums, we help you project a cohesive and commanding identity that resonates with peers and partners alike."
+    },
+    {
+        slug: "social-media-marketing",
+        id: "04",
+        title: "Social Media Marketing",
+        shortDesc: "Amplifying influence through purpose-driven engagement and high-impact digital storytelling.",
+        longDesc: "We approach Social Media Marketing as a vital extension of your strategic identity, moving beyond static content to create purpose-driven engagement. By identifying the optimal platforms for your specific target audience, we design high-impact visuals and copy that spark meaningful conversation. Our focus is on building digital communities that turn followers into brand advocates, ensuring your online footprint is not just visible, but influential and aligned with your broader PR goals."
+    },
+    {
+        slug: "biography-legacy-books",
+        id: "05",
+        title: "Biography, Legacy Writing & Coffee Table Books",
+        shortDesc: "Preserving the human journey by transforming personal milestones into timeless literary legacies.",
+        longDesc: "Our Biography and Legacy Writing services offer a sophisticated approach to preserving heritage and identity. We bring family histories, memoirs, and personal narratives to life with elegance, depth, and narrative empathy. From the initial research to the final development of luxury coffee table books, we ensure that every project reflects an authentic voice and a timeless perspective. At Words Matter, we transform personal milestones into cherished legacies, weaving together the threads of memory and experience to create enduring treasures for future generations."
+    }
 ];
 
 export default function Services() {
@@ -55,11 +84,11 @@ export default function Services() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <div className="min-h-screen">
+            <div className="min-h-screen bg-white dark:bg-background-dark">
                 {/* Main Content Container */}
-                <main className="pt-24 pb-32 relative min-h-screen">
-                    {/* The Vertical Anchor Line (Only on mobile/small screens for aesthetics) */}
-                    <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-px bg-primary h-full opacity-10 z-0"></div>
+                <main className="pt-48 pb-32 relative min-h-screen">
+                    {/* The Vertical Anchor Line */}
+                    <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-800 h-full z-0"></div>
 
                     {/* Intro Section */}
                     <section className="px-6 md:px-12 mb-20 md:mb-40 relative z-10">
@@ -80,7 +109,7 @@ export default function Services() {
                         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
                             {servicesData.map((service) => (
                                 <Link key={service.id} href={`/services/${service.slug}`} className="block group">
-                                    <article className="relative h-full p-8 border border-gray-100 dark:border-gray-800 rounded-2xl hover:border-primary/20 hover:bg-white/5 dark:hover:bg-white/5 transition-all duration-500">
+                                    <article className="relative h-full p-8 border border-gray-100 dark:border-gray-800 rounded-2xl bg-transparent transition-all duration-500">
                                         <div className="text-primary mb-8 flex justify-between items-center">
                                             <span className="text-sm font-mono font-bold">{service.id}</span>
                                             <span className="material-icons opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300">arrow_forward</span>
@@ -90,7 +119,7 @@ export default function Services() {
                                         </h2>
                                         <div className="w-12 h-1 bg-primary mb-8 group-hover:w-24 transition-all duration-500"></div>
                                         <p className="font-serif text-xl font-light italic text-slate-600 dark:text-slate-300 leading-relaxed">
-                                            {service.desc}
+                                            {service.shortDesc}
                                         </p>
                                     </article>
                                 </Link>
@@ -102,8 +131,8 @@ export default function Services() {
                     <section className="px-6 md:px-12 mb-32">
                         <div className="max-w-7xl mx-auto">
                             <div className="relative group cursor-pointer">
-                                <div className="overflow-hidden rounded-2xl aspect-21/9 bg-slate-200 dark:bg-slate-800 relative shadow-2xl">
-                                    <div className="absolute inset-0 bg-linear-to-tr from-slate-200 to-slate-300 dark:from-slate-800 dark:to-slate-900 opacity-50 z-0"></div>
+                                <div className="overflow-hidden rounded-2xl aspect-21/9 bg-transparent relative border border-gray-200 dark:border-gray-800">
+
                                     <img
                                         alt="Editorial shot"
                                         className="object-cover w-full h-full opacity-80 mix-blend-multiply dark:mix-blend-overlay grayscale hover:scale-105 transition-transform duration-1000"
@@ -120,11 +149,11 @@ export default function Services() {
 
                     {/* CTA Section */}
                     <section className="px-6 md:px-12 mb-20">
-                        <div className="max-w-7xl mx-auto p-12 md:p-24 bg-slate-900 dark:bg-slate-800 text-white rounded-3xl relative overflow-hidden text-center">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-primary blur-[100px] opacity-30"></div>
+                        <div className="max-w-7xl mx-auto p-12 md:p-24 bg-transparent border border-gray-200 dark:border-gray-800 text-charcoal dark:text-white rounded-3xl relative overflow-hidden text-center">
+
                             <h3 className="text-4xl md:text-6xl font-bold mb-6 relative z-10 leading-tight">Start the Dialogue</h3>
-                            <p className="text-xl md:text-2xl text-slate-300 font-serif italic mb-12 relative z-10">Exclusive representation for select clients.</p>
-                            <a href="/contact" className="inline-block px-12 py-5 bg-white text-slate-900 text-center font-bold uppercase tracking-[0.2em] text-sm hover:bg-primary hover:text-white transition-all duration-300 rounded-full">
+                            <p className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 font-serif italic mb-12 relative z-10">Exclusive representation for select clients.</p>
+                            <a href="/contact" className="inline-block px-12 py-5 bg-transparent border border-gray-200 dark:border-gray-800 text-charcoal dark:text-white hover:border-black dark:hover:border-white transition-all duration-300 rounded-full font-bold uppercase tracking-[0.2em] text-sm">
                                 Inquire Now
                             </a>
                         </div>

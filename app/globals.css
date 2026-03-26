@@ -13,11 +13,11 @@
   --color-stone-custom: #e8e6e1;
 
   --font-display: "Inter", sans-serif;
-  --font-serif: "Playfair Display", serif;
+  --font-league: "League Spartan", serif;
 
   --spacing-128: 32rem;
 
-  --animate-slide-up: slideUp 4s cubic-bezier(0.87, 0, 0.13, 1) infinite;
+  --animate-slide-up: slideUp 8s cubic-bezier(0.87, 0, 0.13, 1) infinite;
 
   @keyframes slideUp {
 
@@ -200,6 +200,7 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

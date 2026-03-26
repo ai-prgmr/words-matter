@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, League_Spartan } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,10 +10,11 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const league = League_Spartan({
+  variable: "--font-league",
   subsets: ["latin"],
-  style: ["normal", "italic"],
+  style: ["normal"],
+  weight: ["100", "600", "900"],
 });
 
 export const metadata: Metadata = {
@@ -40,7 +41,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${playfair.variable} antialiased font-display bg-background-light dark:bg-background-dark text-charcoal dark:text-gray-100 transition-colors duration-300 overflow-x-hidden w-full`}
+        className={`font-league ${league.variable} antialiased font-display bg-white transition-colors duration-300 overflow-x-hidden w-full`}
       >
         <ThemeProvider
           attribute="class"
@@ -50,8 +51,8 @@ export default function RootLayout({
         >
           <div className="min-h-screen flex flex-col overflow-x-hidden w-full">
             <Header />
-            <main className="grow pt-16">
-              <div className="max-w-7xl mx-auto">
+            <main className="grow">
+              <div className="">
                 {children}
               </div>
             </main>

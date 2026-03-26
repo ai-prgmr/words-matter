@@ -44,7 +44,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
     };
 
     return (
-        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden bg-background-light dark:bg-background-dark">
+        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden bg-white dark:bg-background-dark">
             <Script
                 id={`case-study-${study.slug}-jsonld`}
                 type="application/ld+json"
@@ -85,7 +85,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
                 </div>
 
                 {/* Hero Feature Image */}
-                <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-20 shadow-xl">
+                <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-20">
                     <img
                         src={study.imageUrl}
                         alt={study.title}

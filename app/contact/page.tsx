@@ -40,15 +40,15 @@ export default function Contact() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <div className="min-h-screen relative overflow-hidden pt-12">
+            <div className="min-h-screen relative overflow-hidden bg-white dark:bg-background-dark pt-32">
                 {/* Main Content Area */}
                 <main className="grow flex flex-col px-6 md:px-12 relative z-10 py-12 md:py-32">
-                    <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div className="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                         {/* Left Side: Swiss Style Header */}
                         <div>
                             <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8">Direct Line</p>
                             <div className="h-1.5 w-32 bg-primary mb-12 animate-pulse"></div>
-                            <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
+                            <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
                                 Let's start<br />
                                 something<br />
                                 <span className="text-primary italic font-serif">notable.</span>
@@ -60,7 +60,7 @@ export default function Contact() {
                             {/* Phone Method */}
                             <a className="group block relative" href="tel:+15550192834">
                                 <div className="absolute -left-6 top-0 h-full w-1.5 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
-                                <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors duration-300">
+                                <h2 className="text-2xl md:text-4xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors duration-300">
                                     +1 (555) 019-2834
                                 </h2>
                                 <p className="mt-4 font-serif italic text-slate-500 dark:text-slate-400 text-lg">
@@ -70,8 +70,8 @@ export default function Contact() {
                             {/* Email Method */}
                             <a className="group block relative" href="mailto:press@wordsmatter.pr">
                                 <div className="absolute -left-6 top-0 h-full w-1.5 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
-                                <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors duration-300 break-all md:break-normal">
-                                    press@wordsmatter.pr
+                                <h2 className="text-3xl md:text-3xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors duration-300 break-all md:break-normal">
+                                    noopurr@wordsmatter.in
                                 </h2>
                                 <p className="mt-4 font-serif italic text-slate-500 dark:text-slate-400 text-lg">
                                     Responses typically within 2 hours.
@@ -81,7 +81,7 @@ export default function Contact() {
                             <a className="group block relative" href="https://wa.me/15550192834">
                                 <div className="absolute -left-6 top-0 h-full w-1.5 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
                                 <div className="flex items-center gap-6">
-                                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors duration-300">
+                                    <h2 className="text-3xl md:text-3xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors duration-300">
                                         WhatsApp
                                     </h2>
                                     <span className="material-icons text-3xl md:text-4xl text-slate-400 group-hover:text-primary transition-colors">arrow_outward</span>

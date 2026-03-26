@@ -45,19 +45,13 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     };
 
     return (
-        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden">
+        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden bg-white dark:bg-background-dark">
 
             <Script
                 id={`blog-post-${post.slug}-jsonld`}
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-
-            {/* Abstract Background Orbs */}
-            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none flex justify-center items-start">
-                <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary dark:bg-primary rounded-full filter blur-[150px] opacity-20 dark:opacity-30"></div>
-                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-800 dark:bg-purple-900 rounded-full filter blur-[150px] opacity-20 dark:opacity-30"></div>
-            </div>
 
             <article className="max-w-4xl mx-auto relative z-10">
 
@@ -93,7 +87,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 </header>
 
                 {/* Hero Image */}
-                <div className="relative w-full aspect-[21/9] rounded-3xl overflow-hidden mb-16 shadow-2xl">
+                <div className="relative w-full aspect-21/9 rounded-3xl overflow-hidden mb-16">
                     <img
                         src={post.imageUrl}
                         alt={post.title}

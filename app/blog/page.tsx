@@ -47,20 +47,14 @@ export default function BlogListing() {
     };
 
     return (
-        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden">
+        <div className="min-h-screen pt-24 md:pt-48 pb-20 px-6 md:px-12 relative overflow-hidden bg-white dark:bg-background-dark">
             <Script
                 id="blog-jsonld"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
 
-            {/* Abstract Background Orbs */}
-            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none flex justify-center items-start">
-                <div className="absolute top-1/4 right-[10%] w-120 md:w-160 h-120 md:h-160 bg-cyan-800 dark:bg-cyan-900 rounded-full filter blur-[100px] opacity-30 mix-blend-normal"></div>
-                <div className="absolute bottom-1/4 left-0 w-100 md:w-140 h-100 md:h-140 bg-primary dark:bg-primary rounded-full filter blur-[120px] opacity-20 mix-blend-normal"></div>
-            </div>
-
-            <div className="max-w-7xl mx-auto relative z-10 w-full">
+            <div className="max-w-7xl mx-auto relative z-10 w-full pt-24">
                 {/* Header Section */}
                 <header className="mb-20 md:mb-32">
                     <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Journal</p>
@@ -76,7 +70,7 @@ export default function BlogListing() {
                         <Link
                             href={`/blog/${post.slug}`}
                             key={post.slug}
-                            className="group flex flex-col h-full bg-white/40 dark:bg-black/20 backdrop-blur-lg border border-gray-100 dark:border-gray-800 rounded-3xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-2"
+                            className="group flex flex-col h-full bg-transparent border border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden hover:border-black dark:hover:border-white transition-all duration-500 hover:-translate-y-2"
                         >
                             {/* Image Container */}
                             <div className="relative w-full aspect-4/3 overflow-hidden">
@@ -89,7 +83,7 @@ export default function BlogListing() {
                             </div>
 
                             {/* Content Panel */}
-                            <div className="p-8 flex flex-col flex-grow">
+                            <div className="p-8 flex flex-col grow">
                                 <div className="flex items-center gap-3 mb-6 text-[10px] font-mono font-bold uppercase tracking-widest text-gray-400">
                                     <span className="text-primary">{post.category}</span>
                                     <span>•</span>
@@ -100,7 +94,7 @@ export default function BlogListing() {
                                     {post.title}
                                 </h2>
 
-                                <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm mb-8 flex-grow">
+                                <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm mb-8 grow">
                                     {post.excerpt}
                                 </p>
 
