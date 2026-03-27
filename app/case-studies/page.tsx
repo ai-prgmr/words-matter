@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Script from 'next/script';
+import { AnimatedDiv } from "@/components/ui/animated-section";
 
 export const caseStudies = [
     {
@@ -58,16 +59,16 @@ export default function CaseStudiesListing() {
 
             <div className="max-w-7xl mx-auto relative z-10 w-full">
                 {/* Header Section */}
-                <header className="mb-20 md:mb-32">
+                <AnimatedDiv className="mb-20 md:mb-32">
                     <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Work</p>
                     <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-charcoal dark:text-white leading-[1.1] max-w-4xl">
                         Evidence of <br />
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-500 to-gray-800 dark:from-gray-300 dark:to-white italic font-serif font-light">Precision</span>.
                     </h1>
-                </header>
+                </AnimatedDiv>
 
                 {/* Case Studies List */}
-                <div className="space-y-12 md:space-y-24">
+                <AnimatedDiv className="space-y-12 md:space-y-24">
                     {caseStudies.map((study, idx) => (
                         <Link
                             href={`/case-studies/${study.slug}`}
@@ -115,7 +116,7 @@ export default function CaseStudiesListing() {
 
                         </Link>
                     ))}
-                </div>
+                </AnimatedDiv>
 
             </div>
         </div>

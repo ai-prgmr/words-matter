@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { caseStudies } from '../page';
+import { AnimatedArticle } from "@/components/ui/animated-section";
 
 export function generateStaticParams() {
     return caseStudies.map((study) => ({
@@ -52,7 +53,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
             />
 
             {/* Header / Intro */}
-            <article className="max-w-4xl mx-auto relative z-10">
+            <AnimatedArticle className="max-w-4xl mx-auto relative z-10">
 
                 <div className="mb-12">
                     <Link href="/case-studies" className="inline-flex items-center text-xs font-bold uppercase tracking-[0.2em] text-gray-500 hover:text-primary transition-colors group">
@@ -154,7 +155,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
                     </Link>
                 </footer>
 
-            </article>
+            </AnimatedArticle>
         </div>
     );
 }

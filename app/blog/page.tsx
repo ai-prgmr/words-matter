@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Script from 'next/script';
+import { AnimatedDiv } from "@/components/ui/animated-section";
 
 export const metadata = {
     title: 'Journal | Words Matter',
@@ -56,16 +57,16 @@ export default function BlogListing() {
 
             <div className="max-w-7xl mx-auto relative z-10 w-full pt-24">
                 {/* Header Section */}
-                <header className="mb-20 md:mb-32">
+                <AnimatedDiv className="mb-20 md:mb-32">
                     <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Journal</p>
                     <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-charcoal dark:text-white leading-[1.1] max-w-4xl">
                         Thoughts on <br />
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-600 italic font-serif font-light">Perception</span>.
                     </h1>
-                </header>
+                </AnimatedDiv>
 
                 {/* Blog Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+                <AnimatedDiv className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
                     {blogPosts.map((post, idx) => (
                         <Link
                             href={`/blog/${post.slug}`}
@@ -105,7 +106,7 @@ export default function BlogListing() {
                             </div>
                         </Link>
                     ))}
-                </div>
+                </AnimatedDiv>
 
             </div>
         </div>

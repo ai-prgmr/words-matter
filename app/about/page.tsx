@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+import { AnimatedSection } from "@/components/ui/animated-section";
 
 const mentorsData = [
     {
@@ -120,7 +121,7 @@ export default function AboutPage() {
             />
 
             {/* 1. THE HERO */}
-            <section className="relative flex min-h-[50vh] flex-col items-center justify-center px-6 text-center pt-20 pb-20 z-10">
+            <AnimatedSection className="relative flex min-h-[50vh] flex-col items-center justify-center px-6 text-center pt-20 pb-20 z-10">
                 <div className="relative z-10 max-w-5xl mx-auto">
                     <h1 className="font-serif text-4xl leading-tight md:text-6xl lg:text-7xl text-charcoal dark:text-white font-light">
                         "Captivating audiences through{" "}
@@ -130,10 +131,10 @@ export default function AboutPage() {
                         is not just a strategy—it is an art form."
                     </h1>
                 </div>
-            </section>
+            </AnimatedSection>
 
             {/* 2. WORDS MATTER - INTRODUCTION */}
-            <section className="mx-auto max-w-5xl px-6 md:px-12 pb-24 relative z-10">
+            <AnimatedSection className="mx-auto max-w-5xl px-6 md:px-12 pb-24 relative z-10">
                 <div className="prose prose-lg md:prose-xl dark:prose-invert max-w-none text-charcoal dark:text-gray-300 font-serif leading-relaxed space-y-8 text-center md:text-left">
                     <p className="text-2xl md:text-3xl font-light leading-snug">
                         Welcome to Words Matter, a boutique agency where the art of strategic storytelling meets the preservation of personal legacy. We believe that in a world driven by perception, the right words do more than just communicate—they define who you are today and how you are remembered tomorrow.
@@ -148,10 +149,10 @@ export default function AboutPage() {
                         At Words Matter, we blend the strategic rigor of public relations with the deep empathy of personal storytelling. We are your trusted partners in shaping your image, elevating your digital footprint, and transforming your stories into timeless treasures. Discover the power of words—because here, every word truly matters.
                     </p>
                 </div>
-            </section>
+            </AnimatedSection>
 
             {/* 3. VISION AND PHILOSOPHY */}
-            <section id="philosophy" className="border-t border-gray-200 dark:border-gray-800 relative z-10">
+            <AnimatedSection id="philosophy" className="border-t border-gray-200 dark:border-gray-800 relative z-10">
                 <div className="mx-auto max-w-7xl px-6 md:px-12 py-24">
                     <div className="grid md:grid-cols-2 gap-16 md:gap-24">
                         {/* Vision */}
@@ -177,10 +178,10 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </AnimatedSection>
 
             {/* 4. FOUNDERS SECTION */}
-            <section id="founders" className="bg-gray-50 dark:bg-black/20 border-t border-gray-200 dark:border-gray-800 py-32 relative z-10">
+            <AnimatedSection id="founders" className="bg-gray-50 dark:bg-black/20 border-t border-gray-200 dark:border-gray-800 py-32 relative z-10">
                 <div className="mx-auto max-w-7xl px-6 md:px-12">
                     <h2 className="font-serif text-4xl md:text-6xl text-center mb-24 text-charcoal dark:text-white font-light">
                         Founder & Co-Founder
@@ -282,10 +283,10 @@ export default function AboutPage() {
                     </div>
 
                 </div>
-            </section>
+            </AnimatedSection>
 
             {/* 5. MENTORS & ADVISORY BOARD */}
-            <section className="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 py-32 relative z-10">
+            <AnimatedSection className="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 py-32 relative z-10">
                 <div className="mx-auto max-w-7xl px-6 md:px-12">
                     <h2 className="font-serif text-4xl md:text-6xl text-center mb-24 text-charcoal dark:text-white font-light">
                         Mentors & Advisory Board
@@ -360,10 +361,10 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </AnimatedSection>
 
             {/* 6. DIRECT CTA */}
-            <section className="mx-auto max-w-3xl text-center px-6 md:px-12 py-32 border-t border-gray-200 dark:border-gray-800">
+            <AnimatedSection className="mx-auto max-w-3xl text-center px-6 md:px-12 py-32 border-t border-gray-200 dark:border-gray-800">
                 <p className="mb-8 text-2xl md:text-3xl leading-relaxed text-charcoal dark:text-gray-200 font-serif">
                     We believe that strategy is the architecture of perception. In a world full of noise, we help the most interesting voices resonate with precision.
                 </p>
@@ -375,7 +376,7 @@ export default function AboutPage() {
                         </span>
                     </Link>
                 </div>
-            </section>
+            </AnimatedSection>
         </div>
     );
 }

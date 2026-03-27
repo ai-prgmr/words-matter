@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { blogPosts } from '../page';
+import { AnimatedArticle } from "@/components/ui/animated-section";
 
 export function generateStaticParams() {
     return blogPosts.map((post) => ({
@@ -53,7 +54,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
 
-            <article className="max-w-4xl mx-auto relative z-10">
+            <AnimatedArticle className="max-w-4xl mx-auto relative z-10">
 
                 {/* Back Link */}
                 <div className="mb-12">
@@ -137,7 +138,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     </div>
                 </footer>
 
-            </article>
+            </AnimatedArticle>
         </div>
     );
 }

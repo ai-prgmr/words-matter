@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
 import { servicesData } from "@/app/services/page";
+import { AnimatedSection } from "@/components/ui/animated-section";
 
 export const metadata: Metadata = {
   title: "Words Matter | PR & Media Strategy Agency in India",
@@ -131,9 +132,9 @@ export default function Home() {
       <div className="min-h-screen relative overflow-hidden bg-gray-100/20">
 
         {/* Hero Section */}
-        <section
+        <AnimatedSection
           className="relative min-h-[90vh] flex items-center justify-center pt-20 pb-20 px-6 md:px-12 w-full border-b border-gray-200 dark:border-gray-800 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/words-matter/background-image.png')", opacity: "30" }}
+          style={{ backgroundImage: "url('/words-matter/optimized-image.jpg')", opacity: "30" }}
         >
           {/* Subtle overlay for text contrast and dark mode support */}
           <div className="absolute inset-0 bg-white/70 dark:bg-black/50  pointer-events-none"></div>
@@ -180,10 +181,10 @@ export default function Home() {
             </div>
 
           </div>
-        </section >
+        </AnimatedSection>
 
         {/* Pull Quote Section */}
-        < section className="py-24 px-8 md:px-12 dark:border-gray-800" >
+        <AnimatedSection className="py-24 px-8 md:px-12 dark:border-gray-800" >
           <div className="max-w-3xl mx-auto">
             <blockquote className="relative">
               {/* <span className="absolute -top-6 left-8 text-[8rem] text-gray-800 dark:text-gray-900 font-league leading-none">"</span> */}
@@ -195,10 +196,10 @@ export default function Home() {
               </footer>
             </blockquote>
           </div>
-        </section >
+        </AnimatedSection>
 
         {/* Services Grid */}
-        < section className="pb-24 px-6 md:px-12  dark:bg-background-dark border-b border-gray-200 dark:border-gray-800" >
+        <AnimatedSection className="pb-24 px-6 md:px-12  dark:bg-background-dark border-b border-gray-200 dark:border-gray-800" >
           <div className="max-w-7xl mx-auto">
             <div className="flex justify-between items-baseline mb-16 border-b border-gray-200 dark:border-gray-800 pb-8">
               <h2 className="text-xs font-bold tracking-widest uppercase text-gray-400">Expertise</h2>
@@ -226,9 +227,9 @@ export default function Home() {
               <Link href="/services" className="text-xs font-bold uppercase tracking-[0.3em] text-primary border-b border-primary hover:border-transparent transition-colors">View all services</Link>
             </div>
           </div>
-        </section >
+        </AnimatedSection>
         {/* Featured in Marquee Section */}
-        < section className="py-24 md:py-32 overflow-hidden relative border-b border-gray-200 dark:border-gray-800 dark:bg-background-dark" >
+        <AnimatedSection className="py-24 md:py-32 overflow-hidden relative border-b border-gray-200 dark:border-gray-800 dark:bg-background-dark" >
           <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16 md:mb-24 text-center relative z-10">
             <h2 className="text-3xl md:text-5xl font-extrabold text-charcoal dark:text-white mb-6 tracking-tight">
               Get Featured in <br className="block md:hidden" /> <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-500">Premium Publications</span>
@@ -237,14 +238,14 @@ export default function Home() {
               Secure your brand spotlight in the top tier in Indian and global publications. Use our trusted network to get a massive boost for your business.
             </p>
           </div>
-          <section aria-label="Featured In">
+          <AnimatedSection aria-label="Featured In">
             <h2 className="sr-only">
               Words Matter has secured placements in: Times of India, NDTV, Economic Times,
               Hindustan Times, Business Standard, News18, Livemint, Zee News, ANI, Mid-Day,
               Deccan Chronicle, and Deccan Herald.
             </h2>
             {/* Your existing marquee stays the same visually */}
-          </section>
+          </AnimatedSection>
           {/* Marquee Container */}
           <div className="relative flex overflow-hidden group">
             {/* Fade Edges for smooth scroll disappearing */}
@@ -270,10 +271,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section >
+        </AnimatedSection>
 
         {/* CTA Section */}
-        < section className="pb-8 px-6 md:px-12 dark:bg-background-dark border-b border-gray-200 dark:border-gray-800" >
+        <AnimatedSection className="pb-8 px-6 md:px-12 dark:bg-background-dark border-b border-gray-200 dark:border-gray-800" >
           <div className="max-w-7xl mx-auto p-12 md:p-24  text-charcoal dark:text-white relative overflow-hidden text-center">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary blur-[100px] opacity-30"></div>
 
@@ -295,7 +296,7 @@ export default function Home() {
             </a>
 
           </div>
-        </section >
+        </AnimatedSection>
       </div >
     </>
   );

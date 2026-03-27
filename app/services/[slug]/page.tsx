@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Script from 'next/script';
 import { servicesData } from '../page';
+import { AnimatedArticle } from "@/components/ui/animated-section";
 
 export function generateStaticParams() {
     return servicesData.map((service) => ({
@@ -49,7 +50,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     };
 
     return (
-        <article className="min-h-screen pt-48 pb-24 px-6 md:px-12 relative overflow-hidden bg-white dark:bg-background-dark">
+        <AnimatedArticle className="min-h-screen pt-48 pb-24 px-6 md:px-12 relative overflow-hidden bg-white dark:bg-background-dark">
             <Script
                 id={`service-${service.slug}-jsonld`}
                 type="application/ld+json"
@@ -92,6 +93,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                     </Link>
                 </div>
             </div>
-        </article>
+        </AnimatedArticle>
     );
 }

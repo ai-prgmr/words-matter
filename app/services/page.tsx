@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
+import { AnimatedSection } from "@/components/ui/animated-section";
+import { AnimatedArticle } from "@/components/ui/animated-section";
 
 export const metadata: Metadata = {
     title: "Services | Words Matter PR",
@@ -91,7 +93,7 @@ export default function Services() {
                     <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-800 h-full z-0"></div>
 
                     {/* Intro Section */}
-                    <section className="px-6 md:px-12 mb-20 md:mb-40 relative z-10">
+                    <AnimatedSection className="px-6 md:px-12 mb-20 md:mb-40 relative z-10">
                         <div className="max-w-7xl mx-auto">
                             <div className="md:pl-12 pt-10 md:pt-24 max-w-4xl">
                                 <p className="text-xs font-bold tracking-[0.4em] text-primary uppercase mb-6">Our Expertise</p>
@@ -102,14 +104,14 @@ export default function Services() {
                                 </h1>
                             </div>
                         </div>
-                    </section>
+                    </AnimatedSection>
 
                     {/* Services Grid */}
-                    <section className="px-6 md:px-12 mb-32">
+                    <AnimatedSection className="px-6 md:px-12 mb-32">
                         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
                             {servicesData.map((service) => (
                                 <Link key={service.id} href={`/services/${service.slug}`} className="block group">
-                                    <article className="relative h-full p-8 border border-gray-100 dark:border-gray-800 rounded-2xl bg-transparent transition-all duration-500">
+                                    <AnimatedArticle className="relative h-full p-8 border border-gray-100 dark:border-gray-800 rounded-2xl bg-transparent transition-all duration-500">
                                         <div className="text-primary mb-8 flex justify-between items-center">
                                             <span className="text-sm font-mono font-bold">{service.id}</span>
                                             <span className="material-icons opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300">arrow_forward</span>
@@ -121,14 +123,14 @@ export default function Services() {
                                         <p className="font-serif text-xl font-light italic text-slate-600 dark:text-slate-300 leading-relaxed">
                                             {service.shortDesc}
                                         </p>
-                                    </article>
+                                    </AnimatedArticle>
                                 </Link>
                             ))}
                         </div>
-                    </section>
+                    </AnimatedSection>
 
                     {/* Editorial Image Block */}
-                    <section className="px-6 md:px-12 mb-32">
+                    <AnimatedSection className="px-6 md:px-12 mb-32">
                         <div className="max-w-7xl mx-auto">
                             <div className="relative group cursor-pointer">
                                 <div className="overflow-hidden rounded-2xl aspect-21/9 bg-transparent relative border border-gray-200 dark:border-gray-800">
@@ -145,10 +147,10 @@ export default function Services() {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </AnimatedSection>
 
                     {/* CTA Section */}
-                    <section className="px-6 md:px-12 mb-20">
+                    <AnimatedSection className="px-6 md:px-12 mb-20">
                         <div className="max-w-7xl mx-auto p-12 md:p-24 bg-transparent border border-gray-200 dark:border-gray-800 text-charcoal dark:text-white rounded-3xl relative overflow-hidden text-center">
 
                             <h3 className="text-4xl md:text-6xl font-bold mb-6 relative z-10 leading-tight">Start the Dialogue</h3>
@@ -157,7 +159,7 @@ export default function Services() {
                                 Inquire Now
                             </a>
                         </div>
-                    </section>
+                    </AnimatedSection>
                 </main>
             </div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { AnimatedDiv } from "@/components/ui/animated-section";
 
 export const metadata: Metadata = {
     title: "Contact Us | Words Matter",
@@ -42,7 +43,7 @@ export default function Contact() {
             />
             <div className="min-h-screen relative overflow-hidden bg-white dark:bg-background-dark pt-32">
                 {/* Main Content Area */}
-                <main className="grow flex flex-col px-6 md:px-12 relative z-10 py-12 md:py-32">
+                <AnimatedDiv className="grow flex flex-col px-6 md:px-12 relative z-10 py-12 md:py-32">
                     <div className="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                         {/* Left Side: Swiss Style Header */}
                         <div>
@@ -92,7 +93,7 @@ export default function Contact() {
                             </a>
                         </div>
                     </div>
-                </main>
+                </AnimatedDiv>
 
                 {/* Visual Anchor: Fountain Pen Nib Illustration (Adjusted for desktop) */}
                 <div className="absolute bottom-0 right-0 w-1/3 h-1/2 pointer-events-none opacity-5 dark:opacity-10 z-0">
