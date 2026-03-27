@@ -53,7 +53,7 @@ export default function Header() {
                             <div key={link.name} className="relative group">
                                 <Link
                                     href={link.href}
-                                    className={`text-sm font-league font-semibold uppercase tracking-widest transition-colors flex items-center gap-1 ${pathname === link.href ? "text-primary" : "text-[#B9915D] dark:text-gray-100"
+                                    className={`text-sm font-league font-semibold uppercase tracking-widest transition-colors flex items-center gap-1 ${pathname === link.href ? "text-primary" : "text-[#B9915D]"
                                         }`}
                                 >
                                     {link.name}
@@ -63,12 +63,12 @@ export default function Header() {
                                 </Link>
                                 {link.subItems && (
                                     <div className="absolute left-0 top-full pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                                        <div className="w-56 bg-white dark:bg-charcoal shadow-xl rounded-xl border border-gray-100 dark:border-gray-800 py-2 flex flex-col relative z-50 overflow-hidden">
+                                        <div className="w-56 bg-white shadow-xl rounded-xl border border-gray-100 py-2 flex flex-col relative z-50 overflow-hidden">
                                             {link.subItems.map(subItem => (
                                                 <Link
                                                     key={subItem.name}
                                                     href={subItem.href}
-                                                    className="px-6 py-3 text-[13px] font-league font-semibold uppercase tracking-widest transition-colors text-charcoal dark:text-gray-100 hover:text-primary dark:hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800/50"
+                                                    className="px-6 py-3 text-[13px] font-league font-semibold uppercase tracking-widest transition-colors text-charcoal hover:text-primary hover:bg-gray-50"
                                                 >
                                                     {subItem.name}
                                                 </Link>
@@ -94,7 +94,7 @@ export default function Header() {
 
             {/* Mobile Navigation Overlay */}
             <div
-                className={`fixed inset-0 bg-background-light dark:bg-background-dark z-40 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed inset-0 bg-background-light z-40 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <nav className="flex flex-col items-center gap-8 w-full max-h-[80vh] overflow-y-auto py-10 px-6">
@@ -103,7 +103,7 @@ export default function Header() {
                             <Link
                                 href={link.href}
                                 onClick={() => setIsOpen(false)}
-                                className={`text-3xl font-league font-bold uppercase tracking-tighter transition-colors ${pathname === link.href ? "text-primary" : "text-[#B9915D] dark:text-gray-100"
+                                className={`text-3xl font-league font-bold uppercase tracking-tighter transition-colors ${pathname === link.href ? "text-primary" : "text-[#B9915D]"
                                     }`}
                             >
                                 {link.name}
@@ -115,7 +115,7 @@ export default function Header() {
                                             key={subItem.name}
                                             href={subItem.href}
                                             onClick={() => setIsOpen(false)}
-                                            className="text-lg font-league uppercase tracking-widest transition-colors text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary"
+                                            className="text-lg font-league uppercase tracking-widest transition-colors text-gray-500 hover:text-primary"
                                         >
                                             {subItem.name}
                                         </Link>

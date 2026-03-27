@@ -46,7 +46,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     };
 
     return (
-        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden bg-white dark:bg-background-dark">
+        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden bg-white">
 
             <Script
                 id={`blog-post-${post.slug}-jsonld`}
@@ -72,16 +72,16 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                         <time>{post.date}</time>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-charcoal dark:text-white leading-[1.1] mb-8">
+                    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-charcoal leading-[1.1] mb-8">
                         {post.title}
                     </h1>
 
-                    <div className="flex items-center gap-4 border-t border-gray-200 dark:border-gray-800 pt-8 mt-8">
-                        <div className="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center font-serif italic text-charcoal dark:text-gray-300">
+                    <div className="flex items-center gap-4 border-t border-gray-200 pt-8 mt-8">
+                        <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-serif italic text-charcoal">
                             {post.author.charAt(0)}
                         </div>
                         <div>
-                            <p className="text-sm font-bold text-charcoal dark:text-gray-200">{post.author}</p>
+                            <p className="text-sm font-bold text-charcoal">{post.author}</p>
                             <p className="text-xs text-gray-500 font-mono">Senior Partner</p>
                         </div>
                     </div>
@@ -92,13 +92,13 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     <img
                         src={post.imageUrl}
                         alt={post.title}
-                        className="w-full h-full object-cover mix-blend-multiply dark:mix-blend-overlay opacity-80"
+                        className="w-full h-full object-cover mix-blend-multiply opacity-80"
                     />
                 </div>
 
                 {/* Simulated Content */}
-                <div className="prose prose-lg dark:prose-invert prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:leading-relaxed max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary hover:prose-a:text-primary/80">
-                    <p className="lead text-xl md:text-2xl text-charcoal dark:text-gray-200 font-medium mb-12">
+                <div className="prose prose-lg prose-p:text-gray-600 prose-p:leading-relaxed max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary hover:prose-a:text-primary/80">
+                    <p className="lead text-xl md:text-2xl text-charcoal font-medium mb-12">
                         {post.excerpt}
                     </p>
 
@@ -126,13 +126,13 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 </div>
 
                 {/* Footer / Share */}
-                <footer className="mt-24 pt-12 border-t border-gray-200 dark:border-gray-800 flex justify-between items-center">
-                    <p className="text-sm font-bold text-charcoal dark:text-gray-300 tracking-wide">Share this essay</p>
+                <footer className="mt-24 pt-12 border-t border-gray-200 flex justify-between items-center">
+                    <p className="text-sm font-bold text-charcoal tracking-wide">Share this essay</p>
                     <div className="flex gap-4">
-                        <button className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
+                        <button className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
                             <span className="text-xs font-bold">IN</span>
                         </button>
-                        <button className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
+                        <button className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
                             <span className="text-xs font-bold">X</span>
                         </button>
                     </div>

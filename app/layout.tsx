@@ -3,7 +3,6 @@ import { Inter, League_Spartan } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -43,28 +42,22 @@ export default function RootLayout({
       <body
         className={`font-league ${league.variable} antialiased font-display bg-white transition-colors duration-300 overflow-x-hidden w-full`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="min-h-screen flex flex-col overflow-x-hidden w-full">
-            <Header />
-            <main className="grow">
-              <div className="">
-                {children}
-              </div>
-            </main>
-            {/* Floating Action Button */}
-            {/* <div className="fixed bottom-10 right-10 z-50">
+        <div className="min-h-screen flex flex-col overflow-x-hidden w-full">
+          <Header />
+          <main className="grow">
+            <div className="">
+              {children}
+            </div>
+          </main>
+          {/* Floating Action Button */}
+          <div className="fixed bottom-10 right-10 z-50">
             <button className="w-14 h-14 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 group">
               <span className="material-icons group-hover:rotate-90 transition-transform duration-300">add</span>
             </button>
-          </div> */}
-            <Footer />
           </div>
-        </ThemeProvider>
+          <Footer />
+        </div>
+
       </body>
 
     </html>

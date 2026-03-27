@@ -45,7 +45,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
     };
 
     return (
-        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden bg-white dark:bg-background-dark">
+        <div className="min-h-screen pt-24 md:pt-32 pb-20 px-6 md:px-12 relative overflow-hidden bg-white">
             <Script
                 id={`case-study-${study.slug}-jsonld`}
                 type="application/ld+json"
@@ -69,19 +69,19 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
                         <span>{study.year}</span>
                     </div>
 
-                    <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-charcoal dark:text-white leading-[1.1] mb-8">
+                    <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-charcoal leading-[1.1] mb-8">
                         {study.title}
                     </h1>
 
-                    <p className="text-xl md:text-3xl text-gray-500 dark:text-gray-400 font-serif italic font-light max-w-2xl leading-relaxed">
+                    <p className="text-xl md:text-3xl text-gray-500 font-serif italic font-light max-w-2xl leading-relaxed">
                         {study.excerpt}
                     </p>
                 </header>
 
-                <div className="border-t border-gray-200 dark:border-gray-800 pt-8 mt-8 mb-16 flex justify-between items-center w-full">
+                <div className="border-t border-gray-200 pt-8 mt-8 mb-16 flex justify-between items-center w-full">
                     <div className="flex flex-col">
                         <span className="text-[10px] font-bold font-mono tracking-widest uppercase text-gray-400 mb-1">Client Confidentiality</span>
-                        <span className="text-sm font-bold uppercase text-charcoal dark:text-gray-300">Names Anonymized</span>
+                        <span className="text-sm font-bold uppercase text-charcoal">Names Anonymized</span>
                     </div>
                 </div>
 
@@ -90,24 +90,24 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
                     <img
                         src={study.imageUrl}
                         alt={study.title}
-                        className="w-full h-full object-cover mix-blend-multiply dark:mix-blend-overlay opacity-90 grayscale hover:grayscale-0 transition-all duration-700"
+                        className="w-full h-full object-cover mix-blend-multiply opacity-90 grayscale hover:grayscale-0 transition-all duration-700"
                     />
                 </div>
 
                 {/* The Architecture grid */}
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24">
                     <div className="md:col-span-4 flex flex-col gap-8 sticky top-32 h-fit">
-                        <div className="pb-8 border-b border-gray-100 dark:border-gray-800">
+                        <div className="pb-8 border-b border-gray-100">
                             <h4 className="text-[10px] font-bold tracking-widest uppercase text-primary mb-2">Challenge</h4>
-                            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed font-medium">Navigating extreme regulatory headwinds while securing global public sentiment favoring consolidation.</p>
+                            <p className="text-sm text-gray-600 leading-relaxed font-medium">Navigating extreme regulatory headwinds while securing global public sentiment favoring consolidation.</p>
                         </div>
-                        <div className="pb-8 border-b border-gray-100 dark:border-gray-800">
+                        <div className="pb-8 border-b border-gray-100">
                             <h4 className="text-[10px] font-bold tracking-widest uppercase text-primary mb-2">Strategy</h4>
-                            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed font-medium">Reframing the acquisition entirely from 'market dominance' to 'technological sovereignty'.</p>
+                            <p className="text-sm text-gray-600 leading-relaxed font-medium">Reframing the acquisition entirely from 'market dominance' to 'technological sovereignty'.</p>
                         </div>
                         <div className="pb-8">
                             <h4 className="text-[10px] font-bold tracking-widest uppercase text-primary mb-2">Scope</h4>
-                            <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1 font-mono">
+                            <ul className="text-sm text-gray-600 space-y-1 font-mono">
                                 <li>Global Media Relations</li>
                                 <li>Executive Positioning</li>
                                 <li>Crisis War-room</li>
@@ -115,7 +115,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
                         </div>
                     </div>
 
-                    <div className="md:col-span-8 prose prose-lg dark:prose-invert prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:leading-relaxed max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary hover:prose-a:text-primary/80">
+                    <div className="md:col-span-8 prose prose-lg prose-p:text-gray-600 prose-p:leading-relaxed max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary hover:prose-a:text-primary/80">
                         <h2>The Context</h2>
                         <p>
                             When leading technology giants attempt consolidation, the resultant shockwaves ripple far beyond Wall Street. The narrative instantly fractures into political, economic, and social domains, usually defaulting to hostility toward monopolistic power.
@@ -147,9 +147,9 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
                 </div>
 
                 {/* Footer  */}
-                <footer className="mt-32 pt-16 border-t border-gray-200 dark:border-gray-800 text-center">
+                <footer className="mt-32 pt-16 border-t border-gray-200 text-center">
                     <p className="text-xs uppercase tracking-[0.3em] font-bold text-gray-400 mb-8">Ready to Architect Your Narrative?</p>
-                    <Link href="/contact" className="inline-flex items-center text-4xl md:text-5xl font-extrabold tracking-tighter text-charcoal dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors group">
+                    <Link href="/contact" className="inline-flex items-center text-4xl md:text-5xl font-extrabold tracking-tighter text-charcoal hover:text-primary transition-colors group">
                         Start the Conversation
                         <span className="material-icons text-primary text-5xl ml-4 transform group-hover:translate-x-4 transition-transform duration-500">arrow_forward</span>
                     </Link>

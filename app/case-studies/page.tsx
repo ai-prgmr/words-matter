@@ -50,7 +50,7 @@ export default function CaseStudiesListing() {
     };
 
     return (
-        <div className="min-h-screen pt-28 md:pt-32 pb-20 px-6 md:px-12 mt-10 relative overflow-hidden bg-white dark:bg-background-dark">
+        <div className="min-h-screen pt-28 md:pt-32 pb-20 px-6 md:px-12 mt-10 relative overflow-hidden bg-white">
             <Script
                 id="case-studies-jsonld"
                 type="application/ld+json"
@@ -61,9 +61,9 @@ export default function CaseStudiesListing() {
                 {/* Header Section */}
                 <AnimatedDiv className="mb-20 md:mb-32">
                     <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Work</p>
-                    <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-charcoal dark:text-white leading-[1.1] max-w-4xl">
+                    <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-charcoal leading-[1.1] max-w-4xl">
                         Evidence of <br />
-                        <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-500 to-gray-800 dark:from-gray-300 dark:to-white italic font-serif font-light">Precision</span>.
+                        <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-500 to-gray-800 italic font-serif font-light">Precision</span>.
                     </h1>
                 </AnimatedDiv>
 
@@ -82,7 +82,7 @@ export default function CaseStudiesListing() {
                                 <img
                                     src={study.imageUrl}
                                     alt={study.title}
-                                    className="w-full h-full object-cover grayscale mix-blend-multiply group-hover:mix-blend-normal dark:mix-blend-overlay group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
+                                    className="w-full h-full object-cover grayscale mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
                                 />
                             </div>
 
@@ -94,22 +94,22 @@ export default function CaseStudiesListing() {
                                     <span>{study.year}</span>
                                 </div>
 
-                                <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-charcoal dark:text-white mb-6 leading-[1.1] group-hover:text-primary transition-colors duration-300">
+                                <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-charcoal mb-6 leading-[1.1] group-hover:text-primary transition-colors duration-300">
                                     {study.title}
                                 </h2>
 
-                                <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-lg mb-12">
+                                <p className="text-gray-500 leading-relaxed text-lg mb-12">
                                     {study.excerpt}
                                 </p>
 
-                                <div className="border-t border-gray-200 dark:border-gray-800 pt-6 flex justify-between items-center w-full">
+                                <div className="border-t border-gray-200 pt-6 flex justify-between items-center w-full">
                                     <div className="flex flex-col">
                                         <span className="text-[10px] font-bold font-mono tracking-widest uppercase text-gray-400 mb-1">Client</span>
-                                        <span className="text-sm font-bold uppercase text-charcoal dark:text-gray-300">{study.client}</span>
+                                        <span className="text-sm font-bold uppercase text-charcoal">{study.client}</span>
                                     </div>
 
-                                    <div className="w-12 h-12 rounded-full border border-gray-200 dark:border-gray-800 flex items-center justify-center group-hover:border-primary group-hover:bg-primary transition-all duration-300">
-                                        <span className="material-icons text-charcoal dark:text-gray-400 group-hover:text-white transition-colors duration-300">arrow_forward</span>
+                                    <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-primary group-hover:bg-primary transition-all duration-300">
+                                        <span className="material-icons text-charcoal group-hover:text-white transition-colors duration-300">arrow_forward</span>
                                     </div>
                                 </div>
                             </div>

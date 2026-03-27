@@ -86,20 +86,20 @@ export default function Services() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <div className="min-h-screen bg-white dark:bg-background-dark">
+            <div className="min-h-screen bg-white">
                 {/* Main Content Container */}
                 <main className="pt-48 pb-32 relative min-h-screen">
                     {/* The Vertical Anchor Line */}
-                    <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-800 h-full z-0"></div>
+                    <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-px bg-gray-200 h-full z-0"></div>
 
                     {/* Intro Section */}
                     <AnimatedSection className="px-6 md:px-12 mb-20 md:mb-40 relative z-10">
                         <div className="max-w-7xl mx-auto">
                             <div className="md:pl-12 pt-10 md:pt-24 max-w-4xl">
                                 <p className="text-xs font-bold tracking-[0.4em] text-primary uppercase mb-6">Our Expertise</p>
-                                <h1 className="text-6xl md:text-9xl font-black tracking-tighter text-slate-900 dark:text-white leading-[0.85]">
+                                <h1 className="text-6xl md:text-9xl font-black tracking-tighter text-slate-900 leading-[0.85]">
                                     Shape<br />
-                                    <span className="text-slate-400 dark:text-slate-600">The</span><br />
+                                    <span className="text-slate-400">The</span><br />
                                     Narrative.
                                 </h1>
                             </div>
@@ -111,16 +111,16 @@ export default function Services() {
                         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
                             {servicesData.map((service) => (
                                 <Link key={service.id} href={`/services/${service.slug}`} className="block group">
-                                    <AnimatedArticle className="relative h-full p-8 border border-gray-100 dark:border-gray-800 rounded-2xl bg-transparent transition-all duration-500">
+                                    <AnimatedArticle className="relative h-full p-8 border border-gray-100 rounded-2xl bg-transparent transition-all duration-500">
                                         <div className="text-primary mb-8 flex justify-between items-center">
                                             <span className="text-sm font-mono font-bold">{service.id}</span>
                                             <span className="material-icons opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300">arrow_forward</span>
                                         </div>
-                                        <h2 className="text-4xl font-black text-slate-900 dark:text-white tracking-tight mb-6 leading-tight">
+                                        <h2 className="text-4xl font-black text-slate-900 tracking-tight mb-6 leading-tight">
                                             {service.title}
                                         </h2>
                                         <div className="w-12 h-1 bg-primary mb-8 group-hover:w-24 transition-all duration-500"></div>
-                                        <p className="font-serif text-xl font-light italic text-slate-600 dark:text-slate-300 leading-relaxed">
+                                        <p className="font-serif text-xl font-light italic text-slate-600 leading-relaxed">
                                             {service.shortDesc}
                                         </p>
                                     </AnimatedArticle>
@@ -133,11 +133,11 @@ export default function Services() {
                     <AnimatedSection className="px-6 md:px-12 mb-32">
                         <div className="max-w-7xl mx-auto">
                             <div className="relative group cursor-pointer">
-                                <div className="overflow-hidden rounded-2xl aspect-21/9 bg-transparent relative border border-gray-200 dark:border-gray-800">
+                                <div className="overflow-hidden rounded-2xl aspect-21/9 bg-transparent relative border border-gray-200">
 
                                     <img
                                         alt="Editorial shot"
-                                        className="object-cover w-full h-full opacity-80 mix-blend-multiply dark:mix-blend-overlay grayscale hover:scale-105 transition-transform duration-1000"
+                                        className="object-cover w-full h-full opacity-80 mix-blend-multiply grayscale hover:scale-105 transition-transform duration-1000"
                                         src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=2670"
                                     />
                                     <div className="absolute bottom-8 right-8 text-white z-10 text-right">
@@ -151,11 +151,11 @@ export default function Services() {
 
                     {/* CTA Section */}
                     <AnimatedSection className="px-6 md:px-12 mb-20">
-                        <div className="max-w-7xl mx-auto p-12 md:p-24 bg-transparent border border-gray-200 dark:border-gray-800 text-charcoal dark:text-white rounded-3xl relative overflow-hidden text-center">
+                        <div className="max-w-7xl mx-auto p-12 md:p-24 bg-transparent border border-gray-200 text-charcoal rounded-3xl relative overflow-hidden text-center">
 
                             <h3 className="text-4xl md:text-6xl font-bold mb-6 relative z-10 leading-tight">Start the Dialogue</h3>
-                            <p className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 font-serif italic mb-12 relative z-10">Exclusive representation for select clients.</p>
-                            <a href="/contact" className="inline-block px-12 py-5 bg-transparent border border-gray-200 dark:border-gray-800 text-charcoal dark:text-white hover:border-black dark:hover:border-white transition-all duration-300 rounded-full font-bold uppercase tracking-[0.2em] text-sm">
+                            <p className="text-xl md:text-2xl text-gray-500 font-serif italic mb-12 relative z-10">Exclusive representation for select clients.</p>
+                            <a href="/contact" className="inline-block px-12 py-5 bg-transparent border border-gray-200 text-charcoal hover:border-black transition-all duration-300 rounded-full font-bold uppercase tracking-[0.2em] text-sm">
                                 Inquire Now
                             </a>
                         </div>

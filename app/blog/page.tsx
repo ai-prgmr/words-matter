@@ -48,7 +48,7 @@ export default function BlogListing() {
     };
 
     return (
-        <div className="min-h-screen pt-24 md:pt-48 pb-20 px-6 md:px-12 relative overflow-hidden bg-white dark:bg-background-dark">
+        <div className="min-h-screen pt-24 md:pt-48 pb-20 px-6 md:px-12 relative overflow-hidden bg-white">
             <Script
                 id="blog-jsonld"
                 type="application/ld+json"
@@ -59,7 +59,7 @@ export default function BlogListing() {
                 {/* Header Section */}
                 <AnimatedDiv className="mb-20 md:mb-32">
                     <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Journal</p>
-                    <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-charcoal dark:text-white leading-[1.1] max-w-4xl">
+                    <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-charcoal leading-[1.1] max-w-4xl">
                         Thoughts on <br />
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-600 italic font-serif font-light">Perception</span>.
                     </h1>
@@ -71,7 +71,7 @@ export default function BlogListing() {
                         <Link
                             href={`/blog/${post.slug}`}
                             key={post.slug}
-                            className="group flex flex-col h-full bg-transparent border border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden hover:border-black dark:hover:border-white transition-all duration-500 hover:-translate-y-2"
+                            className="group flex flex-col h-full bg-transparent border border-gray-200 rounded-3xl overflow-hidden hover:border-black transition-all duration-500 hover:-translate-y-2"
                         >
                             {/* Image Container */}
                             <div className="relative w-full aspect-4/3 overflow-hidden">
@@ -79,7 +79,7 @@ export default function BlogListing() {
                                 <img
                                     src={post.imageUrl}
                                     alt={post.title}
-                                    className="w-full h-full object-cover grayscale mix-blend-multiply group-hover:mix-blend-normal dark:mix-blend-overlay group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
+                                    className="w-full h-full object-cover grayscale mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
                                 />
                             </div>
 
@@ -91,16 +91,16 @@ export default function BlogListing() {
                                     <span>{post.date}</span>
                                 </div>
 
-                                <h2 className="text-2xl font-bold tracking-tight text-charcoal dark:text-white mb-4 leading-snug group-hover:text-primary transition-colors duration-300">
+                                <h2 className="text-2xl font-bold tracking-tight text-charcoal mb-4 leading-snug group-hover:text-primary transition-colors duration-300">
                                     {post.title}
                                 </h2>
 
-                                <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm mb-8 grow">
+                                <p className="text-gray-500 leading-relaxed text-sm mb-8 grow">
                                     {post.excerpt}
                                 </p>
 
-                                <div className="mt-auto border-t border-gray-100 dark:border-gray-800/50 pt-6 flex justify-between items-center w-full">
-                                    <span className="text-xs font-bold font-mono tracking-widest uppercase text-charcoal dark:text-gray-300">{post.author}</span>
+                                <div className="mt-auto border-t border-gray-100 pt-6 flex justify-between items-center w-full">
+                                    <span className="text-xs font-bold font-mono tracking-widest uppercase text-charcoal">{post.author}</span>
                                     <span className="material-icons text-primary text-xl transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">arrow_outward</span>
                                 </div>
                             </div>
