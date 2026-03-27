@@ -65,7 +65,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="max-w-lg mx-auto p-8 bg-white border border-slate-100 shadow-xl rounded-2xl font-sans text-slate-900">
+        <div className="max-w-lg mx-auto p-8 bg-white border border-slate-100 shadow-xl rounded-2xl font-league text-slate-900">
             <h2 className="text-2xl font-semibold mb-6 text-slate-800">Get in Touch</h2>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">

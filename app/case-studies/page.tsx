@@ -63,7 +63,7 @@ export default function CaseStudiesListing() {
                     <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Work</p>
                     <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-charcoal leading-[1.1] max-w-4xl">
                         Evidence of <br />
-                        <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-500 to-gray-800 italic font-serif font-light">Precision</span>.
+                        <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-500 to-gray-800 italic font-league font-light">Precision</span>.
                     </h1>
                 </AnimatedDiv>
 

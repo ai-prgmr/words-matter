@@ -273,30 +273,6 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        {/* CTA Section */}
-        <AnimatedSection className="pb-8 px-6 md:px-12 border-b border-gray-200" >
-          <div className="max-w-7xl mx-auto p-12 md:p-24  text-charcoal relative overflow-hidden text-center">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary blur-[100px] opacity-30"></div>
-
-            <h3 className="text-4xl md:text-6xl font-bold mb-6 relative z-10 leading-tight">
-              Ready to start <br className="hidden md:block" /> the conversation?
-            </h3>
-
-            <a
-              className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg border border-slate-200 bg-transparent px-12 py-6 transition-all duration-300 hover:border-blue-600 hover:bg-blue-600"
-              href="/contact"
-            >
-              {/* Hover Bloom Effect */}
-              <span className="absolute h-0 w-0 rounded-full bg-white opacity-10 transition-all duration-500 ease-out group-hover:h-80 group-hover:w-80"></span>
-
-              <span className="relative text-sm font-bold uppercase tracking-[0.2em] group-hover:text-white">
-                Start the conversation
-              </span>
-              <span className="material-icons text-sm opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300">arrow_forward</span>
-            </a>
-
-          </div>
-        </AnimatedSection>
       </div >
     </>
   );

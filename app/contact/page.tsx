@@ -48,7 +48,7 @@ export default function Contact() {
                         <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Direct Line</p>
                         <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
                             Let's start<br className="hidden md:block" />
-                            something <span className="text-primary italic font-serif leading-[1.3] pb-4">notable.</span>
+                            something <span className="text-primary italic font-league leading-[1.3] pb-4">notable.</span>
                         </h1>
                     </div>
                 </AnimatedDiv>
@@ -64,7 +64,7 @@ export default function Contact() {
                                 <h2 className="text-2xl md:text-4xl font-bold text-slate-900 group-hover:text-primary transition-colors duration-300">
                                     +1 (555) 019-2834
                                 </h2>
-                                <p className="mt-4 font-serif italic text-slate-500 text-lg">
+                                <p className="mt-4 font-league italic text-slate-500 text-lg">
                                     Reserved for urgent client matters.
                                 </p>
                             </a>
@@ -74,7 +74,7 @@ export default function Contact() {
                                 <h2 className="text-3xl md:text-3xl font-bold text-slate-900 group-hover:text-primary transition-colors duration-300 break-all md:break-normal">
                                     noopurr@wordsmatter.in
                                 </h2>
-                                <p className="mt-4 font-serif italic text-slate-500 text-lg">
+                                <p className="mt-4 font-league italic text-slate-500 text-lg">
                                     Responses typically within 2 hours.
                                 </p>
                             </a>
@@ -87,7 +87,7 @@ export default function Contact() {
                                     </h2>
                                     <span className="material-icons text-3xl md:text-4xl text-slate-400 group-hover:text-primary transition-colors">arrow_outward</span>
                                 </div>
-                                <p className="mt-4 font-serif italic text-slate-500 text-lg">
+                                <p className="mt-4 font-league italic text-slate-500 text-lg">
                                     Encrypted & confidential correspondence.
                                 </p>
                             </a>

@@ -120,7 +120,7 @@ export default function Services() {
                                             {service.title}
                                         </h2>
                                         <div className="w-12 h-1 bg-primary mb-8 group-hover:w-24 transition-all duration-500"></div>
-                                        <p className="font-serif text-xl font-light italic text-slate-600 leading-relaxed">
+                                        <p className="font-league text-xl font-light italic text-slate-600 leading-relaxed">
                                             {service.shortDesc}
                                         </p>
                                     </AnimatedArticle>
@@ -142,7 +142,7 @@ export default function Services() {
                                     />
                                     <div className="absolute bottom-8 right-8 text-white z-10 text-right">
                                         <p className="text-[10px] uppercase tracking-[0.4em] font-bold">Editorial Vol. IV</p>
-                                        <p className="text-4xl font-serif italic">The Art of Stillness</p>
+                                        <p className="text-4xl font-league italic">The Art of Stillness</p>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@ export default function Services() {
                         <div className="max-w-7xl mx-auto p-12 md:p-24 bg-transparent border border-gray-200 text-charcoal rounded-3xl relative overflow-hidden text-center">
 
                             <h3 className="text-4xl md:text-6xl font-bold mb-6 relative z-10 leading-tight">Start the Dialogue</h3>
-                            <p className="text-xl md:text-2xl text-gray-500 font-serif italic mb-12 relative z-10">Exclusive representation for select clients.</p>
+                            <p className="text-xl md:text-2xl text-gray-500 font-league italic mb-12 relative z-10">Exclusive representation for select clients.</p>
                             <a href="/contact" className="inline-block px-12 py-5 bg-transparent border border-gray-200 text-charcoal hover:border-black transition-all duration-300 rounded-full font-bold uppercase tracking-[0.2em] text-sm">
                                 Inquire Now
                             </a>

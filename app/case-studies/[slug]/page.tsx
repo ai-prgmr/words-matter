@@ -73,7 +73,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
                         {study.title}
                     </h1>
 
-                    <p className="text-xl md:text-3xl text-gray-500 font-serif italic font-light max-w-2xl leading-relaxed">
+                    <p className="text-xl md:text-3xl text-gray-500 font-league italic font-light max-w-2xl leading-relaxed">
                         {study.excerpt}
                     </p>
                 </header>

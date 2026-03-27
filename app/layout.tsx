@@ -50,11 +50,11 @@ export default function RootLayout({
             </div>
           </main>
           {/* Floating Action Button */}
-          <div className="fixed bottom-10 right-10 z-50">
+          {/* <div className="fixed bottom-10 right-10 z-50">
             <button className="w-14 h-14 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 group">
               <span className="material-icons group-hover:rotate-90 transition-transform duration-300">add</span>
             </button>
-          </div>
+          </div> */}
           <Footer />
         </div>
 

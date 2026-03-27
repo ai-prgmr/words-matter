@@ -123,7 +123,7 @@ export default function AboutPage() {
             {/* 1. THE HERO */}
             <AnimatedSection className="relative flex min-h-[50vh] flex-col items-center justify-center px-6 text-center pt-20 pb-20 z-10">
                 <div className="relative z-10 max-w-5xl mx-auto">
-                    <h1 className="font-serif text-4xl leading-tight md:text-6xl lg:text-7xl text-charcoal font-light">
+                    <h1 className="font-league text-4xl leading-tight md:text-6xl lg:text-7xl text-charcoal font-light">
                         "Captivating audiences through{" "}
                         <span className="italic text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-600 pr-2">
                             compelling narratives
@@ -135,7 +135,7 @@ export default function AboutPage() {
 
             {/* 2. WORDS MATTER - INTRODUCTION */}
             <AnimatedSection className="mx-auto max-w-5xl px-6 md:px-12 pb-24 relative z-10">
-                <div className="prose prose-lg md:prose-xl max-w-none text-charcoal font-serif leading-relaxed space-y-8 text-center md:text-left">
+                <div className="prose prose-lg md:prose-xl max-w-none text-charcoal font-league leading-relaxed space-y-8 text-center md:text-left">
                     <p className="text-2xl md:text-3xl font-light leading-snug">
                         Welcome to Words Matter, a boutique agency where the art of strategic storytelling meets the preservation of personal legacy. We believe that in a world driven by perception, the right words do more than just communicate—they define who you are today and how you are remembered tomorrow.
                     </p>
@@ -161,7 +161,7 @@ export default function AboutPage() {
                                 <span className="w-8 h-px bg-primary"></span>
                                 Vision
                             </h2>
-                            <p className="font-serif text-2xl md:text-3xl leading-relaxed text-charcoal font-light">
+                            <p className="font-league text-2xl md:text-3xl leading-relaxed text-charcoal font-light">
                                 To be a leading boutique agency where the power of words shapes authentic identities, preserves legacies, and elevates personal and professional images with unmatched clarity and impact.
                             </p>
                         </div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
                                 <span className="w-8 h-px bg-primary"></span>
                                 Philosophy
                             </h2>
-                            <p className="font-serif text-lg leading-relaxed text-gray-600">
+                            <p className="font-league text-lg leading-relaxed text-gray-600">
                                 At Words Matter, we believe that every narrative holds the power to transform perception and forge meaningful connections. Our approach is grounded in integrity, meticulous craftsmanship, and a passion for storytelling that honors the uniqueness of every individual and brand we serve. We are dedicated to amplifying voices with honesty, precision, and empathy, ensuring that words truly matter in building lasting impressions.
                             </p>
                         </div>
@@ -183,7 +183,7 @@ export default function AboutPage() {
             {/* 4. FOUNDERS SECTION */}
             <AnimatedSection id="founders" className="bg-gray-50 border-t border-gray-200 py-32 relative z-10">
                 <div className="mx-auto max-w-7xl px-6 md:px-12">
-                    <h2 className="font-serif text-4xl md:text-6xl text-center mb-24 text-charcoal font-light">
+                    <h2 className="font-league text-4xl md:text-6xl text-center mb-24 text-charcoal font-light">
                         Founder & Co-Founder
                     </h2>
 
@@ -212,11 +212,11 @@ export default function AboutPage() {
                                 </p>
                                 <h3 className="text-4xl font-extrabold tracking-tighter text-charcoal md:text-6xl leading-[0.9] mb-8">
                                     Noopurr R <br className="hidden md:block" />
-                                    <span className="font-serif italic font-light">Chablani</span>
+                                    <span className="font-league italic font-light">Chablani</span>
                                 </h3>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-gray-600 font-serif leading-relaxed space-y-6">
+                            <div className="prose prose-lg max-w-none text-gray-600 font-league leading-relaxed space-y-6">
                                 <p>
                                     Noopurr R Chablani is a visionary entrepreneur, passionate storyteller, and the driving force behind Words Matter. With a deep appreciation for the written word and a keen understanding of the power of storytelling, Noopurr has established herself as a leading figure in the field of Public Relations, Image building and Personal narratives.
                                 </p>
@@ -264,11 +264,11 @@ export default function AboutPage() {
                                 </p>
                                 <h3 className="text-4xl font-extrabold tracking-tighter text-charcoal md:text-6xl leading-[0.9] mb-8">
                                     Rohit <br className="hidden md:block" />
-                                    <span className="font-serif italic font-light">Agarwal</span>
+                                    <span className="font-league italic font-light">Agarwal</span>
                                 </h3>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-gray-600 font-serif leading-relaxed space-y-6">
+                            <div className="prose prose-lg max-w-none text-gray-600 font-league leading-relaxed space-y-6">
                                 <p>
                                     Rohit's professional career spans three decades of working with a range of disparate organisations, from the Indian Army to the World Bank. Commissioned in a Tank Regiment at the age of 20, he spent the next 20 years soldiering across the length and breadth of the country. Along the way, he acquired a Master's degree in Strategy and an MBA in Marketing from the Indian Institute of Foreign Trade. At 40 years of age, he decided to switch tracks, careers and domains. He has since worked as a consultant with organisations like the S Chand Group, International Finance Corporation (World Bank Group), Franklin Covey South Asia, Cherie Blaire Foundation and the Bird Group. Working as a consultant has given him time and flexibility to pursue his passion for writing as well.
                                 </p>
@@ -288,7 +288,7 @@ export default function AboutPage() {
             {/* 5. MENTORS & ADVISORY BOARD */}
             <AnimatedSection className="bg-white border-t border-gray-200 py-32 relative z-10">
                 <div className="mx-auto max-w-7xl px-6 md:px-12">
-                    <h2 className="font-serif text-4xl md:text-6xl text-center mb-24 text-charcoal font-light">
+                    <h2 className="font-league text-4xl md:text-6xl text-center mb-24 text-charcoal font-light">
                         Mentors & Advisory Board
                     </h2>
 
@@ -297,7 +297,7 @@ export default function AboutPage() {
                         <div id="mentors">
                             <div className="flex items-center gap-6 mb-12">
                                 <span className="w-12 h-px bg-primary hidden md:block"></span>
-                                <h3 className="text-2xl md:text-3xl font-serif text-charcoal">
+                                <h3 className="text-2xl md:text-3xl font-league text-charcoal">
                                     Our Mentors
                                 </h3>
                                 <span className="w-12 h-px bg-primary md:hidden"></span>
@@ -308,14 +308,14 @@ export default function AboutPage() {
                                     <div key={index} className="bg-gray-50 block w-full p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                                         <Link href={mentor.link}>
                                             <div className="w-full aspect-4/3 rounded-xl bg-gray-200 flex items-center justify-center overflow-hidden mb-6">
-                                                <span className="text-gray-400 font-serif italic text-sm">Image Placeholder</span>
+                                                <span className="text-gray-400 font-league italic text-sm">Image Placeholder</span>
                                                 {/* <img className="rounded-xl w-full h-full object-cover" src={mentor.image} alt={mentor.name} /> */}
                                             </div>
                                         </Link>
                                         <Link href={mentor.link}>
-                                            <h5 className="mb-2 text-2xl font-serif text-charcoal font-light">{mentor.name}</h5>
+                                            <h5 className="mb-2 text-2xl font-league text-charcoal font-light">{mentor.name}</h5>
                                         </Link>
-                                        <p className="mb-6 text-gray-600 font-serif text-sm leading-relaxed">
+                                        <p className="mb-6 text-gray-600 font-league text-sm leading-relaxed">
                                             {mentor.description}
                                         </p>
                                         <Link href={mentor.link} className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary border border-gray-200 hover:border-primary px-5 py-2.5 rounded-lg transition-colors group">
@@ -331,7 +331,7 @@ export default function AboutPage() {
                         <div id="advisors">
                             <div className="flex items-center gap-6 mb-12">
                                 <span className="w-12 h-px bg-primary hidden md:block"></span>
-                                <h3 className="text-2xl md:text-3xl font-serif text-charcoal">
+                                <h3 className="text-2xl md:text-3xl font-league text-charcoal">
                                     Advisory Board
                                 </h3>
                                 <span className="w-12 h-px bg-primary md:hidden"></span>
@@ -346,9 +346,9 @@ export default function AboutPage() {
                                             </div>
                                         </Link>
                                         <Link href={advisor.link}>
-                                            <h5 className="mb-2 text-2xl font-serif text-charcoal font-light">{advisor.name}</h5>
+                                            <h5 className="mb-2 text-2xl font-league text-charcoal font-light">{advisor.name}</h5>
                                         </Link>
-                                        <p className="mb-6 text-gray-600 font-serif text-sm leading-relaxed">
+                                        <p className="mb-6 text-gray-600 font-league text-sm leading-relaxed">
                                             {advisor.description}
                                         </p>
                                         <Link href={advisor.link} className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary border border-gray-200 hover:border-primary px-5 py-2.5 rounded-lg transition-colors group">
@@ -365,7 +365,7 @@ export default function AboutPage() {
 
             {/* 6. DIRECT CTA */}
             <AnimatedSection className="mx-auto max-w-3xl text-center px-6 md:px-12 py-32 border-t border-gray-200">
-                <p className="mb-8 text-2xl md:text-3xl leading-relaxed text-charcoal font-serif">
+                <p className="mb-8 text-2xl md:text-3xl leading-relaxed text-charcoal font-league">
                     We believe that strategy is the architecture of perception. In a world full of noise, we help the most interesting voices resonate with precision.
                 </p>
                 <div className="mt-12">

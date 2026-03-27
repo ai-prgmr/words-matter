@@ -77,7 +77,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     </h1>
 
                     <div className="flex items-center gap-4 border-t border-gray-200 pt-8 mt-8">
-                        <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-serif italic text-charcoal">
+                        <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-league italic text-charcoal">
                             {post.author.charAt(0)}
                         </div>
                         <div>
