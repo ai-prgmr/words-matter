@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -57,7 +58,7 @@ export default function Footer() {
                     {/* Brand Meta */}
                     <div className="lg:col-span-2 md:pr-12">
                         <Link href="/" className="inline-block mb-8">
-                            <h3 className="text-3xl font-black tracking-tighter text-slate-900">WORDS MATTER</h3>
+                            <Image src="/words-matter/words-matter-logo.png" alt="Logo" width={100} height={100} />
                         </Link>
                         <p className="text-base text-slate-500 leading-relaxed font-league  max-w-sm">
                             A strategic public relations and perception architecture agency for leaders and brands who command the conversation.

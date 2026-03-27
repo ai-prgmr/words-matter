@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   basePath: "/words-matter",
   output: "export",
   images: {
-    minimumCacheTTL: 31536000, // 1 year in seconds
+    minimumCacheTTL: 31536000,
+    unoptimized: true,
   },
 };
 

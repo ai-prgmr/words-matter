@@ -42,9 +42,9 @@ export default function Header() {
     return (
         <>
             <header className={`fixed top-0 w-full z-50 bg-transparent  transition-all duration-300 font-league ${isScrolled ? "bg-white/70 backdrop-blur-md py-3 border-b border-white/10" : "bg-transparent py-5"}`}>
-                <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center relative z-50">
+                <div className="max-w-7xl mx-auto px-6 flex justify-between items-center relative z-50">
                     <Link href="/" className="transition-opacity hover:opacity-80 z-50 flex items-center">
-                        <img src="/words-matter/words-matter-logo.png" alt="Words Matter" className="h-16 md:h-24 w-auto object-contain" />
+                        <img src={isScrolled ? "/words-matter/icon.png" : "/words-matter/words-matter-logo.png"} alt="Words Matter" className={isScrolled ? "h-16 w-auto object-contain" : "h-16 md:h-24 w-auto object-contain"} />
                     </Link>
 
                     {/* Desktop Navigation */}
