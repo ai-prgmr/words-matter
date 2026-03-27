@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { AnimatedDiv } from "@/components/ui/animated-section";
-
+import ContactForm from "@/components/contact-form";
 export const metadata: Metadata = {
     title: "Contact Us | Words Matter",
     description: "Get in touch for urgent client matters or press inquiries. Zurich, New York, London.",
@@ -42,22 +42,22 @@ export default function Contact() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <div className="min-h-screen relative overflow-hidden bg-white dark:bg-background-dark pt-32">
-                {/* Main Content Area */}
-                <AnimatedDiv className="grow flex flex-col px-6 md:px-12 relative z-10 py-12 md:py-32">
-                    <div className="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                        {/* Left Side: Swiss Style Header */}
-                        <div>
-                            <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8">Direct Line</p>
-                            <div className="h-1.5 w-32 bg-primary mb-12 animate-pulse"></div>
-                            <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
-                                Let's start<br />
-                                something<br />
-                                <span className="text-primary italic font-serif">notable.</span>
-                            </h1>
-                        </div>
+                {/* Header Section */}
+                <AnimatedDiv className="px-6 md:px-12 relative z-10 pt-16 md:pt-24 pb-12 md:pb-20">
+                    <div className="max-w-6xl mx-auto w-full">
+                        <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Direct Line</p>
+                        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
+                            Let's start<br className="hidden md:block" />
+                            something <span className="text-primary italic font-serif leading-[1.3] pb-4">notable.</span>
+                        </h1>
+                    </div>
+                </AnimatedDiv>
 
-                        {/* Right Side: Asymmetric Contact Grid */}
-                        <div className="flex flex-col space-y-12 md:space-y-20 md:pl-12">
+                {/* Main Content Area */}
+                <AnimatedDiv className="grow flex flex-col px-6 md:px-12 relative z-10 pb-20 md:pb-32">
+                    <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+                        {/* Left Side: Contact Form */}
+                        <div className="flex flex-col space-y-12 md:space-y-16">
                             {/* Phone Method */}
                             <a className="group block relative" href="tel:+15550192834">
                                 <div className="absolute -left-6 top-0 h-full w-1.5 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
@@ -92,9 +92,14 @@ export default function Contact() {
                                 </p>
                             </a>
                         </div>
+
+
+                        {/* Right Side: Asymmetric Contact Grid */}
+                        <div className="w-full">
+                            <ContactForm />
+                        </div>
                     </div>
                 </AnimatedDiv>
-
                 {/* Visual Anchor: Fountain Pen Nib Illustration (Adjusted for desktop) */}
                 <div className="absolute bottom-0 right-0 w-1/3 h-1/2 pointer-events-none opacity-5 dark:opacity-10 z-0">
                     <img
