@@ -3,7 +3,8 @@ import Script from "next/script";
 import Link from "next/link";
 import { servicesData } from "@/app/services/page";
 import { AnimatedSection } from "@/components/ui/animated-section";
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import EditorialTeaser from "@/components/EditorialTeaser";
 export const metadata: Metadata = {
   title: "Words Matter | PR & Media Strategy Agency in India",
   description:
@@ -27,17 +28,21 @@ export const metadata: Metadata = {
 };
 const faqs = [
   {
-    q: "What does Words Matter do?",
-    a: "Words Matter is a strategic PR and media agency that helps brands, founders, and executives get featured in India's top publications including Times of India, NDTV, Economic Times, and 50+ others."
+    q: "What is Words Matter?",
+    a: "Words Matter LLP is a boutique strategic communications and image management agency based in Gurugram, India. We architect perception, combining elite media relations with deep narrative strategy for select clients."
   },
   {
-    q: "Which publications does Words Matter work with?",
-    a: "We have established relationships with TOI, NDTV, Business Standard, Hindustan Times, ET, Livemint, News18, ANI, Zee News, Mid-Day, Deccan Chronicle, and Deccan Herald."
+    q: "Who leads the agency's strategic direction?",
+    a: "The firm is spearheaded by Image Strategist Noopurr R Chablani and Brand Strategist Rohit Agarwal, leveraging decades of combined experience across corporate, military, and global consulting sectors."
   },
   {
-    q: "How is Words Matter different from a traditional PR agency?",
-    a: "We focus on strategic positioning — not just press releases. We architect how your brand is perceived across India's media landscape, combining earned media with narrative strategy."
+    q: "Who is your ideal clientele?",
+    a: "We exclusively represent legacy enterprises, high-profile founders, C-suite executives, and public figures who require absolute discretion and authoritative media positioning."
   },
+  {
+    q: "Which publications do you secure placements in?",
+    a: "We maintain direct, high-leverage relationships with India's premier tier-one publications, including The Times of India, Economic Times, NDTV, Livemint, and Business Standard, among others."
+  }
 ];
 
 export default function Home() {
@@ -272,6 +277,50 @@ export default function Home() {
             </div>
           </div>
         </AnimatedSection>
+
+        {/* The Authority Statement */}
+        <AnimatedSection className="py-24 px-6 md:px-12 bg-white">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-xs font-bold tracking-widest uppercase text-primary mb-8">The Words Matter Standard</h2>
+            <p className="text-2xl md:text-4xl font-league text-charcoal leading-relaxed mb-10">
+              We do not chase trends. We build <span className="italic text-primary">lasting legacies</span>. Our approach to public relations treats your reputation as your most critical, high-yield asset.
+            </p>
+          </div>
+        </AnimatedSection>
+
+        {/* The AEO FAQ Accordion */}
+        <AnimatedSection className="py-24 px-6 md:px-12 border-t border-gray-200 bg-[#FAFAFA]">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-black text-charcoal tracking-tight mb-4">Strategic Inquiries</h2>
+              <p className="text-gray-500 font-league text-xl">Clarity before engagement.</p>
+            </div>
+
+            <Accordion type="single" collapsible className="w-full border-t border-gray-200">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
+
+                  {/* UPGRADE: Increased py-6 to py-10 for massive breathing room between questions */}
+                  <AccordionTrigger className="text-xl md:text-2xl font-bold tracking-tight text-charcoal hover:text-primary hover:no-underline transition-colors py-10 text-left pr-4">
+                    {faq.q}
+                  </AccordionTrigger>
+
+                  {/* UPGRADE: Added pt-2 to separate answer from question, and increased pb-8 to pb-12 */}
+                  <AccordionContent className="text-gray-500 font-league text-lg md:text-xl leading-relaxed pt-2 pb-12 pr-12">
+                    {faq.a}
+                  </AccordionContent>
+
+                </AccordionItem>
+              ))}
+            </Accordion>
+
+          </div>
+        </AnimatedSection>
+
+
+        <EditorialTeaser />
+
+
 
       </div >
     </>
