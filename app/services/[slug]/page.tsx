@@ -84,14 +84,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
 
                 </div>
-
-                <div className="mt-24 pt-16 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-8">
-                    <h4 className="text-2xl font-league italic text-charcoal m-0">Require strategic counsel?</h4>
-                    <Link href="/contact" className="group flex items-center justify-center px-8 py-4 bg-transparent border border-gray-200 text-charcoal font-bold uppercase tracking-[0.2em] text-xs hover:border-black transition-colors rounded-full shrink-0">
-                        <span>Initiate Dialogue</span>
-                        <span className="material-icons ml-3 text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                    </Link>
-                </div>
             </div>
         </AnimatedArticle>
     );

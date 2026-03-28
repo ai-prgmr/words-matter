@@ -31,8 +31,8 @@ export default function Header() {
             subItems: [
                 { name: "Philosophy", href: "/about#philosophy" },
                 { name: "Founders", href: "/about#founders" },
-                { name: "Advisors", href: "/about#advisors" },
                 { name: "Mentors", href: "/about#mentors" },
+                { name: "Advisors", href: "/about#advisors" },
             ]
         },
         { name: "Contact", href: "/contact" },

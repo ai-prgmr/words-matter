@@ -128,7 +128,7 @@ export default function AboutPage() {
     };
 
     return (
-        <div className="min-h-screen relative bg-white pt-48">
+        <div className="min-h-screen relative bg-white pt-10 md:pt-24">
             <Script
                 id="about-jsonld"
                 type="application/ld+json"
@@ -136,7 +136,7 @@ export default function AboutPage() {
             />
 
             {/* 1. THE HERO */}
-            <AnimatedSection className="relative flex min-h-[50vh] flex-col items-center justify-center px-6 text-center pt-20 pb-20 z-10">
+            <AnimatedSection className="relative flex min-h-[50vh] flex-col items-center justify-center px-6 text-center py-4 md:py-10 z-10">
                 <div className="relative z-10 max-w-5xl mx-auto">
                     <h1 className="font-league text-4xl leading-tight md:text-6xl lg:text-7xl text-charcoal font-light">
                         "Captivating audiences through{" "}
