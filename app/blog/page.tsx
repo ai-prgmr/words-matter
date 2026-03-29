@@ -48,7 +48,7 @@ export default function BlogListing() {
     };
 
     return (
-        <div className="min-h-screen pt-24 md:pt-48 pb-20 px-6 md:px-12 relative overflow-hidden bg-white">
+        <div className="min-h-screen pt-24 pb-20 px-6 md:px-12 relative overflow-hidden bg-white">
             <Script
                 id="blog-jsonld"
                 type="application/ld+json"
@@ -57,7 +57,7 @@ export default function BlogListing() {
 
             <div className="max-w-7xl mx-auto relative z-10 w-full pt-24">
                 {/* Header Section */}
-                <AnimatedDiv className="mb-20 md:mb-32">
+                <AnimatedDiv className="mb-20 md:mb-16">
                     <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Journal</p>
                     <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-charcoal leading-[1.1] max-w-4xl">
                         Thoughts on <br />

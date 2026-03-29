@@ -56,16 +56,24 @@ const auditQuestions = [
 ];
 
 export default function PerceptionAudit() {
+    // 1. NEW INTRO STATE
+    const [hasStarted, setHasStarted] = useState(false);
+
     // Standard Audit States
     const [currentStep, setCurrentStep] = useState(0);
     const [answers, setAnswers] = useState<Record<number, string>>({});
     const [isProcessing, setIsProcessing] = useState(false);
     const [isComplete, setIsComplete] = useState(false);
 
-    // New Form States
+    // Form States
     const [showForm, setShowForm] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [formData, setFormData] = useState({
+        name: "",
+        company: "",
+        email: ""
+    });
 
     const handleOptionSelect = (optionId: string) => {
         setAnswers({ ...answers, [currentStep]: optionId });
@@ -87,73 +95,123 @@ export default function PerceptionAudit() {
         }, 2500);
     };
 
-    // Replace this with your actual Google Sheets fetch logic
     const handleFormSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulating the API call to your backend
-        setTimeout(() => {
+        const payload = {
+            name: formData.name,
+            company: formData.company,
+            email: formData.email,
+            q1: answers[0] || "N/A",
+            q2: answers[1] || "N/A",
+            q3: answers[2] || "N/A",
+            q4: answers[3] || "N/A",
+            q5: answers[4] || "N/A"
+        };
+
+        try {
+            // Replace with your actual Google Apps Script URL
+            const scriptUrl = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
+
+            await fetch(scriptUrl, {
+                method: "POST",
+                mode: "no-cors",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+            });
+
             setIsSubmitting(false);
             setIsSuccess(true);
-        }, 1500);
+
+        } catch (error) {
+            console.error("Audit submission failed:", error);
+            setIsSubmitting(false);
+        }
     };
 
     const resetAudit = () => {
+        setHasStarted(false);
         setCurrentStep(0);
         setAnswers({});
         setIsComplete(false);
         setShowForm(false);
         setIsSuccess(false);
+        setFormData({ name: "", company: "", email: "" });
     };
 
     return (
-        <section className="pb-24 px-6 md:px-12 bg-[#FAFAFA] border-y border-gray-200 flex justify-center items-center min-h-[800px]">
+        <section className="py-24 px-6 md:px-12 bg-[#FAFAFA] border-y border-gray-200 flex justify-center items-center min-h-[800px]">
             <div className="max-w-3xl w-full">
 
-                {/* STATE 1: THE CAROUSEL */}
+                {/* STATE 0: THE INTRO SCREEN */}
+                {!hasStarted && (
+                    <div className="text-center animate-in fade-in zoom-in-95 duration-700 p-8 md:p-16 border border-gray-200 bg-white shadow-sm">
+                        <div className="w-16 h-1 bg-primary mx-auto mb-10"></div>
+                        <h3 className="text-xs font-bold uppercase tracking-widest text-primary mb-6">Executive Diagnostic</h3>
+                        <h2 className="text-4xl md:text-5xl font-black text-charcoal tracking-tight mb-8">The Perception Audit</h2>
 
-                <div className="relative">
-                    <div className="flex justify-between items-center mb-12 border-b border-gray-200 pb-6">
-                        <div>
-                            <h2 className="text-2xl font-black text-charcoal tracking-tight">The Perception Audit</h2>
-                            <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mt-2">Executive Diagnostic</p>
-                        </div>
-                        <span className="text-sm font-mono text-primary">
-                            0{currentStep + 1} — 0{auditQuestions.length}
-                        </span>
+                        <p className="text-xl font-league text-gray-600 leading-relaxed max-w-2xl mx-auto mb-12">
+                            Your brand's legacy is either architected by you, or assigned to you by the market. Take this 60-second diagnostic to uncover critical vulnerabilities in your current media positioning and executive footprint.
+                        </p>
+
+                        <button
+                            onClick={() => setHasStarted(true)}
+                            className="group inline-flex items-center justify-center px-10 py-5  text-charcoal font-bold uppercase tracking-widest text-md hover:bg-primary transition-colors duration-500 rounded-none w-full sm:w-auto"
+                        >
+                            <span>Begin Audit</span>
+                            <svg className="w-4 h-4 ml-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </button>
                     </div>
+                )}
 
-                    {!isProcessing && !isComplete && (<div key={currentStep} className="animate-in fade-in slide-in-from-right-8 duration-500 ease-out">
-                        <h3 className="text-3xl md:text-4xl font-league text-charcoal leading-snug mb-12">
-                            {auditQuestions[currentStep].question}
-                        </h3>
-
-                        <div className="flex flex-col gap-4">
-                            {auditQuestions[currentStep].options.map((option) => {
-                                const isSelected = answers[currentStep] === option.id;
-                                return (
-                                    <button
-                                        key={option.id}
-                                        onClick={() => handleOptionSelect(option.id)}
-                                        className={`w-full text-left p-6 md:p-8 border transition-all duration-300 group flex items-start gap-6 ${isSelected
-                                            ? "border-primary bg-primary/5 shadow-sm"
-                                            : "border-gray-200 bg-white hover:border-charcoal"
-                                            }`}
-                                    >
-                                        <span className={`text-xs font-bold font-mono pt-1 ${isSelected ? "text-primary" : "text-gray-400 group-hover:text-charcoal"}`}>
-                                            {option.id}
-                                        </span>
-                                        <span className={`text-lg md:text-xl font-league ${isSelected ? "text-charcoal font-medium" : "text-gray-600"}`}>
-                                            {option.text}
-                                        </span>
-                                    </button>
-                                );
-                            })}
+                {/* STATE 1: THE CAROUSEL */}
+                {hasStarted && !isProcessing && !isComplete && (
+                    <div className="relative">
+                        <div className="flex justify-between items-center mb-12 border-b border-gray-200 pb-6">
+                            <div>
+                                <h2 className="text-2xl font-black text-charcoal tracking-tight">The Perception Audit</h2>
+                                <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mt-2">Executive Diagnostic</p>
+                            </div>
+                            <span className="text-sm font-mono text-primary">
+                                0{currentStep + 1} — 0{auditQuestions.length}
+                            </span>
                         </div>
-                    </div>)}
-                </div>
 
+                        <div key={currentStep} className="animate-in fade-in slide-in-from-right-8 duration-500 ease-out">
+                            <h3 className="text-3xl md:text-4xl font-league text-charcoal leading-snug mb-12">
+                                {auditQuestions[currentStep].question}
+                            </h3>
+
+                            <div className="flex flex-col gap-4">
+                                {auditQuestions[currentStep].options.map((option) => {
+                                    const isSelected = answers[currentStep] === option.id;
+                                    return (
+                                        <button
+                                            key={option.id}
+                                            onClick={() => handleOptionSelect(option.id)}
+                                            className={`w-full text-left p-6 md:p-8 border transition-all duration-300 group flex items-start gap-6 ${isSelected
+                                                ? "border-primary bg-primary/5 shadow-sm"
+                                                : "border-gray-200 bg-white hover:border-charcoal"
+                                                }`}
+                                        >
+                                            <span className={`text-xs font-bold font-mono pt-1 ${isSelected ? "text-primary" : "text-gray-400 group-hover:text-charcoal"}`}>
+                                                {option.id}
+                                            </span>
+                                            <span className={`text-lg md:text-xl font-league ${isSelected ? "text-charcoal font-medium" : "text-gray-600"}`}>
+                                                {option.text}
+                                            </span>
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                 {/* STATE 2: THE PROCESSING SCREEN */}
                 {isProcessing && (
@@ -183,15 +241,12 @@ export default function PerceptionAudit() {
 
                                 <button
                                     onClick={() => setShowForm(true)}
-                                    className="group inline-flex items-center justify-center px-10 py-5 bg-black text-charcoal font-bold uppercase tracking-widest text-[10px] transition-colors duration-500 rounded-none w-full sm:w-auto"
+                                    className="group inline-flex items-center justify-center px-10 py-5 bg-charcoal text-white font-bold uppercase tracking-widest text-[10px] hover:bg-primary transition-colors duration-500 rounded-none w-full sm:w-auto"
                                 >
                                     <span>Request Confidential Debrief</span>
                                     <svg className="w-4 h-4 ml-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                     </svg>
-                                </button>
-                                <button onClick={resetAudit} className="text-[10px] font-bold uppercase tracking-widest text-gray-400 hover:text-primary transition-colors">
-                                    Restart Audit
                                 </button>
                             </div>
                         ) : (
@@ -208,17 +263,38 @@ export default function PerceptionAudit() {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div className="space-y-2">
                                             <label className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Full Name</label>
-                                            <input required type="text" className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none" placeholder="Jane Doe" />
+                                            <input
+                                                required
+                                                type="text"
+                                                value={formData.name}
+                                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                                className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none"
+                                                placeholder="Jane Doe"
+                                            />
                                         </div>
                                         <div className="space-y-2">
                                             <label className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Company</label>
-                                            <input required type="text" className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none" placeholder="Acme Corp" />
+                                            <input
+                                                required
+                                                type="text"
+                                                value={formData.company}
+                                                onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                                                className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none"
+                                                placeholder="Acme Corp"
+                                            />
                                         </div>
                                     </div>
 
                                     <div className="space-y-2">
                                         <label className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Work Email</label>
-                                        <input required type="email" className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none" placeholder="jane@acmecorp.com" />
+                                        <input
+                                            required
+                                            type="email"
+                                            value={formData.email}
+                                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                            className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none"
+                                            placeholder="jane@acmecorp.com"
+                                        />
                                     </div>
 
                                     <button
@@ -228,7 +304,6 @@ export default function PerceptionAudit() {
                                     >
                                         {isSubmitting ? 'Transmitting Data...' : 'Submit Audit & Request Debrief'}
                                     </button>
-
                                 </form>
                             </div>
                         )}
