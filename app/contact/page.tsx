@@ -42,56 +42,31 @@ export default function Contact() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <div className="min-h-screen relative overflow-hidden bg-white pt-32">
-                {/* Header Section */}
-                <AnimatedDiv className="px-6 md:px-12 relative z-10 pt-16 md:pt-24 pb-12 md:pb-20">
-                    <div className="max-w-6xl mx-auto w-full">
-                        <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Direct Line</p>
-                        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
-                            Let's start<br className="hidden md:block" />
-                            something <span className="text-primary italic font-league leading-[1.3] pb-4">notable!</span>
-                        </h1>
-                    </div>
-                </AnimatedDiv>
+            <div className="min-h-screen relative overflow-hidden bg-white pt-48">
+
 
                 {/* Main Content Area */}
                 <AnimatedDiv className="grow flex flex-col px-6 md:px-12 relative z-10 pb-20 md:pb-32">
                     <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
                         {/* Left Side: Contact Form */}
                         <div className="flex flex-col space-y-12 md:space-y-16">
-                            {/* Phone Method */}
-                            {/* <a className="group block relative" href="tel:+15550192834">
-                                <div className="absolute -left-6 top-0 h-full w-1.5 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
-                                <h2 className="text-2xl md:text-4xl font-bold text-slate-900 group-hover:text-primary transition-colors duration-300">
-                                    +1 (555) 019-2834
-                                </h2>
-                                <p className="mt-4 font-league italic text-slate-500 text-lg">
-                                    Reserved for urgent client matters.
-                                </p>
-                            </a>
-                            {/* Email Method */}
+                            <div className="max-w-6xl mx-auto w-full">
+                                <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Direct Line</p>
+                                <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+                                    Let's start<br className="hidden md:block" />
+                                    something <span className="text-primary italic font-league leading-[1.3] pb-4">notable!</span>
+                                </h1>
+                            </div>
                             <Link className="group block relative" href="mailto:press@wordsmatter.pr">
                                 <div className="absolute -left-6 top-0 h-full w-1.5 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
                                 <h2 className="text-3xl md:text-3xl font-bold text-slate-900 group-hover:text-primary transition-colors duration-300 break-all md:break-normal">
-                                    noopurr@wordsmatter.in
+                                    press@wordsmatter.in
                                 </h2>
                                 <p className="mt-4 font-league italic text-slate-500 text-lg">
                                     Responses typically within 2 hours.
                                 </p>
                             </Link>
-                            {/* WhatsApp Method */}
-                            {/* <a className="group block relative" href="https://wa.me/15550192834">
-                                <div className="absolute -left-6 top-0 h-full w-1.5 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
-                                <div className="flex items-center gap-6">
-                                    <h2 className="text-3xl md:text-3xl font-bold text-slate-900 group-hover:text-primary transition-colors duration-300">
-                                        WhatsApp
-                                    </h2>
-                                    <span className="material-icons text-3xl md:text-4xl text-slate-400 group-hover:text-primary transition-colors">arrow_outward</span>
-                                </div>
-                                <p className="mt-4 font-league italic text-slate-500 text-lg">
-                                    Encrypted & confidential correspondence.
-                                </p>
-                            </a> */}
+
                         </div>
 
 

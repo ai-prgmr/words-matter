@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import FounderTeaser from "@/components/Founder-Teaser";
+import Image from "next/image";
 
 const mentorsData = [
     {
@@ -31,21 +32,21 @@ const mentorsData = [
     },
     {
         name: "Yogesh Agarwal",
-        image: "/images/mentors/yogesh-agarwal.jpg",
+        image: "/words-matter/mentors/yogesh-agarwal.jpg",
         description: "A concise overview of Yogesh Agarwal's background and contributions. Add more specific insights about their strategic direction here.",
         link: "#"
     },
     {
         name: "Arvind Thakore",
-        image: "/images/mentors/arvind-thakore.jpg",
+        image: "/words-matter/mentors/arvind-thakore.jpg",
         description: "A concise overview of Arvind Thakore's background and contributions. Add more specific insights about their strategic direction here.",
         link: "#"
     },
     {
         name: "Samir Bhatia",
-        image: "/images/mentors/samir-bhatia.jpg",
+        image: "/words-matter/mentors/samir-bhatia.jpeg",
         description: "A seasoned leader recognised for driving high-impact corporate transformation and scalability",
-        link: "#"
+        link: "https://www.linkedin.com/in/samir-bhatia-1418343/"
     }
 ];
 
@@ -224,8 +225,8 @@ export default function AboutPage() {
                                 {mentorsData.map((mentor, index) => (
                                     <div key={index} className="bg-gray-50 block w-full p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                                         <Link href={mentor.link}>
-                                            <div className="w-full aspect-4/3 rounded-xl bg-gray-200 flex items-center justify-center overflow-hidden mb-6">
-                                                <img className="rounded-xl w-full h-full object-cover object-top" src={mentor.image} alt={mentor.name} />
+                                            <div className="relative w-full aspect-4/5 rounded-xl overflow-hidden mb-6">
+                                                <Image className="rounded-xl object-cover object-top" src={mentor.image} alt={mentor.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" />
                                             </div>
                                         </Link>
                                         <Link href={mentor.link}>
@@ -257,8 +258,8 @@ export default function AboutPage() {
                                 {advisorsData.map((advisor, index) => (
                                     <div key={index} className="bg-gray-50 block w-full p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                                         <Link href={advisor.link}>
-                                            <div className="w-full aspect-4/3 rounded-xl bg-gray-200 flex items-center justify-center overflow-hidden mb-6">
-                                                <img className="rounded-xl w-full h-full object-cover object-top" src={advisor.image} alt={advisor.name} />
+                                            <div className="relative w-full aspect-4/5 rounded-xl overflow-hidden mb-6">
+                                                <Image className="rounded-xl object-cover object-top" src={advisor.image} alt={advisor.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" />
                                             </div>
                                         </Link>
                                         <Link href={advisor.link}>

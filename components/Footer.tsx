@@ -1,6 +1,7 @@
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { usePathname } from 'next/navigation';
 export default function Footer() {
     const email_address = "noopurr@wordsmatter.in";
 
@@ -17,6 +18,8 @@ export default function Footer() {
         { name: "Instagram", href: "#" },
     ];
 
+    const pathname = usePathname();
+
     return (
         <footer className="bg-slate-50 border-t border-slate-200 pt-24 pb-12 px-6 md:px-12 overflow-hidden relative">
 
@@ -25,7 +28,7 @@ export default function Footer() {
 
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Top Section: CTA & Branding */}
-                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end border-b border-slate-200 pb-20 mb-16 gap-12">
+                {pathname !== "/contact" && <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end border-b border-slate-200 pb-20 mb-16 gap-12">
                     <div className="max-w-3xl">
                         <p className="text-xs font-bold tracking-[0.4em] uppercase text-primary mb-6 flex items-center gap-4">
                             <span className="w-12 h-px bg-primary"></span>
@@ -48,7 +51,7 @@ export default function Footer() {
                             <span className="material-icons relative text-lg ml-4 text-slate-900 group-hover:text-white transform group-hover:translate-x-2 transition-all duration-300">arrow_forward</span>
                         </Link>
                     </div>
-                </div>
+                </div>}
 
                 {/* Middle Grid Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-24 z-10 relative">
