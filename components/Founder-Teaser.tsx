@@ -9,10 +9,10 @@ export default function FounderTeaser() {
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mb-16 md:mb-24">
                     <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight tracking-tight">
-                        The Architects of <span className="italic text-[#B18E54]">Influence.</span>
+                        The Architects of <span className="italic text-[#B18E54]">Influence</span>
                     </h2>
                     <p className="font-sans text-neutral-500 font-light text-lg leading-relaxed">
-                        A partnership forged to elevate reputations. Discover the strategists behind the industry's most definitive communication campaigns.
+                        A partnership forged to elevate reputation. Discover the strategists behind the industry's most definitive communication campaigns.
                     </p>
                 </div>
                 <h3 className="font-league text-4xl md:text-6xl text-center mb-24 text-charcoal font-light">
@@ -24,9 +24,9 @@ export default function FounderTeaser() {
                     {/* FOUNDER 1: Noopurr */}
                     <div className="flex flex-col group">
                         {/* Portrait Container */}
-                        <div className="relative aspect-[4/5] w-full overflow-hidden mb-8 bg-neutral-100">
+                        <div className="relative aspect-4/5 w-full overflow-hidden mb-8 bg-neutral-100">
                             <Image
-                                src="/words-matter/noopur-profile.jpg"
+                                src="/words-matter/noopur-r-chablani.jpg"
                                 alt="Noopurr R Chablani - Founder"
                                 fill
                                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-in-out scale-100 group-hover:scale-105"

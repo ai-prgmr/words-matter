@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is Words Matter?",
-    a: "Words Matter LLP is a boutique strategic communications and image management agency based in Gurugram, India. We architect perception, combining elite media relations with deep narrative strategy for select clients."
+    a: "Words Matter is a boutique strategic communications and image management agency based in Gurugram, India. We architect perception, combining elite media relations with deep narrative strategy for select clients."
   },
   {
     q: "Who leads the agency's strategic direction?",
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "Which publications do you secure placements in?",
-    a: "We maintain direct, high-leverage relationships with India's premier tier-one publications, including The Times of India, Economic Times, NDTV, Livemint, and Business Standard, among others."
+    a: "We maintain direct, high-leverage relationships with India's premier tier-one publications, including The Times of India, Economic Times, NDTV, Livemint and Business Standard among others."
   }
 ];
 
@@ -178,8 +178,8 @@ export default function Home() {
                 </h2>
 
                 <p className="mt-4 text-sm md:text-base text-slate-600 max-w-md mx-auto">
-                  A strategic communications agency helping Indian founders, executives, and brands
-                  earn coverage in premium publications — and build lasting authority.
+                  A strategic boutique agency helping founders, executives, startups and brands
+                  build reputation, credibility, visibility & lasting authority
                 </p>
 
               </div>
@@ -293,7 +293,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-black text-charcoal tracking-tight mb-4">Strategic Inquiries</h2>
-              <p className="text-gray-500 font-league text-xl">Clarity before engagement.</p>
+              <p className="text-gray-500 font-league text-xl">Clarity before engagement</p>
             </div>
 
             <Accordion type="single" collapsible className="w-full border-t border-gray-200">

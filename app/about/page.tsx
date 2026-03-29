@@ -3,29 +3,30 @@ import Link from "next/link";
 import Script from "next/script";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import FounderTeaser from "@/components/Founder-Teaser";
+import Image from "next/image";
 
 const mentorsData = [
     {
         name: "Praveen Kumar Shrivastava",
-        image: "/images/mentors/praveen-kumar-shrivastava.jpg",
+        image: "/words-matter/mentors/praveen-shrivastava.jpeg",
         description: "A concise overview of Praveen Kumar Shrivastava's background and contributions. Add more specific insights about their strategic direction here.",
-        link: "#"
+        link: "https://www.linkedin.com/in/praveen-shrivastava-2398aa2/"
     },
     {
-        name: "Kiranjeet Jain",
-        image: "/images/mentors/kiranjeet-jain.jpg",
-        description: "A concise overview of Kiranjeet Jain's background and contributions. Add more specific insights about their strategic direction here.",
-        link: "#"
+        name: "Kiran Jain",
+        image: "/words-matter/mentors/kiran-jain.jpeg",
+        description: "A veteran of the global aviation industry, with an extensive track record in managing complex aerospace operations and strategic growth.",
+        link: "https://www.linkedin.com/in/kiran-jain-62b8785/"
     },
     {
         name: "Dinesh Mittal",
-        image: "/images/mentors/dinesh-mittal.jpg",
+        image: "/words-matter/mentors/dinesh-mittal.jpeg",
         description: "A concise overview of Dinesh Mittal's background and contributions. Add more specific insights about their strategic direction here.",
-        link: "#"
+        link: "https://mittalgroup.com/about-us/"
     },
     {
         name: "Sudhir Deoras",
-        image: "/images/mentors/sudhir-deoras.jpg",
+        image: "/words-matter/mentors/sudhir-deoras.jpeg",
         description: "A concise overview of Sudhir Deoras's background and contributions. Add more specific insights about their strategic direction here.",
         link: "#"
     },
@@ -44,29 +45,29 @@ const mentorsData = [
     {
         name: "Samir Bhatia",
         image: "/images/mentors/samir-bhatia.jpg",
-        description: "A concise overview of Samir Bhatia's background and contributions. Add more specific insights about their strategic direction here.",
+        description: "A seasoned leader recognised for driving high-impact corporate transformation and scalability",
         link: "#"
     }
 ];
 
 const advisorsData = [
     {
-        name: "Nikhil Bhat",
+        name: "Nikhil Nagesh Bhat",
         image: "/words-matter/advisor/nikhil-nagesh-bhat.jpeg",
         description: "A master storyteller crafting world-class experiences through cinematic excellence.",
-        link: "#"
+        link: "https://en.wikipedia.org/wiki/Nikhil_Nagesh_Bhat"
     },
     {
         name: "Navneeth Mohan",
         image: "/words-matter/advisor/navneeth-mohan.jpeg",
         description: "Redefining the landscape of experiential marketing and live events.",
-        link: "#"
+        link: "https://www.linkedin.com/in/navneeth-mohan-8259111a/"
     },
     {
         name: "Vikram Sinha",
         image: "/words-matter/advisor/Vikram-sinha.jpeg",
         description: "Architect of visual impact, transforming complex ideas into compelling brand films.",
-        link: "#"
+        link: "https://www.linkedin.com/in/vikram-sinha-438742136/"
     },
     {
         name: "Dr Payal S Kapoor",
@@ -143,7 +144,7 @@ export default function AboutPage() {
                         <span className="italic text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-600 pr-2">
                             compelling narratives
                         </span>{" "}
-                        is not just a strategy—it is an art form."
+                        is not just a strategy—it is an art form"
                     </h1>
                 </div>
             </AnimatedSection>
@@ -176,7 +177,7 @@ export default function AboutPage() {
                                 <span className="w-8 h-px bg-primary"></span>
                                 Vision
                             </h2>
-                            <p className="font-league text-2xl md:text-3xl leading-relaxed text-charcoal font-light">
+                            <p className="font-league text-lg leading-relaxed text-charcoal">
                                 To be a leading boutique agency where the power of words shapes authentic identities, preserves legacies, and elevates personal and professional images with unmatched clarity and impact.
                             </p>
                         </div>
@@ -187,7 +188,7 @@ export default function AboutPage() {
                                 <span className="w-8 h-px bg-primary"></span>
                                 Philosophy
                             </h2>
-                            <p className="font-league text-lg leading-relaxed text-gray-600">
+                            <p className="font-league text-lg leading-relaxed text-charcoal">
                                 At Words Matter, we believe that every narrative holds the power to transform perception and forge meaningful connections. Our approach is grounded in integrity, meticulous craftsmanship, and a passion for storytelling that honors the uniqueness of every individual and brand we serve. We are dedicated to amplifying voices with honesty, precision, and empathy, ensuring that words truly matter in building lasting impressions.
                             </p>
                         </div>
@@ -225,8 +226,7 @@ export default function AboutPage() {
                                     <div key={index} className="bg-gray-50 block w-full p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                                         <Link href={mentor.link}>
                                             <div className="w-full aspect-4/3 rounded-xl bg-gray-200 flex items-center justify-center overflow-hidden mb-6">
-                                                <span className="text-gray-400 font-league italic text-sm">Image Placeholder</span>
-                                                {/* <img className="rounded-xl w-full h-full object-cover" src={mentor.image} alt={mentor.name} /> */}
+                                                <img className="rounded-xl w-full h-full object-cover object-top" src={mentor.image} alt={mentor.name} />
                                             </div>
                                         </Link>
                                         <Link href={mentor.link}>
@@ -236,7 +236,7 @@ export default function AboutPage() {
                                             {mentor.description}
                                         </p>
                                         <Link href={mentor.link} className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary border border-gray-200 hover:border-primary px-5 py-2.5 rounded-lg transition-colors group">
-                                            Read more
+                                            Know more
                                             <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 12H5m14 0-4 4m4-4-4-4" /></svg>
                                         </Link>
                                     </div>
@@ -269,7 +269,7 @@ export default function AboutPage() {
                                             {advisor.description}
                                         </p>
                                         <Link href={advisor.link} className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary border border-gray-200 hover:border-primary px-5 py-2.5 rounded-lg transition-colors group">
-                                            Linked In
+                                            Know more
                                             <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 12H5m14 0-4 4m4-4-4-4" /></svg>
                                         </Link>
                                     </div>

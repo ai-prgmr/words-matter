@@ -7,77 +7,77 @@ export const servicesData = [
     {
         slug: "corporate-pr",
         id: "01",
-        title: "Corporate PR",
-        shortDesc: "Bridging the gap between corporate vision and public perception through expert media and executive curation.",
-        philosophy: "Our Corporate PR suite is built on the foundation of narrative architecture and authority positioning. We move beyond simple visibility to strategically manage your organization’s reputation through high-level media relations and bespoke press strategies. By aligning your core messaging with overarching business objectives, we ensure your brand story remains consistent and compelling across all platforms. Our executive profiling and speech-writing services are designed to transform leadership into thought leadership, enabling executives to communicate with the clarity, confidence, and influence required in today’s competitive landscape.",
+        title: "Corporate Public Relations",
+        shortDesc: "Bridging the gap between corporate vision and public perception through expert media and executive curation",
+        philosophy: "Our Corporate PR suite is built on the foundation of narrative architecture and authority positioning. We move beyond simple visibility to strategically manage your organization’s reputation through high-level media relations and bespoke strategies. By aligning your core messaging with overarching business objectives, we ensure your brand story remains consistent and compelling across all platforms. Our executive profiling and speech-writing services are designed to transform leadership into thought leadership, enabling executives to communicate with the clarity, confidence, and influence required in today’s competitive landscape.",
         subServices: [
-            { name: "Executive Curation", desc: "Positioning leadership as definitive industry voices through targeted profiling." },
-            { name: "Media Architecture", desc: "Securing high-leverage placements in tier-one financial and trade press." },
-            { name: "Strategic Speechwriting", desc: "Crafting authoritative narratives for global summits and shareholder addresses." },
-            { name: "Financial Communications", desc: "Translating complex fiscal milestones into compelling market narratives." }
+            { name: "Executive Curation", desc: "Positioning leadership as definitive industry voices through targeted profiling" },
+            { name: "Media Architecture", desc: "Securing high-leverage placements in tier-one financial and trade magazines" },
+            { name: "Strategic Speechwriting", desc: "Crafting authoritative narratives for global summits and shareholder addresses" },
+            { name: "Financial Communications", desc: "Translating complex fiscal milestones into compelling market narratives" }
         ],
-        targetClient: "Designed for established conglomerates, C-suite executives, and late-stage innovators requiring absolute narrative control and market authority.",
-        process: "We initiate with a comprehensive perception audit, mapping current stakeholder sentiment before engineering a proactive, multi-tiered media matrix designed to secure definitive industry positioning."
+        targetClient: "Designed for established conglomerates, C-suite executives, and late-stage innovators requiring absolute narrative control and market authority",
+        process: "We initiate with a comprehensive perception audit, mapping current stakeholder sentiment before engineering a proactive, multi-tiered media matrix designed to secure definitive industry positioning"
     },
     {
         slug: "reputation-management",
         id: "02",
         title: "Reputation Management",
-        shortDesc: "Safeguarding your most valuable asset through crisis precision and stakeholder synergy.",
+        shortDesc: "Safeguarding your most valuable asset through crisis preparedness and stakeholder synergy",
         philosophy: "In the realm of Reputation Management, we provide the strategic foresight necessary to safeguard and enhance your market standing. We specialize in reputational resilience, offering expert crisis communications to navigate complex challenges while protecting your brand’s integrity. Through sophisticated stakeholder perception mapping, we decode audience sentiment to craft tailored communication strategies that foster deep-seated trust and loyalty. By distilling your mission into a coherent brand narrative, we ensure your story is a powerful, proactive tool for long-term growth and stability.",
         subServices: [
-            { name: "Crisis Mitigation & Response", desc: "Deploying rapid, strategic protocols to navigate public scrutiny and volatility." },
-            { name: "Stakeholder Perception Mapping", desc: "Decoding audience sentiment to proactively address reputational vulnerabilities." },
-            { name: "Risk Foresight & Intelligence", desc: "Identifying and neutralizing potential media threats before they materialize." },
-            { name: "Post-Crisis Rehabilitation", desc: "Rebuilding and reinforcing brand equity following periods of market disruption." }
+            { name: "Crisis Mitigation & Response", desc: "Deploying rapid, strategic protocols to navigate public scrutiny and volatility" },
+            { name: "Stakeholder Perception Mapping", desc: "Decoding audience sentiment to proactively address reputational vulnerabilities" },
+            { name: "Risk Foresight & Intelligence", desc: "Identifying and neutralizing potential media threats before they materialize" },
+            { name: "Post-Crisis Rehabilitation", desc: "Rebuilding and reinforcing brand equity following periods of market disruption" }
         ],
-        targetClient: "Tailored for high-profile individuals, public figures, and global enterprises navigating complex public scrutiny, market volatility, or transitional phases.",
-        process: "Operating with absolute discretion, we deploy rapid-response communication protocols while simultaneously building long-term reputational resilience through continuous audience sentiment analysis."
+        targetClient: "Tailored for high-profile individuals, public figures, and global enterprises navigating complex public scrutiny, market volatility, or transitional phases",
+        process: "Operating with absolute discretion, we deploy rapid-response communication protocols while simultaneously building long-term reputational resilience through continuous audience sentiment analysis"
     },
     {
         slug: "image-management",
         id: "03",
         title: "Image Management",
-        shortDesc: "Refining the personal brand through precise digital curation and executive presence.",
-        philosophy: "Our Image Management services are designed for the precise curation of your professional persona. We view personal branding as a strategic asset, meticulously aligning your unique strengths with your career aspirations. This expertise extends to high-touch digital presence curation and specialized LinkedIn Management, where we optimize your profile and content to build powerful, authentic connections. Whether in digital spaces or real-world forums, we help you project a cohesive and commanding identity that resonates with peers and partners alike.",
+        shortDesc: "Refining the personal brand through precise digital curation and executive presence",
+        philosophy: "Our Image Management services are designed for the precise curation of your professional persona. We view personal branding as a strategic asset, meticulously aligning your unique strengths with your career aspirations. This expertise extends to high-touch digital presence curation and specialized LinkedIn management, where we optimize your profile and content to build powerful, authentic connections. Whether in digital spaces or real-world forums, we help you project a cohesive and commanding identity that resonates with peers and partners alike.",
         subServices: [
-            { name: "Personal Brand Architecture", desc: "Aligning your unique professional strengths with high-level career aspirations." },
-            { name: "Elite LinkedIn Management", desc: "Optimizing digital profiles to cultivate powerful, authentic B2B connections." },
-            { name: "Digital Footprint Auditing", desc: "Curating historical online presence to reflect current executive standing." },
-            { name: "Executive Presence Coaching", desc: "Refining interpersonal and public-facing communication for maximum impact." }
+            { name: "Personal Brand Architecture", desc: "Aligning your unique professional strengths with high-level career aspirations" },
+            { name: "Elite LinkedIn Management", desc: "Optimizing digital profiles to cultivate powerful, authentic B2B connections" },
+            { name: "Digital Footprint Auditing", desc: "Curating historical online presence to reflect current executive standing" },
+            { name: "Executive Presence Coaching", desc: "Refining interpersonal and public-facing communication for maximum impact" }
         ],
         targetClient: "Curated for founders, visionaries, industry disruptors, and emerging leaders seeking to align their digital and real-world persona with their highest professional aspirations.",
         process: "Through meticulous digital curation and targeted content strategy, we strip away the noise to project a cohesive, commanding identity that resonates profoundly with your precise target demographic."
     },
     {
-        slug: "social-media-marketing",
+        slug: "digital-marketing",
         id: "04",
-        title: "Social Media Marketing",
-        shortDesc: "Amplifying influence through purpose-driven engagement and high-impact digital storytelling.",
-        philosophy: "We approach Social Media Marketing as a vital extension of your strategic identity, moving beyond static content to create purpose-driven engagement. By identifying the optimal platforms for your specific target audience, we design high-impact visuals and copy that spark meaningful conversation. Our focus is on building digital communities that turn followers into brand advocates, ensuring your online footprint is not just visible, but influential and aligned with your broader PR goals.",
+        title: "Digital Marketing",
+        shortDesc: "Amplifying influence through purpose-driven engagement and high-impact digital storytelling",
+        philosophy: "We approach Digital Marketing as a vital extension of your strategic identity, moving beyond static content to create purpose-driven engagement. By identifying the optimal platforms for your specific target audience, we design high-impact visuals and copy that spark meaningful conversation. Our focus is on building digital communities that turn followers into brand advocates, ensuring your online footprint is not just visible, but influential and aligned with your broader PR goals.",
         subServices: [
-            { name: "Platform-Specific Strategy", desc: "Identifying and leveraging the optimal digital environments for your exact audience." },
-            { name: "High-Impact Visual Storytelling", desc: "Designing bespoke aesthetics that command attention and convey premium quality." },
-            { name: "Community Cultivation", desc: "Fostering authentic dialogue that transforms passive followers into brand advocates." },
-            { name: "Campaign Analytics & Refinement", desc: "Utilizing advanced data metrics to continuously optimize engagement and reach." }
+            { name: "Platform-Specific Strategy", desc: "Identifying and leveraging the optimal digital environments for your exact audience" },
+            { name: "High-Impact Visual Storytelling", desc: "Designing bespoke aesthetics that command attention and convey premium quality" },
+            { name: "Community Cultivation", desc: "Fostering authentic dialogue that transforms passive followers into brand advocates" },
+            { name: "Campaign Analytics & Refinement", desc: "Utilizing advanced data metrics to continuously optimize engagement and reach" }
         ],
-        targetClient: "Engineered for premium lifestyle brands, corporate institutions, and public personalities demanding a digital footprint that cultivates genuine, loyal communities.",
-        process: "We bypass generic trends to design bespoke, purpose-driven engagement ecosystems. By analyzing audience behavior, we architect digital narratives that drive measurable influence."
+        targetClient: "Engineered for premium lifestyle brands, corporate institutions, and public personalities demanding a digital footprint that cultivates genuine, loyal communities",
+        process: "We bypass generic trends to design bespoke, purpose-driven engagement ecosystems. By analyzing audience behavior, we architect digital narratives that drive measurable influence"
     },
     {
-        slug: "biography-legacy-books",
+        slug: "legacy-books",
         id: "05",
-        title: "Biography & Legacy Writing",
-        shortDesc: "Preserving the human journey by transforming personal milestones into timeless literary legacies.",
-        philosophy: "Our Biography and Legacy Writing services offer a sophisticated approach to preserving heritage and identity. We bring family histories, memoirs, and personal narratives to life with elegance, depth, and narrative empathy. From the initial research to the final development of luxury coffee table books, we ensure that every project reflects an authentic voice and a timeless perspective. At Words Matter, we transform personal milestones into cherished legacies, weaving together the threads of memory and experience to create enduring treasures for future generations.",
+        title: "Legacy Writing & Coffee Table Books",
+        shortDesc: "Preserving the human journey by transforming personal milestones into timeless literary legacies",
+        philosophy: "Our Legacy Writing services offer a sophisticated approach to preserving heritage and identity. We bring family histories, memoirs and personal narratives to life with elegance, depth and narrative empathy. From the initial research to the final development of luxury coffee table books, we ensure that every project reflects an authentic voice and a timeless perspective. At Words Matter, we transform personal milestones into cherished legacies, weaving together the threads of memory and experience to create enduring treasures for future generations.",
         subServices: [
-            { name: "Memoir & Autobiography", desc: "Ghostwriting highly personal, authentic narratives that capture the essence of a life." },
-            { name: "Corporate History Documentation", desc: "Archiving the founding struggles, triumphs, and evolution of legacy businesses." },
-            { name: "Luxury Coffee Table Books", desc: "Producing visually stunning, tactile volumes that serve as premium brand artifacts." },
-            { name: "Generational Archiving", desc: "Conducting deep-dive interviews to preserve family histories for future descendants." }
+            { name: "Memoirs", desc: "Ghostwriting highly personal, authentic narratives that capture the essence of a life" },
+            { name: "Corporate History Documentation", desc: "Archiving the founding struggles, triumphs, and evolution of legacy businesses" },
+            { name: "Luxury Coffee Table Books", desc: "Producing visually stunning, tactile volumes that serve as premium brand artifacts" },
+            { name: "Generational Archiving", desc: "Conducting deep-dive interviews to preserve family histories for future descendants" }
         ],
-        targetClient: "Commissioned by legacy families, veteran industry pioneers, and historic institutions wishing to immortalize their journeys with uncompromising elegance.",
-        process: "Led by expert biographers, our methodology combines immersive interviews and meticulous archival research with profound narrative empathy, resulting in a perfectly crafted literary artifact."
+        targetClient: "Commissioned by legacy families, veteran industry pioneers, and historic institutions wishing to immortalize their journeys with uncompromising elegance",
+        process: "Led by expert biographers, our methodology combines immersive interviews and meticulous archival research with profound narrative empathy, resulting in a perfectly crafted literary artifact"
     }
 ];
 export function generateStaticParams() {
@@ -189,7 +189,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                         <h3 className="text-lg md:text-xl text-charcoal font-semibold tracking-tight">Core Deliverables</h3>
                     </div>
                     <p className="text-gray-500 font-league md:max-w-md text-xl md:text-2xl leading-relaxed">
-                        Precision-engineered strategies designed to achieve definitive market positioning and absolute narrative control.
+                        Precision-engineered strategies designed to achieve definitive market positioning and absolute narrative control
                     </p>
                 </div>
 

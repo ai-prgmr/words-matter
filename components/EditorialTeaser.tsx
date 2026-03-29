@@ -5,7 +5,7 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 const featuredArticle = {
     slug: "architecture-of-perception",
     category: "Brand Strategy",
-    title: "The Architecture of Perception: Why Silence is a PR Strategy.",
+    title: "The Architecture of Perception: Why Silence is a PR Strategy",
     excerpt: "In an era of relentless digital noise, the most powerful statement a legacy brand can make is often calculated silence. We explore the mechanics of narrative scarcity.",
     readTime: "4 MIN READ",
     date: "OCT 12, 2026"
@@ -15,19 +15,19 @@ const recentArticles = [
     {
         slug: "crisis-mitigation-2026",
         category: "Crisis Management",
-        title: "Navigating the First 48 Hours of a Media Cycle.",
+        title: "Navigating the First 48 Hours of a Crisis Management",
         date: "SEP 28, 2026"
     },
     {
         slug: "ceo-as-creator",
         category: "Executive Curation",
-        title: "The CEO as a Creator: Transitioning to Thought Leadership.",
+        title: "The CEO as a Creator: Transitioning to Thought Leadership",
         date: "SEP 14, 2026"
     },
     {
         slug: "legacy-vs-relevance",
         category: "Image Management",
-        title: "Legacy vs. Relevance in the Modern Indian Market.",
+        title: "Legacy vs. Relevance in the Modern Indian Market",
         date: "AUG 30, 2026"
     }
 ];
@@ -41,7 +41,7 @@ export default function EditorialTeaser() {
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-24 gap-8">
                     <div>
                         <h2 className="text-[10px] font-bold tracking-widest uppercase text-primary mb-4">Words Matter Journal</h2>
-                        <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-charcoal tracking-tight">Editorial & <br />Perspectives.</h3>
+                        <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-charcoal tracking-tight">Editorial & <br />Perspectives</h3>
                     </div>
                     <Link href="/blog" className="group inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-charcoal hover:text-primary transition-colors">
                         View Complete Archive

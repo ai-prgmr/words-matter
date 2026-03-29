@@ -26,7 +26,7 @@ export default function Header() {
         { name: "Home", href: "/" },
         { name: "Services", href: "/services" },
         {
-            name: "About",
+            name: "About Us",
             href: "/about",
             subItems: [
                 { name: "Philosophy", href: "/about#philosophy" },

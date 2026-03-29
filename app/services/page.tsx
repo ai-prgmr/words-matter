@@ -22,8 +22,8 @@ export const servicesData = [
     {
         slug: "corporate-pr",
         id: "01",
-        title: "Corporate PR",
-        shortDesc: "Bridging the gap between corporate vision and public perception through expert media and executive curation.",
+        title: "Corporate Public Relations",
+        shortDesc: "Bridging the gap between corporate vision and public perception through expert media and executive curation",
         longDesc: "Our Corporate PR suite is built on the foundation of narrative architecture and authority positioning. We move beyond simple visibility to strategically manage your organization’s reputation through high-level media relations and bespoke press strategies. By aligning your core messaging with overarching business objectives, we ensure your brand story remains consistent and compelling across all platforms. Our executive profiling and speech-writing services are designed to transform leadership into thought leadership, enabling executives to communicate with the clarity, confidence, and influence required in today’s competitive landscape."
     },
     {
@@ -37,21 +37,21 @@ export const servicesData = [
         slug: "image-management",
         id: "03",
         title: "Image Management",
-        shortDesc: "Refining the personal brand through precise digital curation and executive presence.",
+        shortDesc: "Refining the personal brand through precise digital curation and executive presence",
         longDesc: "Our Image Management services are designed for the precise curation of your professional persona. We view personal branding as a strategic asset, meticulously aligning your unique strengths with your career aspirations. This expertise extends to high-touch digital presence curation and specialized LinkedIn Management, where we optimize your profile and content to build powerful, authentic connections. Whether in digital spaces or real-world forums, we help you project a cohesive and commanding identity that resonates with peers and partners alike."
     },
     {
-        slug: "social-media-marketing",
+        slug: "digital-marketing",
         id: "04",
-        title: "Social Media Marketing",
-        shortDesc: "Amplifying influence through purpose-driven engagement and high-impact digital storytelling.",
-        longDesc: "We approach Social Media Marketing as a vital extension of your strategic identity, moving beyond static content to create purpose-driven engagement. By identifying the optimal platforms for your specific target audience, we design high-impact visuals and copy that spark meaningful conversation. Our focus is on building digital communities that turn followers into brand advocates, ensuring your online footprint is not just visible, but influential and aligned with your broader PR goals."
+        title: "Digital Marketing",
+        shortDesc: "Amplifying influence through purpose-driven engagement and high-impact digital storytelling",
+        longDesc: "We approach Digital Marketing as a vital extension of your strategic identity, moving beyond static content to create purpose-driven engagement. By identifying the optimal platforms for your specific target audience, we design high-impact visuals and copy that spark meaningful conversation. Our focus is on building digital communities that turn followers into brand advocates, ensuring your online footprint is not just visible, but influential and aligned with your broader PR goals."
     },
     {
-        slug: "biography-legacy-books",
+        slug: "legacy-books",
         id: "05",
-        title: "Biography, Legacy Writing & Coffee Table Books",
-        shortDesc: "Preserving the human journey by transforming personal milestones into timeless literary legacies.",
+        title: "Legacy Writing & Coffee Table Books",
+        shortDesc: "Preserving the journey by transforming personal milestones into timeless literary legacies",
         longDesc: "Our Biography and Legacy Writing services offer a sophisticated approach to preserving heritage and identity. We bring family histories, memoirs, and personal narratives to life with elegance, depth, and narrative empathy. From the initial research to the final development of luxury coffee table books, we ensure that every project reflects an authentic voice and a timeless perspective. At Words Matter, we transform personal milestones into cherished legacies, weaving together the threads of memory and experience to create enduring treasures for future generations."
     }
 ];
@@ -100,7 +100,7 @@ export default function Services() {
                                 <h1 className="text-6xl md:text-9xl font-black tracking-tighter text-slate-900 leading-[0.85]">
                                     Shape<br />
                                     <span className="text-slate-400">The</span><br />
-                                    Narrative.
+                                    Narrative
                                 </h1>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ export default function Services() {
                                             <span className="text-sm font-mono font-bold">{service.id}</span>
                                             <span className="material-icons opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300">arrow_forward</span>
                                         </div>
-                                        <h2 className="text-4xl font-black text-slate-900 tracking-tight mb-6 leading-tight">
+                                        <h2 className="text-3xl font-black text-slate-900 tracking-tight mb-6 leading-tight">
                                             {service.title}
                                         </h2>
                                         <div className="w-12 h-1 bg-primary mb-8 group-hover:w-24 transition-all duration-500"></div>
@@ -141,7 +141,6 @@ export default function Services() {
                                         src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=2670"
                                     />
                                     <div className="absolute bottom-8 right-8 text-white z-10 text-right">
-                                        <p className="text-[10px] uppercase tracking-[0.4em] font-bold">Editorial Vol. IV</p>
                                         <p className="text-4xl font-league italic">The Art of Stillness</p>
                                     </div>
                                 </div>
@@ -149,17 +148,6 @@ export default function Services() {
                         </div>
                     </AnimatedSection>
 
-                    {/* CTA Section */}
-                    <AnimatedSection className="px-6 md:px-12 mb-20">
-                        <div className="max-w-7xl mx-auto p-12 md:p-24 bg-transparent border border-gray-200 text-charcoal rounded-3xl relative overflow-hidden text-center">
-
-                            <h3 className="text-4xl md:text-6xl font-bold mb-6 relative z-10 leading-tight">Start the Dialogue</h3>
-                            <p className="text-xl md:text-2xl text-gray-500 font-league italic mb-12 relative z-10">Exclusive representation for select clients.</p>
-                            <a href="/contact" className="inline-block px-12 py-5 bg-transparent border border-gray-200 text-charcoal hover:border-black transition-all duration-300 rounded-full font-bold uppercase tracking-[0.2em] text-sm">
-                                Inquire Now
-                            </a>
-                        </div>
-                    </AnimatedSection>
                 </main>
             </div>
 

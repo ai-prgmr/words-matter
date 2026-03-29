@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 export default function Footer() {
     const email_address = "noopurr@wordsmatter.in";
-    const phone_number = "+91 XXXXX XXXXX";
 
     const navLinks = [
         { name: "Home", href: "/" },
@@ -16,7 +15,6 @@ export default function Footer() {
     const socialLinks = [
         { name: "LinkedIn", href: "#" },
         { name: "Instagram", href: "#" },
-        { name: "X (Twitter)", href: "#" },
     ];
 
     return (
@@ -90,20 +88,14 @@ export default function Footer() {
                                     <span className="break-all">{email_address}</span>
                                 </a>
                             </li>
-                            <li>
-                                <a className="text-sm font-medium text-slate-600 hover:text-primary transition-colors flex items-start group" href={`tel:${phone_number.replace(/\s+/g, '')}`}>
-                                    <span className="material-icons text-base mr-3 text-slate-300 group-hover:text-primary transition-colors mt-0.5">phone</span>
-                                    {phone_number}
-                                </a>
-                            </li>
                         </ul>
 
                         <div className="mt-10">
                             <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-4">India HQ</h4>
                             <address className="not-italic text-sm text-slate-500 leading-relaxed font-league">
-                                WeWork Blue One Square,<br />
-                                Udyog Vihar Phase 4,<br />
-                                Gurugram, Haryana
+                                C 438 Sushant Lok,<br />
+                                Phase I,<br />
+                                Gurugram, Haryana - 122002
                             </address>
                         </div>
                     </div>

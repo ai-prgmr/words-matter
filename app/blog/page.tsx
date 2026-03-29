@@ -61,7 +61,7 @@ export default function BlogListing() {
                     <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8 border-l-[3px] border-primary pl-4">Journal</p>
                     <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-charcoal leading-[1.1] max-w-4xl">
                         Thoughts on <br />
-                        <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-600 italic font-league font-light">Perception</span>.
+                        <span className="text-transparent bg-clip-text bg-linear-to-r from-primary p-4 to-purple-600 italic font-league font-light">Perception</span>
                     </h1>
                 </AnimatedDiv>
 
