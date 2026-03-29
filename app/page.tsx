@@ -5,6 +5,7 @@ import { servicesData } from "@/app/services/page";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import EditorialTeaser from "@/components/EditorialTeaser";
+import PerceptionAudit from "@/components/PerceptionAudit";
 export const metadata: Metadata = {
   title: "Words Matter | PR & Media Strategy Agency in India",
   description:
@@ -317,7 +318,9 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-
+        <AnimatedSection>
+          <PerceptionAudit />
+        </AnimatedSection>
         <EditorialTeaser />
 
 

@@ -3,7 +3,6 @@ import Link from "next/link";
 import Script from "next/script";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import FounderTeaser from "@/components/Founder-Teaser";
-import Image from "next/image";
 
 const mentorsData = [
     {
