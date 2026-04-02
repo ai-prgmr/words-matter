@@ -53,7 +53,7 @@ const mentorsData = [
 const advisorsData = [
     {
         name: "Nikhil Nagesh Bhat",
-        image: "/words-matter/advisor/nikhil-nagesh-bhat.jpeg",
+        image: "/words-matter/advisor/nikhil-nagesh-bhat.png",
         description: "A master storyteller crafting world-class experiences through cinematic excellence.",
         link: "https://en.wikipedia.org/wiki/Nikhil_Nagesh_Bhat"
     },
