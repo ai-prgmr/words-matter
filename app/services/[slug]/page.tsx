@@ -92,16 +92,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     if (!service) return {};
 
     return {
-        title: `${service.title} | Words Matter LLP`,
+        title: `${service.title} Services | Words Matter -India`,
         description: service.shortDesc,
         alternates: {
             canonical: `https://wordsmatter.in/services/${slug}`,
         },
         openGraph: {
-            title: `${service.title} | Elite PR Services`,
+            title: `${service.title} Services | Words Matter -India`,
             description: service.shortDesc,
             url: `https://wordsmatter.in/services/${slug}`,
-            siteName: "Words Matter LLP",
+            siteName: "Words Matter",
             type: "website",
         }
     };
@@ -123,9 +123,11 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         "url": `https://wordsmatter.in/services/${slug}`,
         "provider": {
             "@type": "Organization",
-            "name": "Words Matter LLP",
+            "name": "Words Matter",
             "url": "https://wordsmatter.in"
-        }
+        },
+        "areaServed": "IN",
+        "ServiceType": service.title
     };
 
     return (

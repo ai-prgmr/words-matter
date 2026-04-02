@@ -5,10 +5,10 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 import { AnimatedArticle } from "@/components/ui/animated-section";
 
 export const metadata: Metadata = {
-    title: "Services | Words Matter PR",
+    title: "PR & Communications Services | Words Matter — Gurugram, India",
     description: "Media Relations, Crisis Management, and Digital Strategy curated for select clients.",
     openGraph: {
-        title: "Services | Words Matter PR",
+        title: "PR & Communications Services | Words Matter — Gurugram, India",
         description: "Media Relations, Crisis Management, and Digital Strategy curated for select clients.",
         url: "https://wordsmatter.in/services",
         type: "website",
@@ -68,7 +68,7 @@ export default function Services() {
         },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "PR Services",
+            "name": "PR & Communications Services | Words Matter — Gurugram, India",
             "itemListElement": servicesData.map(service => ({
                 "@type": "Offer",
                 "itemOffered": {
@@ -136,7 +136,7 @@ export default function Services() {
                                 <div className="overflow-hidden rounded-2xl aspect-21/9 bg-transparent relative border border-gray-200">
 
                                     <img
-                                        alt="Editorial shot"
+                                        alt="PR & Communications Services | Words Matter — Gurugram, India"
                                         className="object-cover w-full h-full opacity-80 mix-blend-multiply grayscale hover:scale-105 transition-transform duration-1000"
                                         src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=2670"
                                     />

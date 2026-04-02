@@ -27,7 +27,7 @@ const mentorsData = [
     {
         name: "Sudhir Deoras",
         image: "/words-matter/mentors/sudhir-deoras.jpeg",
-        description: "A concise overview of Sudhir Deoras's background and contributions. Add more specific insights about their strategic direction here.",
+        description: "A seasoned executive with a 40-year track record of leadership within the Tata Group, specializing in operational excellence and large-scale business transformation",
         link: "#"
     },
     {

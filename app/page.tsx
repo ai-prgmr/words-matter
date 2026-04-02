@@ -209,7 +209,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="flex justify-between items-baseline mb-16 border-b border-gray-200 pb-8">
               <h2 className="text-xs font-bold tracking-widest uppercase text-gray-400">Expertise</h2>
-              <span className="text-xs font-mono text-primary">01 — 06</span>
+              <span className="text-xs font-mono text-primary">01 — 05</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
               {servicesData.slice(0, 3).map((service) => (
