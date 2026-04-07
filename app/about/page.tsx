@@ -13,12 +13,6 @@ const mentorsData = [
         link: "https://www.linkedin.com/in/praveen-shrivastava-2398aa2/"
     },
     {
-        name: "Kiran Jain",
-        image: "/words-matter/mentors/kiran-jain.jpeg",
-        description: "A veteran of the global aviation industry, with an extensive track record in managing complex aerospace operations and strategic growth.",
-        link: "https://www.linkedin.com/in/kiran-jain-62b8785/"
-    },
-    {
         name: "Dinesh Mittal",
         image: "/words-matter/mentors/dinesh-mittal.jpeg",
         description: "A concise overview of Dinesh Mittal's background and contributions. Add more specific insights about their strategic direction here.",
@@ -47,7 +41,13 @@ const mentorsData = [
         image: "/words-matter/mentors/samir-bhatia.jpeg",
         description: "A seasoned leader recognised for driving high-impact corporate transformation and scalability",
         link: "https://www.linkedin.com/in/samir-bhatia-1418343/"
-    }
+    },
+    {
+        name: "Kiran Jain",
+        image: "/words-matter/mentors/kiran-jain.jpeg",
+        description: "A veteran of the global aviation industry, with an extensive track record in managing complex aerospace operations and strategic growth.",
+        link: "https://www.linkedin.com/in/kiran-jain-62b8785/"
+    },
 ];
 
 const advisorsData = [
@@ -207,16 +207,16 @@ export default function AboutPage() {
             <AnimatedSection className="bg-white border-t border-gray-200 py-32 relative z-10">
                 <div className="mx-auto max-w-7xl px-6 md:px-12">
                     <h2 className="font-league text-4xl md:text-6xl text-center mb-24 text-charcoal font-light">
-                        Mentors & Advisory Board
+                        Voices We Trust
                     </h2>
 
                     <div className="flex flex-col gap-24">
                         {/* Mentors Row */}
-                        <div id="mentors">
+                        <div id="advisors">
                             <div className="flex items-center gap-6 mb-12">
                                 <span className="w-12 h-px bg-primary hidden md:block"></span>
                                 <h3 className="text-2xl md:text-3xl font-league text-charcoal">
-                                    Our Mentors
+                                    Our Advisors
                                 </h3>
                                 <span className="w-12 h-px bg-primary md:hidden"></span>
                             </div>
@@ -249,7 +249,7 @@ export default function AboutPage() {
                             <div className="flex items-center gap-6 mb-12">
                                 <span className="w-12 h-px bg-primary hidden md:block"></span>
                                 <h3 className="text-2xl md:text-3xl font-league text-charcoal">
-                                    Advisory Board
+                                    Thought Partners
                                 </h3>
                                 <span className="w-12 h-px bg-primary md:hidden"></span>
                             </div>
