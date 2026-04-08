@@ -9,20 +9,31 @@ const mentorsData = [
     {
         name: "Praveen Kumar Shrivastava",
         image: "/words-matter/mentors/praveen-shrivastava.jpeg",
-        description: "A concise overview of Praveen Kumar Shrivastava's background and contributions. Add more specific insights about their strategic direction here.",
-        link: "https://www.linkedin.com/in/praveen-shrivastava-2398aa2/"
+        description: "A veteran leader with over three decades of experience in business transformation, strategic leadership, and human resources management.",
+        link: "https://www.linkedin.com/in/praveen-shrivastava-2398aa2/",
+        designation: "Executive Director(Retd), UnoMinda"
+    },
+    {
+        name: "Nirmal Minda",
+        image: "/words-matter/mentors/nirmal-minda.jpg",
+        description: "A visionary industrialist whose leadership has redefined the automotive landscape, providing invaluable strategic foresight to the industry.",
+        link: "https://www.unominda.com/about/management-team",
+        designation: "Chairman, UnoMinda"
     },
     {
         name: "Dinesh Mittal",
         image: "/words-matter/mentors/dinesh-mittal.jpeg",
-        description: "A concise overview of Dinesh Mittal's background and contributions. Add more specific insights about their strategic direction here.",
-        link: "https://mittalgroup.com/about-us/"
+        description: "A veteran of the manufacturing and infrastructure sectors with decades of experience in steering large-scale industrial growth and operational excellence",
+        link: "https://mittalgroup.com/about-us/",
+        designation: "Chairman, Mittal Group"
     },
     {
         name: "Sudhir Deoras",
         image: "/words-matter/mentors/sudhir-deoras.jpeg",
         description: "A seasoned executive with a 40-year track record of leadership within the Tata Group, specializing in operational excellence and large-scale business transformation",
-        link: "#"
+        link: "https://www.linkedin.com/in/sudhir-deoras-605ba3187/",
+        designation: "Senior Director, Baker Tilly DHC"
+
     },
     {
         name: "Yogesh Agarwal",
@@ -32,21 +43,24 @@ const mentorsData = [
     },
     {
         name: "Arvind Thakore",
-        image: "/words-matter/mentors/arvind-thakore.jpg",
-        description: "A concise overview of Arvind Thakore's background and contributions. Add more specific insights about their strategic direction here.",
-        link: "#"
+        image: "/words-matter/mentors/arvind-thakore.jpeg",
+        description: "A seasoned professional with career across retained Entrepreneurship Coach/Facilitation, Executive Search, Media, Publishing & Interactive Media domain.",
+        link: "https://www.linkedin.com/in/arvindthakore/",
+        designation: "Managing Partner, Executive Decision Partners"
     },
     {
         name: "Samir Bhatia",
         image: "/words-matter/mentors/samir-bhatia.jpeg",
         description: "A seasoned leader recognised for driving high-impact corporate transformation and scalability",
-        link: "https://www.linkedin.com/in/samir-bhatia-1418343/"
+        link: "https://www.linkedin.com/in/samir-bhatia-1418343/",
+        designation: "Entrepreneur and Corporate Consultant"
     },
     {
         name: "Kiran Jain",
         image: "/words-matter/mentors/kiran-jain.jpeg",
         description: "A veteran of the global aviation industry, with an extensive track record in managing complex aerospace operations and strategic growth.",
-        link: "https://www.linkedin.com/in/kiran-jain-62b8785/"
+        link: "https://www.linkedin.com/in/kiran-jain-62b8785/",
+        designation: "COO, Noida International Airport"
     },
 ];
 
@@ -55,25 +69,29 @@ const advisorsData = [
         name: "Nikhil Nagesh Bhat",
         image: "/words-matter/advisor/nikhil-nagesh-bhat.png",
         description: "A master storyteller crafting world-class experiences through cinematic excellence.",
-        link: "https://en.wikipedia.org/wiki/Nikhil_Nagesh_Bhat"
+        link: "https://en.wikipedia.org/wiki/Nikhil_Nagesh_Bhat",
+        designation: "Filmmaker, Writer and Director"
     },
     {
         name: "Navneeth Mohan",
         image: "/words-matter/advisor/navneeth-mohan.jpeg",
         description: "Redefining the landscape of experiential marketing and live events.",
-        link: "https://www.linkedin.com/in/navneeth-mohan-8259111a/"
+        link: "https://www.linkedin.com/in/navneeth-mohan-8259111a/",
+        designation: "Founder & Partner, BEWlive"
     },
     {
         name: "Vikram Sinha",
         image: "/words-matter/advisor/Vikram-sinha.jpeg",
         description: "Architect of visual impact, transforming complex ideas into compelling brand films.",
-        link: "https://www.linkedin.com/in/vikram-sinha-438742136/"
+        link: "https://www.linkedin.com/in/vikram-sinha-438742136/",
+        designation: "Founder, Thought Process Films LLP"
     },
     {
         name: "Dr Payal S Kapoor",
         image: "/words-matter/advisor/dr-payal-s-kapoor.jpeg",
         description: "Bridging academic rigor with digital strategy to mentor the next generation of marketers.",
-        link: "https://mdi.ac.in/faculty/payal-s-kapoor"
+        link: "https://mdi.ac.in/faculty/payal-s-kapoor",
+        designation: "Assistant Professor, MDI Gurgaon"
     }
 ];
 
@@ -221,21 +239,18 @@ export default function AboutPage() {
                                 <span className="w-12 h-px bg-primary md:hidden"></span>
                             </div>
 
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 {mentorsData.map((mentor, index) => (
                                     <div key={index} className="bg-gray-50 block w-full p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                                        <Link href={mentor.link}>
-                                            <div className="relative w-full aspect-4/5 rounded-xl overflow-hidden mb-6">
-                                                <Image className="rounded-xl object-cover object-top" src={mentor.image} alt={mentor.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" />
-                                            </div>
-                                        </Link>
-                                        <Link href={mentor.link}>
-                                            <h5 className="mb-2 text-2xl font-league text-charcoal font-light">{mentor.name}</h5>
-                                        </Link>
+                                        <div className="relative w-full aspect-4/5 rounded-xl overflow-hidden mb-6">
+                                            <Image className="rounded-xl object-cover object-top" src={mentor.image} alt={mentor.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" />
+                                        </div>
+                                        <h5 className="mb-2 text-2xl font-league">{mentor.name}</h5>
+                                        <h5 className="mb-2 text-xl font-league font-semibold">{mentor.designation}</h5>
                                         <p className="mb-6 text-gray-600 font-league text-sm leading-relaxed">
                                             {mentor.description}
                                         </p>
-                                        <Link href={mentor.link} className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary border border-gray-200 hover:border-primary px-5 py-2.5 rounded-lg transition-colors group">
+                                        <Link href={mentor.link} target="_blank" className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary border border-gray-200 hover:border-primary px-5 py-2.5 rounded-lg transition-colors group">
                                             Know more
                                             <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 12H5m14 0-4 4m4-4-4-4" /></svg>
                                         </Link>
@@ -254,17 +269,14 @@ export default function AboutPage() {
                                 <span className="w-12 h-px bg-primary md:hidden"></span>
                             </div>
 
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 {advisorsData.map((advisor, index) => (
                                     <div key={index} className="bg-gray-50 block w-full p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                                        <Link href={advisor.link}>
-                                            <div className="relative w-full aspect-4/5 rounded-xl overflow-hidden mb-6">
-                                                <Image className="rounded-xl object-cover object-top" src={advisor.image} alt={advisor.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" />
-                                            </div>
-                                        </Link>
-                                        <Link href={advisor.link}>
-                                            <h5 className="mb-2 text-2xl font-league text-charcoal font-light">{advisor.name}</h5>
-                                        </Link>
+                                        <div className="relative w-full aspect-4/5 rounded-xl overflow-hidden mb-6">
+                                            <Image className="rounded-xl object-cover object-top" src={advisor.image} alt={advisor.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" />
+                                        </div>
+                                        <h5 className="mb-2 text-2xl font-league text-charcoal font-light">{advisor.name}</h5>
+                                        <h5 className="mb-2 text-xl font-league font-semibold">{advisor.designation}</h5>
                                         <p className="mb-6 text-gray-600 font-league text-sm leading-relaxed">
                                             {advisor.description}
                                         </p>
