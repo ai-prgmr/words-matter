@@ -35,19 +35,19 @@ const mentorsData = [
         designation: "Senior Director, Baker Tilly DHC"
 
     },
-    {
-        name: "Yogesh Agarwal",
-        image: "/words-matter/mentors/yogesh-agarwal.jpg",
-        description: "A concise overview of Yogesh Agarwal's background and contributions. Add more specific insights about their strategic direction here.",
-        link: "#"
-    },
-    {
-        name: "Arvind Thakore",
-        image: "/words-matter/mentors/arvind-thakore.jpeg",
-        description: "A seasoned professional with career across retained Entrepreneurship Coach/Facilitation, Executive Search, Media, Publishing & Interactive Media domain.",
-        link: "https://www.linkedin.com/in/arvindthakore/",
-        designation: "Managing Partner, Executive Decision Partners"
-    },
+    // {
+    //     name: "Yogesh Agarwal",
+    //     image: "/words-matter/mentors/yogesh-agarwal.jpg",
+    //     description: "A concise overview of Yogesh Agarwal's background and contributions. Add more specific insights about their strategic direction here.",
+    //     link: "#"
+    // },
+    // {
+    //     name: "Arvind Thakur",
+    //     image: "/words-matter/mentors/arvind-thakore.jpeg",
+    //     description: "A seasoned professional with career across retained Entrepreneurship Coach/Facilitation, Executive Search, Media, Publishing & Interactive Media domain.",
+    //     link: "https://www.linkedin.com/in/arvind-thakur-6b411096/",
+    //     designation: "Managing Partner, Executive Decision Partners"
+    // },
     {
         name: "Samir Bhatia",
         image: "/words-matter/mentors/samir-bhatia.jpeg",
