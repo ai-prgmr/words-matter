@@ -5,10 +5,10 @@ export const metadata: Metadata = {
     title: "Rohit Agarwal | Co-Founder & Brand Strategist | Words Matter",
     description: "From the Indian Army to the World Bank, Rohit Agarwal brings three decades of strategic expertise to Words Matter. Discover his custom approach to brand and image building.",
     openGraph: {
-        title: "Rohit Agarwal | Words Matter LLP",
+        title: "Rohit Agarwal | Words Matter",
         description: "Co-Founder & Brand Strategist. Leveraging decades of global consulting experience to formulate customized brand strategies.",
         url: "https://www.wordsmatter.in/founder/rohit",
-        siteName: "Words Matter LLP",
+        siteName: "Words Matter",
         type: "profile",
     },
     twitter: {
@@ -30,7 +30,7 @@ export default function RohitProfile() {
         "jobTitle": "Co-Founder & Brand Strategist",
         "worksFor": {
             "@type": "Organization",
-            "name": "Words Matter LLP"
+            "name": "Words Matter"
         },
         "alumniOf": {
             "@type": "CollegeOrUniversity",
