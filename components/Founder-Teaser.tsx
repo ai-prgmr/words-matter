@@ -29,6 +29,7 @@ export default function FounderTeaser() {
                                 src="/words-matter/noopur-r-chablani.jpg"
                                 alt="Noopurr R Chablani - Founder"
                                 fill
+                                loading="eager"
                                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-in-out scale-100 group-hover:scale-105"
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
@@ -42,7 +43,7 @@ export default function FounderTeaser() {
 
                         <Link
                             href="/founder/noopurr-r-chablani"
-                            prefetch={true}
+                            prefetch={false}
                             className="inline-flex items-center w-fit cursor-pointer group/link"
                         >
                             <span className="font-sans text-sm tracking-wide text-neutral-600 group-hover/link:text-neutral-900 transition-colors duration-300">
