@@ -82,7 +82,6 @@ export default function FounderTeaser() {
 
                         <Link
                             href="/founder/rohit-agarwal"
-                            prefetch={true}
                             className="inline-flex items-center w-fit cursor-pointer group/link"
                         >
                             <span className="font-sans text-sm tracking-wide text-neutral-600 group-hover/link:text-neutral-900 transition-colors duration-300">
