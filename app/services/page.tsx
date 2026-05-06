@@ -50,7 +50,7 @@ export const servicesData = [
     {
         slug: "legacy-books",
         id: "05",
-        title: "Legacy Writing & Coffee Table Books",
+        title: "Bespoke Writing & Coffee Table Books",
         shortDesc: "Preserving the journey by transforming personal milestones into timeless literary legacies",
         longDesc: "Our Biography and Legacy Writing services offer a sophisticated approach to preserving heritage and identity. We bring family histories, memoirs, and personal narratives to life with elegance, depth, and narrative empathy. From the initial research to the final development of luxury coffee table books, we ensure that every project reflects an authentic voice and a timeless perspective. At Words Matter, we transform personal milestones into cherished legacies, weaving together the threads of memory and experience to create enduring treasures for future generations."
     }

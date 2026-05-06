@@ -14,8 +14,8 @@ export default function Footer() {
     ];
 
     const socialLinks = [
-        { name: "LinkedIn", href: "#" },
-        { name: "Instagram", href: "#" },
+        { name: "LinkedIn", href: "https://www.linkedin.com/company/w0rdsmatter" },
+        { name: "Instagram", href: "https://www.instagram.com/words.matter1" },
     ];
 
     const pathname = usePathname();
@@ -95,7 +95,7 @@ export default function Footer() {
 
                         <div className="mt-10">
                             <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-4">India HQ</h4>
-                            <address className="not-italic text-sm text-slate-500 leading-relaxed font-league">
+                            <address className="not-italic text-gray-500 leading-relaxed font-league font-semibold">
                                 C 438 Sushant Lok,<br />
                                 Phase I,<br />
                                 Gurugram, Haryana - 122002

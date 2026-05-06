@@ -54,7 +54,7 @@ export const servicesData = [
         id: "04",
         title: "Digital Marketing",
         shortDesc: "Amplifying influence through purpose-driven engagement and high-impact digital storytelling",
-        philosophy: "We approach Digital Marketing as a vital extension of your strategic identity, moving beyond static content to create purpose-driven engagement. By identifying the optimal platforms for your specific target audience, we design high-impact visuals and copy that spark meaningful conversation. Our focus is on building digital communities that turn followers into brand advocates, ensuring your online footprint is not just visible, but influential and aligned with your broader PR goals.",
+        philosophy: "We approach Digital Marketing as a vital extension of your strategic identity, moving beyond static content to create purpose-driven engagement. By identifying the optimal platforms for your specific target audience, we design high-impact visuals and conversations that spark meaningful conversation. Our focus is on building digital communities that convert followers into brand advocates, ensuring your online footprint is not just visible, but influential and aligned with your broader PR goals.",
         subServices: [
             { name: "Platform-Specific Strategy", desc: "Identifying and leveraging the optimal digital environments for your exact audience" },
             { name: "High-Impact Visual Storytelling", desc: "Designing bespoke aesthetics that command attention and convey premium quality" },
@@ -67,17 +67,17 @@ export const servicesData = [
     {
         slug: "legacy-books",
         id: "05",
-        title: "Legacy Writing & Coffee Table Books",
+        title: "Bespoke Writing & Coffee Table Books",
         shortDesc: "Preserving the human journey by transforming personal milestones into timeless literary legacies",
         philosophy: "Our Legacy Writing services offer a sophisticated approach to preserving heritage and identity. We bring family histories, memoirs and personal narratives to life with elegance, depth and narrative empathy. From the initial research to the final development of luxury coffee table books, we ensure that every project reflects an authentic voice and a timeless perspective. At Words Matter, we transform personal milestones into cherished legacies, weaving together the threads of memory and experience to create enduring treasures for future generations.",
         subServices: [
-            { name: "Memoirs", desc: "Ghostwriting highly personal, authentic narratives that capture the essence of a life" },
-            { name: "Corporate History Documentation", desc: "Archiving the founding struggles, triumphs, and evolution of legacy businesses" },
+            { name: "Memoirs", desc: "Highly personal, authentic narratives that capture the essence of a life" },
+            { name: "Corporate History Documentation", desc: "Archiving the founding struggles, triumphs, and evolution of businesses" },
             { name: "Luxury Coffee Table Books", desc: "Producing visually stunning, tactile volumes that serve as premium brand artifacts" },
             { name: "Generational Archiving", desc: "Conducting deep-dive interviews to preserve family histories for future descendants" }
         ],
         targetClient: "Commissioned by legacy families, veteran industry pioneers, and historic institutions wishing to immortalize their journeys with uncompromising elegance",
-        process: "Led by expert biographers, our methodology combines immersive interviews and meticulous archival research with profound narrative empathy, resulting in a perfectly crafted literary artifact"
+        process: "Led by experts, our methodology combines immersive interviews and meticulous archival research with profound narrative empathy, resulting in a perfectly crafted literary artifact"
     }
 ];
 export function generateStaticParams() {

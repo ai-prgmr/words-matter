@@ -20,7 +20,8 @@ const auditQuestions = [
             { id: "A", text: "We have a proactive, multi-tiered crisis architecture ready to deploy." },
             { id: "B", text: "We rely heavily on our legal team to draft a standard denial." },
             { id: "C", text: "We wait and see how the media reacts before issuing a statement." },
-            { id: "D", text: "We have no formalized crisis communication strategy in place." }
+            { id: "D", text: "We have no formalized crisis communication strategy in place." },
+            { id: "E", text: "Silence is golden and prefer ignoring it." }
         ]
     },
     {
@@ -37,7 +38,7 @@ const auditQuestions = [
         id: 4,
         question: "Where does your brand predominantly appear in the current media landscape?",
         options: [
-            { id: "A", text: "Tier-one business press (ET, Livemint, Forbes) as expert commentary." },
+            { id: "A", text: "Tier-one business media (ET, Livemint, Forbes) as expert commentary." },
             { id: "B", text: "Trade publications specific to our exact industry vertical." },
             { id: "C", text: "Paid placements, advertorials, or sponsored content." },
             { id: "D", text: "We currently struggle to secure meaningful, earned media." }
@@ -47,8 +48,8 @@ const auditQuestions = [
         id: 5,
         question: "Who is currently the primary architect of your brand's public story?",
         options: [
-            { id: "A", text: "An elite internal/external communications team driving a proactive strategy." },
-            { id: "B", text: "Our marketing department, treating PR merely as an extension of sales." },
+            { id: "A", text: "An elite PR agency driving a proactive strategy." },
+            { id: "B", text: "Our communications department, treating PR merely as an extension of sales." },
             { id: "C", text: "The media themselves; we are entirely reactive to their inquiries." },
             { id: "D", text: "Algorithms and customer chatter; we have surrendered the narrative." }
         ]

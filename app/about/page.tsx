@@ -170,16 +170,16 @@ export default function AboutPage() {
             {/* 2. WORDS MATTER - INTRODUCTION */}
             <AnimatedSection className="mx-auto max-w-5xl px-6 md:px-12 pb-24 relative z-10">
                 <div className="prose prose-lg md:prose-xl max-w-none text-charcoal font-league leading-relaxed space-y-8 text-center md:text-left">
-                    <p className="text-2xl md:text-3xl font-light leading-snug">
+                    <p className="text-2xl md:text-3xl text-charcoal leading-snug">
                         Welcome to Words Matter, a boutique agency where the art of strategic storytelling meets the preservation of personal legacy. We believe that in a world driven by perception, the right words do more than just communicate—they define who you are today and how you are remembered tomorrow.
                     </p>
-                    <p>
+                    <p className="text-2xl md:text-2xl text-charcoal leading-snug">
                         Our expertise begins with Reputation and Image Management, providing high-level PR consultancy to ensure your public identity is both authentic and influential. We specialize in Social Media presence enhancement, refining your digital voice to create a cohesive, impactful profile that resonates with your target audience. Whether you are an individual leader or an evolving brand, we craft the strategic messaging necessary to navigate the modern media landscape with precision.
                     </p>
-                    <p>
+                    <p className="text-2xl md:text-2xl text-charcoal leading-snug">
                         Beyond the professional profile, Words Matter is dedicated to the meticulous craft of biography writing and family histories. We believe every life is a unique tapestry of experiences that deserves to be cherished across generations. Our passionate team of writers and researchers works closely with you to transform memories and anecdotes into beautifully captured autobiographies and memoirs.
                     </p>
-                    <p>
+                    <p className="text-2xl md:text-2xl text-charcoal leading-snug">
                         At Words Matter, we blend the strategic rigor of public relations with the deep empathy of personal storytelling. We are your trusted partners in shaping your image, elevating your digital footprint, and transforming your stories into timeless treasures. Discover the power of words—because here, every word truly matters.
                     </p>
                 </div>
@@ -195,7 +195,7 @@ export default function AboutPage() {
                                 <span className="w-8 h-px bg-primary"></span>
                                 Vision
                             </h2>
-                            <p className="font-league text-lg leading-relaxed text-charcoal">
+                            <p className="font-league text-xl md:text-2xl text-charcoal leading-snug">
                                 To be a leading boutique agency where the power of words shapes authentic identities, preserves legacies, and elevates personal and professional images with unmatched clarity and impact.
                             </p>
                         </div>
@@ -206,7 +206,7 @@ export default function AboutPage() {
                                 <span className="w-8 h-px bg-primary"></span>
                                 Philosophy
                             </h2>
-                            <p className="font-league text-lg leading-relaxed text-charcoal">
+                            <p className="font-league text-xl md:text-2xl text-charcoal leading-snug">
                                 At Words Matter, we believe that every narrative holds the power to transform perception and forge meaningful connections. Our approach is grounded in integrity, meticulous craftsmanship, and a passion for storytelling that honors the uniqueness of every individual and brand we serve. We are dedicated to amplifying voices with honesty, precision, and empathy, ensuring that words truly matter in building lasting impressions.
                             </p>
                         </div>
@@ -247,7 +247,7 @@ export default function AboutPage() {
                                         </div>
                                         <h5 className="mb-2 text-2xl font-league">{mentor.name}</h5>
                                         <h5 className="mb-2 text-xl font-league font-semibold">{mentor.designation}</h5>
-                                        <p className="mb-6 text-gray-600 font-league text-sm leading-relaxed">
+                                        <p className="mb-6  font-league text-lg leading-relaxed">
                                             {mentor.description}
                                         </p>
                                         <Link href={mentor.link} target="_blank" className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary border border-gray-200 hover:border-primary px-5 py-2.5 rounded-lg transition-colors group">
@@ -277,7 +277,7 @@ export default function AboutPage() {
                                         </div>
                                         <h5 className="mb-2 text-2xl font-league text-charcoal font-light">{advisor.name}</h5>
                                         <h5 className="mb-2 text-xl font-league font-semibold">{advisor.designation}</h5>
-                                        <p className="mb-6 text-gray-600 font-league text-sm leading-relaxed">
+                                        <p className="mb-6 font-league text-lg leading-relaxed">
                                             {advisor.description}
                                         </p>
                                         <Link href={advisor.link} className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary border border-gray-200 hover:border-primary px-5 py-2.5 rounded-lg transition-colors group">

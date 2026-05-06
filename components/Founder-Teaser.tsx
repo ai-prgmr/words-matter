@@ -11,7 +11,7 @@ export default function FounderTeaser() {
                     <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight tracking-tight">
                         The Architects of <span className="italic text-[#B18E54]">Influence</span>
                     </h2>
-                    <p className="font-sans text-neutral-500 font-light text-lg leading-relaxed">
+                    <p className="font-league font-light text-xl md:text-xl leading-snug">
                         A partnership forged to elevate reputation. Discover the strategists behind the industry's most definitive communication campaigns.
                     </p>
                 </div>
@@ -37,7 +37,7 @@ export default function FounderTeaser() {
 
                         {/* Details & Link */}
                         <h3 className="font-serif text-3xl font-medium mb-2 tracking-tight">Noopurr R Chablani</h3>
-                        <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-[#B18E54] font-bold mb-6">
+                        <p className="font-league text-[11px] uppercase tracking-[0.2em] text-[#B18E54] font-bold mb-6">
                             Founder & Image Strategist
                         </p>
 
@@ -45,7 +45,7 @@ export default function FounderTeaser() {
                             href="/founder/noopurr-r-chablani"
                             className="inline-flex items-center w-fit cursor-pointer group/link"
                         >
-                            <span className="font-sans text-sm tracking-wide text-neutral-600 group-hover/link:text-neutral-900 transition-colors duration-300">
+                            <span className="font-league text-sm tracking-wide text-neutral-600 group-hover/link:text-neutral-900 transition-colors duration-300">
                                 Read Profile
                             </span>
                             <svg
@@ -76,15 +76,15 @@ export default function FounderTeaser() {
                         {/* Details & Link */}
                         {/* Replace "Co-Founder Name" with their actual name */}
                         <h3 className="font-serif text-3xl font-medium mb-2 tracking-tight">Lt. Col.(Retd) Rohit Agarwal</h3>
-                        <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-[#B18E54] font-bold mb-6">
-                            Co-Founder & Strategic Director
+                        <p className="font-league text-[11px] uppercase tracking-[0.2em] text-[#B18E54] font-bold mb-6">
+                            Co-Founder & Brand Strategist
                         </p>
 
                         <Link
                             href="/founder/rohit-agarwal"
                             className="inline-flex items-center w-fit cursor-pointer group/link"
                         >
-                            <span className="font-sans text-sm tracking-wide text-neutral-600 group-hover/link:text-neutral-900 transition-colors duration-300">
+                            <span className="font-league text-sm tracking-wide text-neutral-600 group-hover/link:text-neutral-900 transition-colors duration-300">
                                 Read Profile
                             </span>
                             <svg
