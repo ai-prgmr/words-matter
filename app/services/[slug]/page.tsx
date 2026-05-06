@@ -29,7 +29,7 @@ export const servicesData = [
             { name: "Crisis Mitigation & Response", desc: "Deploying rapid, strategic protocols to navigate public scrutiny and volatility" },
             { name: "Stakeholder Perception Mapping", desc: "Decoding audience sentiment to proactively address reputational vulnerabilities" },
             { name: "Risk Foresight & Intelligence", desc: "Identifying and neutralizing potential media threats before they materialize" },
-            { name: "Post-Crisis Rehabilitation", desc: "Rebuilding and reinforcing brand equity following periods of market disruption" }
+            { name: "Post-Crisis Strategic Recovery", desc: "Rebuilding and reinforcing brand equity following periods of market disruption" }
         ],
         targetClient: "Tailored for high-profile individuals, public figures, and global enterprises navigating complex public scrutiny, market volatility, or transitional phases",
         process: "Operating with absolute discretion, we deploy rapid-response communication protocols while simultaneously building long-term reputational resilience through continuous audience sentiment analysis"
@@ -42,7 +42,7 @@ export const servicesData = [
         philosophy: "Our Image Management services are designed for the precise curation of your professional persona. We view personal branding as a strategic asset, meticulously aligning your unique strengths with your career aspirations. This expertise extends to high-touch digital presence curation and specialized LinkedIn management, where we optimize your profile and content to build powerful, authentic connections. Whether in digital spaces or real-world forums, we help you project a cohesive and commanding identity that resonates with peers and partners alike.",
         subServices: [
             { name: "Personal Brand Architecture", desc: "Aligning your unique professional strengths with high-level career aspirations" },
-            { name: "Elite LinkedIn Management", desc: "Optimizing digital profiles to cultivate powerful, authentic B2B connections" },
+            { name: "Elite LinkedIn Management", desc: "Optimizing digital profiles to cultivate powerful, authentic audience connections" },
             { name: "Digital Footprint Auditing", desc: "Curating historical online presence to reflect current executive standing" },
             { name: "Executive Presence Coaching", desc: "Refining interpersonal and public-facing communication for maximum impact" }
         ],
@@ -54,7 +54,7 @@ export const servicesData = [
         id: "04",
         title: "Digital Marketing",
         shortDesc: "Amplifying influence through purpose-driven engagement and high-impact digital storytelling",
-        philosophy: "We approach Digital Marketing as a vital extension of your strategic identity, moving beyond static content to create purpose-driven engagement. By identifying the optimal platforms for your specific target audience, we design high-impact visuals and conversations that spark meaningful conversation. Our focus is on building digital communities that convert followers into brand advocates, ensuring your online footprint is not just visible, but influential and aligned with your broader PR goals.",
+        philosophy: "We approach Digital Marketing as a vital extension of your strategic identity, moving beyond static content to create purpose-driven engagement. By identifying the optimal platforms for your specific target audience, we design high-impact visuals and copies that spark meaningful conversations. Our focus is on building digital communities that converts followers into brand advocates, ensuring your online footprint is not just visible, but influential and aligned with your broader PR goals.",
         subServices: [
             { name: "Platform-Specific Strategy", desc: "Identifying and leveraging the optimal digital environments for your exact audience" },
             { name: "High-Impact Visual Storytelling", desc: "Designing bespoke aesthetics that command attention and convey premium quality" },
@@ -69,7 +69,7 @@ export const servicesData = [
         id: "05",
         title: "Bespoke Writing & Coffee Table Books",
         shortDesc: "Preserving the human journey by transforming personal milestones into timeless literary legacies",
-        philosophy: "Our Legacy Writing services offer a sophisticated approach to preserving heritage and identity. We bring family histories, memoirs and personal narratives to life with elegance, depth and narrative empathy. From the initial research to the final development of luxury coffee table books, we ensure that every project reflects an authentic voice and a timeless perspective. At Words Matter, we transform personal milestones into cherished legacies, weaving together the threads of memory and experience to create enduring treasures for future generations.",
+        philosophy: "Our Bespoke Writing services offer a sophisticated approach to preserving heritage and identity. We bring family histories, memoirs and personal narratives to life with elegance, depth and narrative empathy. From the initial research to the final development of luxury coffee table books, we ensure that every project reflects an authentic voice and a timeless perspective. At Words Matter, we transform personal milestones into cherished legacies, weaving together the threads of memory and experience to create enduring treasures for future generations.",
         subServices: [
             { name: "Memoirs", desc: "Highly personal, authentic narratives that capture the essence of a life" },
             { name: "Corporate History Documentation", desc: "Archiving the founding struggles, triumphs, and evolution of businesses" },

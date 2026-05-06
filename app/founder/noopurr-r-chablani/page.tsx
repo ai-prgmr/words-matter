@@ -65,7 +65,7 @@ export default function NoopurrProfile() {
                                 <img
                                     src="/words-matter/noopur-r-chablani.jpg"
                                     alt="Noopurr R Chablani"
-                                    className="w-full h-full object-cover grayscale mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
+                                    className="w-full h-full object-cover mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
                                 />
                             </div>
                         </div>
