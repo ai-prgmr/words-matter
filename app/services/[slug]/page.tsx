@@ -141,7 +141,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             {/* HERO SECTION */}
             <header className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto border-b border-gray-100">
                 <AnimatedDiv delay={0.1}>
-                    <Link href="/services" prefetch={true} className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-primary hover:text-charcoal transition-colors duration-300 mb-16 md:mb-24 group">
+                    <Link href="/services" prefetch={false} className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-primary hover:text-charcoal transition-colors duration-300 mb-16 md:mb-24 group">
                         <svg className="w-4 h-4 mr-3 rotate-270 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>

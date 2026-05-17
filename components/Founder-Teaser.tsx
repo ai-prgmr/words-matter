@@ -65,7 +65,7 @@ export default function FounderTeaser() {
                         <div className="relative aspect-4/5 w-full overflow-hidden mb-8 bg-neutral-100">
                             {/* Replace with actual co-founder portrait */}
                             <Image
-                                src="/words-matter/rohit-agarwal-profile.png"
+                                src="/words-matter/rohit-agarwal-co-founder.png"
                                 alt="Rohit Agarwal - Co-Founder"
                                 fill
                                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-in-out scale-100 group-hover:scale-105"

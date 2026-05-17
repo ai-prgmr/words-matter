@@ -93,7 +93,7 @@ export default function Header() {
 
             {/* Mobile Navigation Overlay */}
             <div
-                className={`fixed inset-0 bg-background-light z-40 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed inset-0 bg-background-light z-40 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0 pointer-events-auto" : "translate-x-full pointer-events-none"
                     }`}
             >
                 <nav className="flex flex-col items-center gap-8 w-full max-h-[80vh] overflow-y-auto py-10 px-6">

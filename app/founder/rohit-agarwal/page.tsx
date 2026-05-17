@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-
+import Link from 'next/link';
 // 1. NEXT.JS 16 METADATA
 export const metadata: Metadata = {
     title: "Rohit Agarwal | Co-Founder & Brand Strategist | Words Matter",
@@ -66,15 +66,33 @@ export default function RohitProfile() {
 
                     {/* Co-Founder Image (Left) */}
                     <div className="lg:col-span-4 lg:sticky lg:top-32">
-                        <div className="relative aspect-4/5 overflow-hidden rounded-4xl bg-white border border-gray-200 p-4">
+                        <div className="relative aspect-4/5 overflow-hidden bg-white p-4">
                             <div className="w-full h-full rounded-2xl overflow-hidden relative group">
-                                <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                                <div className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                                 <img
-                                    src="/words-matter/rohit-agarwal-profile.png"
-                                    alt="Rohit Agarwal"
+                                    src="/words-matter/rohit-agarwal-co-founder.png"
+                                    alt="Rohit Agarwal - Co-Founder - Words Matter"
                                     className="w-full h-full object-cover mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
                                 />
                             </div>
+                        </div>
+                        <div className='flex items-center cursor-pointer p-4 ml-4'>
+                            <Link
+                                href="https://rohitagarwal.in/"
+                                className="inline-flex items-center w-fit cursor-pointer group/link"
+                            >
+                                <span className="font-league text-sm tracking-wide text-neutral-600 group-hover/link:text-neutral-900 transition-colors duration-300">
+                                    Read More
+                                </span>
+                                <svg
+                                    className="ml-3 w-4 h-4 transform group-hover/link:translate-x-2 transition-transform duration-500 ease-out text-[#B18E54]"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </Link>
                         </div>
                     </div>
 
