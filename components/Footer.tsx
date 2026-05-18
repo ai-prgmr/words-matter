@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 export default function Footer() {
-    const email_address = "noopurr@wordsmatter.in";
+    const email_address = "connect@wordsmatter.in";
 
     const navLinks = [
         { name: "Home", href: "/" },

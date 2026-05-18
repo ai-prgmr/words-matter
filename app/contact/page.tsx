@@ -25,7 +25,7 @@ export default function Contact() {
             "@type": "ProfessionalService",
             "name": "Words Matter",
             "telephone": "+91 1234567890",
-            "email": "press@wordsmatter.in",
+            "email": "connect@wordsmatter.in",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Gurgaon",
