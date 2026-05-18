@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
-import { blogPosts } from '../page';
+import { getAllBlogs, getBlogBySlug } from '../../lib/blogs';
 import { AnimatedArticle } from "@/components/ui/animated-section";
+import ReactMarkdown from 'react-markdown';
 
 export function generateStaticParams() {
+    const blogPosts = getAllBlogs();
     return blogPosts.map((post) => ({
         slug: post.slug,
     }));
@@ -12,7 +14,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
-    const post = blogPosts.find((p) => p.slug === slug);
+    const post = getBlogBySlug(slug);
     if (!post) return {};
 
     return {
@@ -26,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
-    const post = blogPosts.find((p) => p.slug === slug);
+    const post = getBlogBySlug(slug);
 
     if (!post) {
         notFound();
@@ -77,12 +79,16 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     </h1>
 
                     <div className="flex items-center gap-4 border-t border-gray-200 pt-8 mt-8">
-                        <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-league italic text-charcoal">
-                            {post.author.charAt(0)}
+                        <div className="w-14 h-14 flex items-center">
+                            <img
+                                src={post.authorUrl}
+                                alt={post.author}
+                                className="w-full h-full object-cover rounded-full"
+                            />
                         </div>
                         <div>
                             <p className="text-sm font-bold text-charcoal">{post.author}</p>
-                            <p className="text-xs text-gray-500 font-mono">Senior Partner</p>
+                            <p className="text-xs text-gray-500 font-mono">{post.position}</p>
                         </div>
                     </div>
                 </header>
@@ -96,33 +102,13 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     />
                 </div>
 
-                {/* Simulated Content */}
+                {/* Markdown Content */}
                 <div className="prose prose-lg prose-p:text-gray-600 prose-p:leading-relaxed max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary hover:prose-a:text-primary/80">
                     <p className="lead text-xl md:text-2xl text-charcoal font-medium mb-12">
                         {post.excerpt}
                     </p>
 
-                    <p>
-                        The landscape of corporate influence has profoundly shifted. In an era where information travels at the speed of fiber optics, the traditional mechanisms of public relations are no longer sufficient. We are transitioning from an age of broadcasting into an epoch of highly curated, targeted dialogue.
-                    </p>
-
-                    <h2>The Architecture of Perception</h2>
-                    <p>
-                        Silence is no longer an empty space; it is a profound loud statement. When a crisis hits, or when a market deeply fluctuates, the vacuum of communication is instantly filled by external, often hostile, narratives. Controlling the frequency requires not just speaking, but speaking with devastating precision.
-                    </p>
-
-                    <blockquote>
-                        "Strategy is not an accident. It is the architecture of perception. We do not react; we engineer the environment in which reaction occurs."
-                    </blockquote>
-
-                    <p>
-                        To build genuine brand equity, one must align corporate initiatives with social impact gracefully. It is no longer enough to claim visionary status; it must be demonstrated through relentless, authentic engagement.
-                    </p>
-
-                    <h3>Looking Forward</h3>
-                    <p>
-                        The future belongs to the agile. Those who view crisis as an opportunity for structural reinforcement will not only survive but establish enduring authority. The ultimate goal remains the same: transforming mere noise into perfect resonance.
-                    </p>
+                    <ReactMarkdown>{post.content}</ReactMarkdown>
                 </div>
 
                 {/* Footer / Share */}

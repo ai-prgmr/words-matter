@@ -9,36 +9,10 @@ export const metadata = {
         canonical: '/blog',
     },
 };
-export const blogPosts = [
-    {
-        slug: 'the-anatomy-of-a-crisis',
-        title: 'The Anatomy of a Crisis: Why Silence Isn\'t Always Golden',
-        excerpt: 'An inside look at how modern perception architecture demands agility and proactive communication during turbulent market shifts.',
-        date: 'February 18, 2026',
-        author: 'Elena Rostova',
-        category: 'Crisis Architecture',
-        imageUrl: 'https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2940&auto=format&fit=crop', // Business/Architecture abstract
-    },
-    {
-        slug: 'influence-beyond-the-algorithm',
-        title: 'Influence Beyond the Algorithm: Crafting Authentic Dialogues',
-        excerpt: 'Digital strategy has become largely automated. We explore why high-value human relationships with true editorial gatekeepers still rule the narrative.',
-        date: 'February 10, 2026',
-        author: 'Marcus Vance',
-        category: 'Digital Strategy',
-        imageUrl: 'https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2929&auto=format&fit=crop', // Abstract network
-    },
-    {
-        slug: 'executive-positioning-in-2026',
-        title: 'Why Executive Positioning Requires Vulnerability in 2026',
-        excerpt: 'The days of the impenetrable CEO are over. Audiences respond to visionary status built on genuine personal brand equity and social alignment.',
-        date: 'January 24, 2026',
-        author: 'Sarah Chen',
-        category: 'Executive Positioning',
-        imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop', // Corporate glass
-    }
-];
-export default function BlogListing() {
+import { getAllBlogs } from '../lib/blogs';
+export default async function BlogListing() {
+    const blogPosts = getAllBlogs();
+
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Blog",

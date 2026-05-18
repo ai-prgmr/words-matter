@@ -77,7 +77,7 @@ export default function EditorialTeaser() {
                         </p>
                     </Link>
 
-                    <div className="lg:col-span-5 flex flex-col justify-between pt-12 lg:pt-0">
+                    {/* <div className="lg:col-span-5 flex flex-col justify-between pt-12 lg:pt-0">
                         <h4 className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-8 hidden lg:block">Recent Dispatches</h4>
 
                         <div className="flex flex-col gap-5 border-t border-gray-200">
@@ -101,7 +101,7 @@ export default function EditorialTeaser() {
                                 </Link>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

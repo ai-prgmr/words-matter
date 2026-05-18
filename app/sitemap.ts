@@ -1,6 +1,6 @@
 export const dynamic = 'force-static'
 import { MetadataRoute } from 'next';
-import { blogPosts } from './blog/page';
+import { getAllBlogs } from './lib/blogs';
 import { caseStudies } from './case-studies/page';
 import { servicesData } from './services/page';
 
@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
 
     // Dynamic Blog Routes
+    const blogPosts = getAllBlogs();
     const blogRoutes = blogPosts.map((post) => ({
         url: `${baseUrl}/blog/${post.slug}`,
         lastModified: new Date(),
