@@ -125,14 +125,14 @@ export default function Footer() {
                     <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-6 md:mb-0">
                         © {new Date().getFullYear()} Words Matter. All rights reserved.
                     </div>
-                    <div className="flex gap-8">
+                    {/* <div className="flex gap-8">
                         <Link href="/privacy" className="text-[10px] font-bold text-slate-400 uppercase tracking-widest hover:text-primary transition-colors">
                             Privacy Policy
                         </Link>
                         <Link href="/terms" className="text-[10px] font-bold text-slate-400 uppercase tracking-widest hover:text-primary transition-colors">
                             Terms of Service
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

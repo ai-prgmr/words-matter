@@ -185,14 +185,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
             {/* CAPABILITIES / DELIVERABLES */}
             <AnimatedSection className="py-20 px-6 md:px-12 max-w-7xl mx-auto border-b border-gray-100">
-                <div className="mb-16 md:mb-24 flex flex-col md:items-end justify-between gap-8">
+                <div className="mb-16 md:mb-24 flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                     <div>
                         <h2 className="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Capabilities</h2>
                         <h3 className="text-lg md:text-xl text-charcoal font-semibold tracking-tight">Core Deliverables</h3>
                     </div>
-                    <p className="text-gray-500 font-league md:max-w-md text-xl md:text-2xl leading-relaxed">
+                    {/* <p className="text-gray-500 font-league md:max-w-md text-xl md:text-2xl leading-relaxed">
                         Precision-engineered strategies designed to achieve definitive market positioning and absolute narrative control
-                    </p>
+                    </p> */}
                 </div>
 
                 <div className="grid grid-cols-1 gap-0 border-t border-gray-200">
