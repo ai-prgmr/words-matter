@@ -28,7 +28,7 @@ const ContactForm = () => {
         resolver: zodResolver(contactSchema),
     });
 
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwRcrfHAiPEZRbFLrJ-_ZmKNwDVvvhovP1GVCNpuWygXQ-6MCL0izQ9ZNwx0Yb3KsYH/exec";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwC_mql85GnY6KsMeqaKAFYgHa8P9yP3Vgr75M6mF1DkH49K7jDIi0Mxbwmi9Aw-IHF/exec";
 
     const onSubmit = async (data: ContactFormData) => {
         // 2. Cooldown Check
