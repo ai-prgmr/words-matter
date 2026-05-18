@@ -86,11 +86,8 @@ const ContactForm = () => {
                                     To ensure quality service, we limit submissions to once every 5 minutes.
                                     If this is an urgent PR matter, please reach out directly:
                                 </p>
-                                <a
-                                    href="tel:+91XXXXXXXXXX"
-                                    className="inline-block mt-3 text-lg font-black text-amber-900 border-b-2 border-amber-400 hover:border-amber-600 transition-all"
-                                >
-                                    +91-XXXXX-XXXXX
+                                <a className="inline-block mt-3 text-lg font-black text-amber-900 border-b-2 border-amber-400 hover:border-amber-600 transition-all" href="tel:+919810498751" aria-label="Call us now">
+                                    +91-98104-98751
                                 </a>
                             </div>
                         </div>
@@ -113,9 +110,9 @@ const ContactForm = () => {
 
                         <div className="text-center">
                             <h3 className="text-lg font-bold text-slate-900">Message Received</h3>
-                            <p className="text-sm text-slate-600">
+                            {/* <p className="text-sm text-slate-600">
                                 Check your inbox. We&apos;ve sent you a confirmation email.
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 )}

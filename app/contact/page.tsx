@@ -57,10 +57,10 @@ export default function Contact() {
                                     something <span className="text-primary italic font-league leading-[1.3] pb-4">notable!</span>
                                 </h1>
                             </div>
-                            <Link className="group block relative" href="mailto:press@wordsmatter.pr">
+                            <Link className="group block relative" href="mailto:connect@wordsmatter.pr">
                                 <div className="absolute -left-6 top-0 h-full w-1.5 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
                                 <h2 className="text-3xl md:text-3xl font-bold text-slate-900 group-hover:text-primary transition-colors duration-300 break-all md:break-normal">
-                                    press@wordsmatter.in
+                                    connect@wordsmatter.in
                                 </h2>
                                 <p className="mt-4 font-league italic text-slate-500 text-lg">
                                     Responses typically within 2 hours.
