@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '',
         '/about',
         '/blog',
-        '/case-studies',
         '/contact',
         '/services'
     ].map((route) => ({
@@ -32,12 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
 
     // Dynamic Case Study Routes
-    const caseStudyRoutes = caseStudies.map((study) => ({
-        url: `${baseUrl}/case-studies/${study.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.9, // Case studies are high-value conversions
-    }));
+    // const caseStudyRoutes = caseStudies.map((study) => ({
+    //     url: `${baseUrl}/case-studies/${study.slug}`,
+    //     lastModified: new Date(),
+    //     changeFrequency: 'monthly' as const,
+    //     priority: 0.9, // Case studies are high-value conversions
+    // }));
 
     // Dynamic Services Routes
     const serviceRoutes = servicesData.map((service) => ({
@@ -47,5 +46,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9, // Services are high-value conversions
     }));
 
-    return [...staticRoutes, ...blogRoutes, ...caseStudyRoutes, ...serviceRoutes];
+    return [...staticRoutes, ...blogRoutes, ...serviceRoutes];
 }
