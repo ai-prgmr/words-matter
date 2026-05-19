@@ -67,7 +67,6 @@ export default function PerceptionAudit() {
     const [isComplete, setIsComplete] = useState(false);
 
     // Form States
-    const [showForm, setShowForm] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
     const [formData, setFormData] = useState({
@@ -113,13 +112,14 @@ export default function PerceptionAudit() {
 
         try {
             // Replace with your actual Google Apps Script URL
-            const scriptUrl = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
+            const scriptUrl = "https://script.google.com/macros/s/AKfycbwTq6WNfBJmm-iHZI0oLChtckQ12hsx4YPYFc1rwNSDNxNPFmhuBU9s5QtHRd6jcyK9/exec";
 
+            // Using text/plain avoids CORS preflight issues with Google Apps Script
             await fetch(scriptUrl, {
                 method: "POST",
                 mode: "no-cors",
                 headers: {
-                    "Content-Type": "application/json",
+                    "Content-Type": "text/plain;charset=utf-8",
                 },
                 body: JSON.stringify(payload),
             });
@@ -138,7 +138,6 @@ export default function PerceptionAudit() {
         setCurrentStep(0);
         setAnswers({});
         setIsComplete(false);
-        setShowForm(false);
         setIsSuccess(false);
         setFormData({ name: "", company: "", email: "" });
     };
@@ -160,7 +159,7 @@ export default function PerceptionAudit() {
 
                         <button
                             onClick={() => setHasStarted(true)}
-                            className="group inline-flex items-center justify-center px-10 py-5  text-charcoal font-bold uppercase tracking-widest text-md hover:bg-primary transition-colors duration-500 rounded-none w-full sm:w-auto"
+                            className="group inline-flex items-center justify-center px-10 py-5  text-charcoal font-bold uppercase tracking-widest text-md hover:bg-primary cursor-pointer hover:text-white transition-colors duration-500 rounded-none w-full sm:w-auto"
                         >
                             <span>Begin Audit</span>
                             <svg className="w-4 h-4 ml-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -231,84 +230,59 @@ export default function PerceptionAudit() {
                 {isComplete && !isSuccess && (
                     <div className="bg-white border border-gray-200 p-8 md:p-16 animate-in zoom-in-95 fade-in duration-700 shadow-sm">
 
-                        {!showForm ? (
-                            <div className="text-center">
-                                <div className="w-16 h-1 bg-primary mx-auto mb-10"></div>
-                                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Diagnostic Complete</h3>
-                                <h2 className="text-4xl md:text-5xl font-black text-charcoal tracking-tight mb-8">Narrative Vulnerability Detected.</h2>
-
-                                <p className="text-xl font-league text-gray-600 leading-relaxed max-w-2xl mx-auto mb-12">
-                                    Based on your inputs, your brand's public narrative is currently being defined by external forces rather than proactive strategy. You possess the foundational authority, but lack the architectural media positioning required to control your legacy.
-                                </p>
-
-                                <button
-                                    onClick={() => setShowForm(true)}
-                                    className="group inline-flex items-center justify-center px-10 py-5 bg-charcoal text-white font-bold uppercase tracking-widest text-[10px] hover:bg-primary transition-colors duration-500 rounded-none w-full sm:w-auto"
-                                >
-                                    <span>Request Confidential Debrief</span>
-                                    <svg className="w-4 h-4 ml-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                    </svg>
-                                </button>
+                        {/* THE INLINE FORM */}
+                        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 border-t border-gray-200 pt-10">
+                            <div className="mb-8 text-center">
+                                <h3 className="text-2xl font-black text-charcoal tracking-tight">Secure Your Debrief</h3>
                             </div>
-                        ) : (
-                            // THE INLINE FORM
-                            <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                                <div className="flex justify-between items-center mb-8 pb-6 border-b border-gray-200">
-                                    <h3 className="text-2xl font-black text-charcoal tracking-tight">Secure Your Debrief</h3>
-                                    <button onClick={() => setShowForm(false)} className="text-[10px] font-bold uppercase tracking-widest text-gray-400 hover:text-charcoal transition-colors">
-                                        Cancel
-                                    </button>
-                                </div>
 
-                                <form onSubmit={handleFormSubmit} className="space-y-6">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div className="space-y-2">
-                                            <label className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Full Name</label>
-                                            <input
-                                                required
-                                                type="text"
-                                                value={formData.name}
-                                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                                className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none"
-                                                placeholder="Jane Doe"
-                                            />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <label className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Company</label>
-                                            <input
-                                                required
-                                                type="text"
-                                                value={formData.company}
-                                                onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                                                className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none"
-                                                placeholder="Acme Corp"
-                                            />
-                                        </div>
-                                    </div>
-
+                            <form onSubmit={handleFormSubmit} className="space-y-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Work Email</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Full Name</label>
                                         <input
                                             required
-                                            type="email"
-                                            value={formData.email}
-                                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                            type="text"
+                                            value={formData.name}
+                                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                             className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none"
-                                            placeholder="jane@acmecorp.com"
+                                            placeholder="Your name"
                                         />
                                     </div>
+                                    <div className="space-y-2">
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Company</label>
+                                        <input
+                                            required
+                                            type="text"
+                                            value={formData.company}
+                                            onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                                            className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none"
+                                            placeholder="Your company name"
+                                        />
+                                    </div>
+                                </div>
 
-                                    <button
-                                        type="submit"
-                                        disabled={isSubmitting}
-                                        className="w-full group flex items-center justify-center px-10 py-5 bg-primary text-white font-bold uppercase tracking-widest text-[10px] hover:bg-charcoal transition-colors duration-500 rounded-none disabled:opacity-70 mt-8"
-                                    >
-                                        {isSubmitting ? 'Transmitting Data...' : 'Submit Audit & Request Debrief'}
-                                    </button>
-                                </form>
-                            </div>
-                        )}
+                                <div className="space-y-2">
+                                    <label className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Work Email</label>
+                                    <input
+                                        required
+                                        type="email"
+                                        value={formData.email}
+                                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                        className="w-full bg-[#FAFAFA] border border-gray-200 p-4 font-league text-lg text-charcoal focus:outline-none focus:border-primary transition-colors rounded-none"
+                                        placeholder="Your Email Id"
+                                    />
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    disabled={isSubmitting}
+                                    className="w-full group flex items-center justify-center px-10 py-5 bg-primary text-white font-bold uppercase tracking-widest text-[10px] hover:bg-charcoal transition-colors duration-500 rounded-none disabled:opacity-70 mt-8"
+                                >
+                                    {isSubmitting ? 'Transmitting Data...' : 'Submit Audit & Request Debrief'}
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 )}
 
