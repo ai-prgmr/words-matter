@@ -140,7 +140,7 @@ export default function Home() {
         {/* Hero Section */}
         <AnimatedSection
           className="relative min-h-[90vh] flex items-center justify-center pt-20 pb-20 px-6 md:px-12 w-full border-b border-gray-200 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/words-matter/optimized-image.jpg')", opacity: "30" }}
+          style={{ backgroundImage: "url('/optimized-image.jpg')", opacity: "30" }}
         >
           {/* Subtle overlay for text contrast and dark mode support */}
           <div className="absolute inset-0 bg-white/70  pointer-events-none"></div>

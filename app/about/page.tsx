@@ -8,28 +8,28 @@ import Image from "next/image";
 const mentorsData = [
     {
         name: "Praveen Kumar Shrivastava",
-        image: "/words-matter/mentors/praveen-shrivastava.jpeg",
+        image: "/mentors/praveen-shrivastava.jpeg",
         description: "A veteran leader with over three decades of experience in business transformation, strategic leadership, and human resources management.",
         link: "https://www.linkedin.com/in/praveen-shrivastava-2398aa2/",
         designation: "Executive Director(Retd), UnoMinda"
     },
     {
         name: "Nirmal Minda",
-        image: "/words-matter/mentors/nirmal-minda.jpg",
+        image: "/mentors/nirmal-minda.jpg",
         description: "A visionary industrialist whose leadership has redefined the automotive landscape, providing invaluable strategic foresight to the industry.",
         link: "https://www.unominda.com/about/management-team",
         designation: "Chairman, UnoMinda"
     },
     {
         name: "Dinesh Mittal",
-        image: "/words-matter/mentors/dinesh-mittal.jpeg",
+        image: "/mentors/dinesh-mittal.jpeg",
         description: "A veteran of the manufacturing and infrastructure sectors with decades of experience in steering large-scale industrial growth and operational excellence",
         link: "https://mittalgroup.com/about-us/",
         designation: "Chairman, Mittal Group"
     },
     {
         name: "Sudhir Deoras",
-        image: "/words-matter/mentors/sudhir-deoras.jpeg",
+        image: "/mentors/sudhir-deoras.jpeg",
         description: "A seasoned executive with a 40-year track record of leadership within the Tata Group, specializing in operational excellence and large-scale business transformation",
         link: "https://www.linkedin.com/in/sudhir-deoras-605ba3187/",
         designation: "Senior Director, Baker Tilly DHC"
@@ -37,27 +37,27 @@ const mentorsData = [
     },
     // {
     //     name: "Yogesh Agarwal",
-    //     image: "/words-matter/mentors/yogesh-agarwal.jpg",
+    //     image: "/mentors/yogesh-agarwal.jpg",
     //     description: "A concise overview of Yogesh Agarwal's background and contributions. Add more specific insights about their strategic direction here.",
     //     link: "#"
     // },
     // {
     //     name: "Arvind Thakur",
-    //     image: "/words-matter/mentors/arvind-thakore.jpeg",
+    //     image: "/mentors/arvind-thakore.jpeg",
     //     description: "A seasoned professional with career across retained Entrepreneurship Coach/Facilitation, Executive Search, Media, Publishing & Interactive Media domain.",
     //     link: "https://www.linkedin.com/in/arvind-thakur-6b411096/",
     //     designation: "Managing Partner, Executive Decision Partners"
     // },
     {
         name: "Samir Bhatia",
-        image: "/words-matter/mentors/samir-bhatia.jpeg",
+        image: "/mentors/samir-bhatia.jpeg",
         description: "A seasoned leader recognised for driving high-impact corporate transformation and scalability",
         link: "https://www.linkedin.com/in/samir-bhatia-1418343/",
         designation: "Entrepreneur and Corporate Consultant"
     },
     {
         name: "Kiran Jain",
-        image: "/words-matter/mentors/kiran-jain.jpeg",
+        image: "/mentors/kiran-jain.jpeg",
         description: "A veteran of the global aviation industry, with an extensive track record in managing complex aerospace operations and strategic growth.",
         link: "https://www.linkedin.com/in/kiran-jain-62b8785/",
         designation: "COO, Noida International Airport"
@@ -67,28 +67,28 @@ const mentorsData = [
 const advisorsData = [
     {
         name: "Nikhil Nagesh Bhat",
-        image: "/words-matter/advisor/nikhil-nagesh-bhat.png",
+        image: "/advisor/nikhil-nagesh-bhat.png",
         description: "A master storyteller crafting world-class experiences through cinematic excellence.",
         link: "https://en.wikipedia.org/wiki/Nikhil_Nagesh_Bhat",
         designation: "Filmmaker, Writer and Director"
     },
     {
         name: "Navneeth Mohan",
-        image: "/words-matter/advisor/navneeth-mohan.jpeg",
+        image: "/advisor/navneeth-mohan.jpeg",
         description: "Redefining the landscape of experiential marketing and live events.",
         link: "https://www.linkedin.com/in/navneeth-mohan-8259111a/",
         designation: "Founder & Partner, BEWlive"
     },
     {
         name: "Vikram Sinha",
-        image: "/words-matter/advisor/Vikram-sinha.jpeg",
+        image: "/advisor/Vikram-sinha.jpeg",
         description: "Architect of visual impact, transforming complex ideas into compelling brand films.",
         link: "https://www.linkedin.com/in/vikram-sinha-438742136/",
         designation: "Founder, Thought Process Films LLP"
     },
     {
         name: "Dr Payal S Kapoor",
-        image: "/words-matter/advisor/dr-payal-s-kapoor.jpeg",
+        image: "/advisor/dr-payal-s-kapoor.jpeg",
         description: "Bridging academic rigor with digital strategy to mentor the next generation of marketers.",
         link: "https://mdi.ac.in/faculty/payal-s-kapoor",
         designation: "Assistant Professor, MDI Gurgaon"

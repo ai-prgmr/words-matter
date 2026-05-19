@@ -70,7 +70,7 @@ export default function RohitProfile() {
                             <div className="w-full h-full rounded-2xl overflow-hidden relative group">
                                 <div className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                                 <img
-                                    src="/words-matter/rohit-agarwal-co-founder.png"
+                                    src="/rohit-agarwal-co-founder.png"
                                     alt="Rohit Agarwal - Co-Founder - Words Matter"
                                     className="w-full h-full object-cover mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
                                 />

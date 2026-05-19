@@ -56,7 +56,7 @@ export default function EditorialTeaser() {
                     <Link href={`/blog/${featuredArticle.slug}`} className="lg:col-span-7 group flex flex-col cursor-pointer">
                         <div className="w-full aspect-video md:aspect-21/9 bg-gray-100 mb-8 overflow-hidden relative">
                             <img
-                                src="/words-matter/silence.avif"
+                                src="/silence.avif"
                                 alt="Abstract architecture"
                                 className="w-full h-full object-cover grayscale opacity-80 mix-blend-multiply group-hover:scale-105 group-hover:grayscale-0 transition-all duration-1000 ease-in-out"
                             />
