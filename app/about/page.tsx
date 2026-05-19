@@ -15,7 +15,7 @@ const mentorsData = [
     },
     {
         name: "Nirmal Minda",
-        image: "/mentors/nirmal-minda.jpg",
+        image: "/mentors/nirmal-minda-profile.png",
         description: "A visionary industrialist whose leadership has redefined the automotive landscape, providing invaluable strategic foresight to the industry.",
         link: "https://www.unominda.com/about/management-team",
         designation: "Chairman, UnoMinda"
@@ -67,28 +67,28 @@ const mentorsData = [
 const advisorsData = [
     {
         name: "Nikhil Nagesh Bhat",
-        image: "/advisor/nikhil-nagesh-bhat.png",
+        image: "/advisor/nikhil-nagesh-bhat-profile.png",
         description: "A master storyteller crafting world-class experiences through cinematic excellence.",
         link: "https://en.wikipedia.org/wiki/Nikhil_Nagesh_Bhat",
         designation: "Filmmaker, Writer and Director"
     },
     {
         name: "Navneeth Mohan",
-        image: "/advisor/navneeth-mohan.jpeg",
+        image: "/advisor/navneeth-mohan-profile.png",
         description: "Redefining the landscape of experiential marketing and live events.",
         link: "https://www.linkedin.com/in/navneeth-mohan-8259111a/",
         designation: "Founder & Partner, BEWlive"
     },
     {
         name: "Vikram Sinha",
-        image: "/advisor/Vikram-sinha.jpeg",
+        image: "/advisor/vikram-sinha-profile.png",
         description: "Architect of visual impact, transforming complex ideas into compelling brand films.",
         link: "https://www.linkedin.com/in/vikram-sinha-438742136/",
         designation: "Founder, Thought Process Films LLP"
     },
     {
         name: "Dr Payal S Kapoor",
-        image: "/advisor/dr-payal-s-kapoor.jpeg",
+        image: "/advisor/dr-payal-kapoor-profile.png",
         description: "Bridging academic rigor with digital strategy to mentor the next generation of marketers.",
         link: "https://mdi.ac.in/faculty/payal-s-kapoor",
         designation: "Assistant Professor, MDI Gurgaon"
