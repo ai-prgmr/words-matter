@@ -4,9 +4,9 @@ title: "The Architecture of Perception: Why Silence is a PR Strategy"
 excerpt: "In an era of relentless digital noise, the most powerful statement a legacy brand can make is often calculated silence. We explore the mechanics of narrative scarcity."
 author: "Noopurr R Chablani"
 date: "May 18, 2026"
-imageUrl: "/words-matter/silence.avif"
+imageUrl: "/silence.avif"
 position: "Founder & Image Strategist"
-authorUrl: "/words-matter/noopur-r-chablani.jpg"
+authorUrl: "/noopur-r-chablani.jpg"
 ---
 
 One of the biggest mistakes brands continue to make is assuming visibility automatically translates into influence. Brands measure presence through media mentions, digital impressions, social engagement, and share of voice. Some brands or leaders stay in your mind long after you stop seeing them and others disappear almost immediately.
