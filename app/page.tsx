@@ -57,7 +57,7 @@ export default function Home() {
       "url": "https://wordsmatter.in",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://wordsmatter.in/logo.png"
+        "url": "https://wordsmatter.in/icon.png"
       },
       "address": {
         "@type": "PostalAddress",
