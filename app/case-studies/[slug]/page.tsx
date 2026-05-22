@@ -21,6 +21,28 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         alternates: {
             canonical: `/case-studies/${slug}`,
         },
+        openGraph: {
+            title: `${study.title} | Words Matter`,
+            description: study.excerpt,
+            url: `/case-studies/${slug}`,
+            siteName: "Words Matter",
+            images: [
+                {
+                    url: study.imageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: study.title,
+                },
+            ],
+            locale: "en_US",
+            type: "article",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `${study.title} | Words Matter`,
+            description: study.excerpt,
+            images: [study.imageUrl],
+        },
     };
 }
 

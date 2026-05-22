@@ -18,10 +18,34 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     if (!post) return {};
 
     return {
-        title: `${post.title} | Words Matter`,
+        title: `${post.title}`,
         description: post.excerpt,
         alternates: {
             canonical: `/blog/${slug}`,
+        },
+        openGraph: {
+            title: `${post.title} | Words Matter`,
+            description: post.excerpt,
+            url: `/blog/${slug}`,
+            siteName: "Words Matter",
+            images: [
+                {
+                    url: post.imageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                },
+            ],
+            locale: "en_US",
+            type: "article",
+            publishedTime: post.date,
+            authors: [post.author],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `${post.title} | Words Matter`,
+            description: post.excerpt,
+            images: [post.imageUrl],
         },
     };
 }
@@ -33,6 +57,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     if (!post) {
         notFound();
     }
+
+    const shareUrl = `https://wordsmatter.in/blog/${post.slug}`;
+    const shareTitle = `${post.title} | Words Matter`;
+    const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
+    const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle)}`;
 
     const jsonLd = {
         "@context": "https://schema.org",
@@ -115,12 +144,24 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 <footer className="mt-24 pt-12 border-t border-gray-200 flex justify-between items-center">
                     <p className="text-sm font-bold text-charcoal tracking-wide">Share this essay</p>
                     <div className="flex gap-4">
-                        <button className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
+                        <a
+                            href={linkedInShareUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+                            aria-label="Share on LinkedIn"
+                        >
                             <span className="text-xs font-bold">IN</span>
-                        </button>
-                        <button className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
+                        </a>
+                        <a
+                            href={twitterShareUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+                            aria-label="Share on X"
+                        >
                             <span className="text-xs font-bold">X</span>
-                        </button>
+                        </a>
                     </div>
                 </footer>
 
