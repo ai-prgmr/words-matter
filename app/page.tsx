@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Words Matter | PR & Media Strategy",
     description: "Strategic PR and media positioning for modern Indian brands.",
-    images: ["https://wordsmatter.in/og-image.jpg"],
+    images: ["https://wordsmatter.in/opengraph-image.png"],
   },
   robots: { index: true, follow: true },
 };
