@@ -8,6 +8,14 @@ export const metadata = {
     alternates: {
         canonical: '/blog',
     },
+    openGraph: {
+        title: 'Journal | Words Matter',
+        description: 'Perspectives on influence, perception architecture, and strategic precision from our senior partners.',
+        url: 'https://wordsmatter.in/blog',
+        siteName: 'Words Matter',
+        images: [{ url: 'https://wordsmatter.in/opengraph-image.png', width: 1200, height: 630 }],
+        type: 'website',
+    },
 };
 import { getAllBlogs } from '../lib/blogs';
 export default async function BlogListing() {

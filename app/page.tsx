@@ -50,54 +50,6 @@ export default function Home() {
   const jsonLd = [
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "@id": "https://wordsmatter.in/#organization",
-      "name": "Words Matter",
-      "description": "Strategic PR and media positioning agency helping brands earn coverage in India's top publications including Times of India, NDTV, Economic Times, and more.",
-      "url": "https://wordsmatter.in",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://wordsmatter.in/icon.png"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Gurugram",
-        "addressRegion": "Haryana",
-        "addressCountry": "IN"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "India"
-      },
-      "sameAs": [
-        "https://linkedin.com/company/wordsmatter",
-        "https://twitter.com/wordsmatterin"
-      ],
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Media Placement & PR",
-            "description": "Securing brand coverage in India's premium publications.",
-            "additionalType": "https://en.wikipedia.org/wiki/Public_relations",
-            "areaServed": "IN"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Brand Positioning & Narrative Strategy",
-            "description": "Crafting brand authority through strategic communications.",
-            "additionalType": "https://en.wikipedia.org/wiki/Brand_management",
-            "areaServed": "IN"
-          }
-        }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "WebSite",
       "url": "https://wordsmatter.in",
       "name": "Words Matter"
@@ -209,10 +161,10 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="flex justify-between items-baseline mb-16 border-b border-gray-200 pb-8">
               <h2 className="text-xs font-bold tracking-widest uppercase text-gray-400">Expertise</h2>
-              <span className="text-xs font-mono text-primary">01 — 03</span>
+              <span className="text-xs font-mono text-primary">01 — 05</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
-              {servicesData.slice(0, 3).map((service) => (
+              {servicesData.map((service) => (
                 <Link key={service.id} href={`/services/${service.slug}`} className="block group cursor-pointer">
                   <div className="flex flex-col gap-6">
                     <span className="text-xs font-mono text-primary flex items-center justify-between">
@@ -228,9 +180,6 @@ export default function Home() {
                   </div>
                 </Link>
               ))}
-            </div>
-            <div className="mt-20 text-center">
-              <Link href="/services" className="text-xs font-bold uppercase tracking-[0.3em] text-primary border-b border-primary hover:border-transparent transition-colors">View all services</Link>
             </div>
           </div>
         </AnimatedSection>
@@ -286,6 +235,43 @@ export default function Home() {
             <p className="text-2xl md:text-4xl font-league text-charcoal leading-relaxed mb-10">
               We do not chase trends. We build <span className="italic text-primary">lasting legacies</span>. Our approach to public relations treats your reputation as your most critical, high-yield asset.
             </p>
+          </div>
+        </AnimatedSection>
+
+        {/* Digital Strategy / Methodology Section */}
+        <AnimatedSection className="py-24 px-6 md:px-12 bg-white text-charcoal border-t border-gray-200">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-xs font-bold tracking-widest uppercase text-primary mb-6">Our Methodology</h2>
+              <h3 className="text-4xl md:text-5xl font-black tracking-tight mb-8 text-charcoal">
+                Where PR Meets <br className="hidden md:block" />
+                <span className="italic text-[#B9915D] font-league">Digital Dominance</span>
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                In the modern media landscape, traditional PR and digital presence are intrinsically linked. A feature in a top-tier publication loses its leverage if your digital footprint doesn't reflect that same authority.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Our methodology bridges this gap. We architect narratives that command attention in print and television, while simultaneously deploying digital strategies that ensure those narratives dominate search engines, social channels, and professional networks.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="border border-gray-100 p-8 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors">
+                <h4 className="text-xl font-bold mb-4 text-charcoal">Strategic PR</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">Securing high-impact placements in Tier-1 media to establish undisputed market authority.</p>
+              </div>
+              <div className="border border-gray-100 p-8 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors mt-0 sm:mt-12">
+                <h4 className="text-xl font-bold mb-4 text-charcoal">Digital Amplification</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">Leveraging media wins across digital ecosystems to maximize visibility and SEO value.</p>
+              </div>
+              <div className="border border-gray-100 p-8 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors">
+                <h4 className="text-xl font-bold mb-4 text-charcoal">Reputation Shield</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">Proactive management of search results and online sentiment to protect brand equity.</p>
+              </div>
+              <div className="border border-gray-100 p-8 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors mt-0 sm:mt-12">
+                <h4 className="text-xl font-bold mb-4 text-charcoal">Executive Branding</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">Curating powerful personal brands for founders through thought leadership and LinkedIn.</p>
+              </div>
+            </div>
           </div>
         </AnimatedSection>
 

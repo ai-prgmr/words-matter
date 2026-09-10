@@ -40,10 +40,65 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <Script
+          id="sitewide-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "@id": "https://wordsmatter.in/#organization",
+              "name": "Words Matter",
+              "alternateName": "Words Matter PR & Media Strategy",
+              "url": "https://wordsmatter.in",
+              "logo": "https://wordsmatter.in/icon.png",
+              "image": "https://wordsmatter.in/opengraph-image.png",
+              "description": "Words Matter is a strategic boutique PR and media positioning agency helping founders, executives, startups and brands build reputation, credibility, visibility and lasting authority through corporate PR, reputation management, image management, and digital marketing.",
+              "email": "connect@wordsmatter.in",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "C 438 Sushant Lok, Phase I",
+                "addressLocality": "Gurugram",
+                "addressRegion": "Haryana",
+                "postalCode": "122002",
+                "addressCountry": "IN"
+              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Gurugram"
+                },
+                {
+                  "@type": "AdministrativeArea",
+                  "name": "Delhi NCR"
+                },
+                {
+                  "@type": "Country",
+                  "name": "India"
+                }
+              ],
+              "sameAs": [
+                "https://www.linkedin.com/company/w0rdsmatter",
+                "https://www.instagram.com/words.matter1"
+              ],
+              "knowsAbout": [
+                "Public Relations",
+                "Corporate Public Relations",
+                "Reputation Management",
+                "Online Reputation Management",
+                "Image Management",
+                "Personal Branding",
+                "Digital Marketing",
+                "Crisis Communications",
+                "Media Relations"
+              ]
+            })
+          }}
+        />
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-4CVLJE18H3"
           strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
+        /> */}
+        {/* <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -51,7 +106,7 @@ export default function RootLayout({
 
             gtag('config', 'G-4CVLJE18H3');
           `}
-        </Script>
+        </Script> */}
       </head>
       <body
         className={`font-league ${league.variable} antialiased font-display bg-white transition-colors duration-300 overflow-x-hidden w-full`}

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { AnimatedSection } from "@/components/ui/animated-section";
+import { getAllBlogs } from "@/app/lib/blogs";
 
 // Dummy data for the prototype - this would eventually be fetched from a CMS (like Sanity or Supabase)
 const featuredArticle = {
@@ -11,28 +12,10 @@ const featuredArticle = {
     date: "OCT 12, 2026"
 };
 
-const recentArticles = [
-    {
-        slug: "crisis-mitigation-2026",
-        category: "Crisis Management",
-        title: "Navigating the First 48 Hours of a Crisis Management",
-        date: "SEP 28, 2026"
-    },
-    {
-        slug: "ceo-as-creator",
-        category: "Executive Curation",
-        title: "The CEO as a Creator: Transitioning to Thought Leadership",
-        date: "SEP 14, 2026"
-    },
-    {
-        slug: "legacy-vs-relevance",
-        category: "Image Management",
-        title: "Legacy vs. Relevance in the Modern Indian Market",
-        date: "AUG 30, 2026"
-    }
-];
-
 export default function EditorialTeaser() {
+    const allBlogs = getAllBlogs();
+    const recentArticles = allBlogs.slice(0, 2);
+
     return (
         <AnimatedSection className="py-24 md:py-32 px-6 md:px-12 bg-white border-t border-gray-200">
             <div className="max-w-7xl mx-auto">
@@ -77,7 +60,7 @@ export default function EditorialTeaser() {
                         </p>
                     </Link>
 
-                    {/* <div className="lg:col-span-5 flex flex-col justify-between pt-12 lg:pt-0">
+                    <div className="lg:col-span-5 flex flex-col justify-between pt-12 lg:pt-0">
                         <h4 className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-8 hidden lg:block">Recent Dispatches</h4>
 
                         <div className="flex flex-col gap-5 border-t border-gray-200">
@@ -101,7 +84,7 @@ export default function EditorialTeaser() {
                                 </Link>
                             ))}
                         </div>
-                    </div> */}
+                    </div>
 
                 </div>
             </div>

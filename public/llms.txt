@@ -1,0 +1,16 @@
+# Words Matter
+
+> India's strategic PR and media positioning agency. We craft influence, authority, and brand resonance through premium publications.
+
+## About Us
+Words Matter is a boutique strategic communications and image management agency based in Gurugram, India. We architect perception, combining elite media relations with deep narrative strategy for select clients. The firm is spearheaded by Image Strategist Noopurr R Chablani and Brand Strategist Rohit Agarwal. We exclusively represent legacy enterprises, high-profile founders, C-suite executives, and public figures who require absolute discretion and authoritative media positioning.
+
+## Services
+- [Corporate Public Relations](https://wordsmatter.in/services/corporate-pr)
+- [Reputation Management](https://wordsmatter.in/services/reputation-management)
+- [Image Management](https://wordsmatter.in/services/image-management)
+- [Digital Marketing](https://wordsmatter.in/services/digital-marketing)
+- [Bespoke Writing & Coffee Table Books](https://wordsmatter.in/services/legacy-books)
+
+## Full Site Context
+- [Full LLM Context](https://wordsmatter.in/llms-full.txt)
