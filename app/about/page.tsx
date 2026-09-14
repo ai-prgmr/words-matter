@@ -97,12 +97,20 @@ const advisorsData = [
 
 export const metadata: Metadata = {
     title: "About Us | Words Matter",
-    description: "Learn more about the philosophy and the team behind Words Matter PR.",
+    description: "Learn more about the philosophy and the mentors, advisors and team behind Words Matter PR. We are a premier PR and media strategy agency based in India.",
     openGraph: {
         title: "About Us | Words Matter",
-        description: "Learn more about the philosophy and the team behind Words Matter PR.",
+        description: "Learn more about the philosophy and the mentors, advisors and team behind Words Matter PR. We are a premier PR and media strategy agency based in Gurugram, India.",
         url: "https://wordsmatter.in/about",
         type: "website",
+        images: [{ url: "https://wordsmatter.in/opengraph-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About Us | Words Matter",
+        description: "Learn more about the philosophy and the mentors, advisors and team behind Words Matter PR. We are a premier PR and media strategy agency based in Gurugram, India.",
+        site: "@WordsMatterIN",
+        images: ["https://wordsmatter.in/opengraph-image.png"],
     },
     alternates: {
         canonical: '/about',
@@ -162,7 +170,7 @@ export default function AboutPage() {
                         <span className="italic text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-600 pr-2">
                             compelling narratives
                         </span>{" "}
-                        is not just a strategy—it is an art form"
+                        is not just a strategy, it is an art form"
                     </h1>
                 </div>
             </AnimatedSection>
@@ -171,7 +179,7 @@ export default function AboutPage() {
             <AnimatedSection className="mx-auto max-w-5xl px-6 md:px-12 pb-24 relative z-10">
                 <div className="prose prose-lg md:prose-xl max-w-none text-charcoal font-league leading-relaxed space-y-8 text-center md:text-left">
                     <p className="text-2xl md:text-3xl text-charcoal leading-snug">
-                        Welcome to Words Matter, a boutique agency where the art of strategic storytelling meets the preservation of personal legacy. We believe that in a world driven by perception, the right words do more than just communicate—they define who you are today and how you are remembered tomorrow.
+                        Welcome to Words Matter, a boutique agency where the art of strategic storytelling meets the preservation of personal legacy. We believe that in a world driven by perception, the right words do more than just communicate, they define who you are today and how you are remembered tomorrow.
                     </p>
                     <p className="text-2xl md:text-2xl text-charcoal leading-snug">
                         Our expertise begins with Reputation and Image Management, providing high-level PR consultancy to ensure your public identity is both authentic and influential. We specialize in Social Media presence enhancement, refining your digital voice to create a cohesive, impactful profile that resonates with your target audience. Whether you are an individual leader or an evolving brand, we craft the strategic messaging necessary to navigate the modern media landscape with precision.

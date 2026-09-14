@@ -5,13 +5,21 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 import { AnimatedArticle } from "@/components/ui/animated-section";
 
 export const metadata: Metadata = {
-    title: "PR & Communications Services | Words Matter — Gurugram, India",
-    description: "Media Relations, Crisis Management, and Digital Strategy curated for select clients.",
+    title: "PR & Communications Services | Words Matter Gurugram, India",
+    description: "Explore Words Matter's PR and communications services, including Media Relations, Crisis Management, and Digital Strategy curated for our clients.",
     openGraph: {
-        title: "PR & Communications Services | Words Matter — Gurugram, India",
-        description: "Media Relations, Crisis Management, and Digital Strategy curated for select clients.",
+        title: "PR & Communications Services | Words Matter - Gurugram, India",
+        description: "Explore Words Matter's PR and communications services, including Media Relations, Crisis Management, and Digital Strategy curated for our clients.",
         url: "https://wordsmatter.in/services",
         type: "website",
+        images: [{ url: "https://wordsmatter.in/opengraph-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "PR & Communications Services | Words Matter",
+        description: "Explore Words Matter's PR and communications services, including Media Relations, Crisis Management, and Digital Strategy curated for our clients.",
+        site: "@WordsMatterIN",
+        images: ["https://wordsmatter.in/opengraph-image.png"],
     },
     alternates: {
         canonical: '/services',

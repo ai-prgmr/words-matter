@@ -6,18 +6,21 @@ export const metadata: Metadata = {
     description: "From the Indian Army to the World Bank, Rohit Agarwal brings three decades of strategic expertise to Words Matter. Discover his custom approach to brand and image building.",
     openGraph: {
         title: "Rohit Agarwal | Words Matter",
-        description: "Co-Founder & Brand Strategist. Leveraging decades of global consulting experience to formulate customized brand strategies.",
-        url: "https://www.wordsmatter.in/founder/rohit",
+        description: "From the Indian Army to the World Bank, Rohit Agarwal brings three decades of strategic expertise to Words Matter. Discover his custom approach to brand and image building.",
+        url: "https://wordsmatter.in/founder/rohit-agarwal",
         siteName: "Words Matter",
         type: "profile",
+        images: [{ url: "https://wordsmatter.in/opengraph-image.png", width: 1200, height: 630 }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Rohit Agarwal | Brand Strategist",
-        description: "Architecting personal and corporate brands with strategic precision.",
+        description: "From the Indian Army to the World Bank, Rohit Agarwal brings three decades of strategic expertise to Words Matter. Discover his custom approach to brand and image building.",
+        site: "@WordsMatterIN",
+        images: ["https://wordsmatter.in/opengraph-image.png"],
     },
     alternates: {
-        canonical: "https://www.wordsmatter.in/founder/rohit",
+        canonical: "https://wordsmatter.in/founder/rohit-agarwal",
     },
 };
 

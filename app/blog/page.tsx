@@ -4,17 +4,24 @@ import { AnimatedDiv } from "@/components/ui/animated-section";
 
 export const metadata = {
     title: 'Journal | Words Matter',
-    description: 'Perspectives on influence, perception architecture, and strategic precision from our senior partners.',
+    description: 'Read the Words Matter Journal. Gain perspectives on influence, reputation management, perception architecture, and strategic precision from our senior partners.',
     alternates: {
         canonical: '/blog',
     },
     openGraph: {
         title: 'Journal | Words Matter',
-        description: 'Perspectives on influence, perception architecture, and strategic precision from our senior partners.',
+        description: 'Read the Words Matter Journal. Gain perspectives on influence, reputation management, perception architecture, and strategic precision from our senior partners.',
         url: 'https://wordsmatter.in/blog',
         siteName: 'Words Matter',
         images: [{ url: 'https://wordsmatter.in/opengraph-image.png', width: 1200, height: 630 }],
         type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Journal | Words Matter',
+        description: 'Read the Words Matter Journal. Gain perspectives on influence, reputation management, perception architecture, and strategic precision from our senior partners.',
+        site: '@WordsMatterIN',
+        images: ['https://wordsmatter.in/opengraph-image.png'],
     },
 };
 import { getAllBlogs } from '../lib/blogs';

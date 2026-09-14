@@ -5,12 +5,20 @@ import ContactForm from "@/components/contact-form";
 import Link from "next/link";
 export const metadata: Metadata = {
     title: "Contact Us | Words Matter",
-    description: "Get in touch for urgent client matters or press inquiries. Zurich, New York, London.",
+    description: "Contact Words Matter at connect@wordsmatter.in or +919810498751. Get in touch for client matters, press inquiries, or general questions.",
     openGraph: {
         title: "Contact Us | Words Matter",
-        description: "Get in touch for urgent client matters or press inquiries.",
+        description: "Contact Words Matter at connect@wordsmatter.in or +919810498751. Get in touch for client matters, press inquiries, or general questions.",
         type: "website",
         url: "https://wordsmatter.in/contact",
+        images: [{ url: "https://wordsmatter.in/opengraph-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact Us | Words Matter",
+        description: "Contact Words Matter at connect@wordsmatter.in or +919810498751. Get in touch for client matters, press inquiries, or general questions.",
+        site: "@WordsMatterIN",
+        images: ["https://wordsmatter.in/opengraph-image.png"],
     },
     alternates: {
         canonical: '/contact',
@@ -24,7 +32,7 @@ export default function Contact() {
         "mainEntity": {
             "@type": "ProfessionalService",
             "name": "Words Matter",
-            "telephone": "+91 1234567890",
+            "telephone": "+919810498751",
             "email": "connect@wordsmatter.in",
             "address": {
                 "@type": "PostalAddress",

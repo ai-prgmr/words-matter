@@ -22,7 +22,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Words Matter | PR & Media Strategy",
-    description: "Strategic PR and media positioning for modern Indian brands.",
+    description: "Get featured in TOI, NDTV, ET & 50+ premium Indian publications. Strategic PR for brands that want to lead.",
+    site: "@WordsMatterIN",
     images: ["https://wordsmatter.in/opengraph-image.png"],
   },
   robots: { index: true, follow: true },

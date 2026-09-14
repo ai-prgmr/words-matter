@@ -3,22 +3,25 @@ import Link from 'next/link';
 // 1. NEXT.JS 16 METADATA
 // This tells Google, Twitter, and LinkedIn exactly what this page is about before it even renders.
 export const metadata: Metadata = {
-    title: "Noopurr R Chablani | Founder & Image Strategist | Words Matter",
-    description: "Noopurr R Chablani is a visionary entrepreneur and the driving force behind Words Matter. Discover her legacy in Public Relations, Image building, and Personal narratives.",
+    title: "Noopurr R Chablani | Founder | Words Matter",
+    description: "Noopurr is a visionary entrepreneur and the driving force behind Words Matter. Discover her legacy in Public Relations, Image building, and Personal narratives.",
     openGraph: {
         title: "Noopurr R Chablani | Words Matter",
-        description: "Visionary entrepreneur and leading figure in Public Relations and Image building.",
-        url: "https://www.wordsmatter.in/founder/noopurr",
+        description: "Noopurr R Chablani is a visionary entrepreneur and the driving force behind Words Matter. Discover her legacy in Public Relations, Image building, and Personal narratives.",
+        url: "https://wordsmatter.in/founder/noopurr-r-chablani",
         siteName: "Words Matter",
         type: "profile",
+        images: [{ url: "https://wordsmatter.in/opengraph-image.png", width: 1200, height: 630 }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Noopurr R Chablani | Image Strategist",
-        description: "The driving force behind Words Matter's definitive communication campaigns.",
+        description: "Noopurr R Chablani is a visionary entrepreneur and the driving force behind Words Matter. Discover her legacy in Public Relations, Image building, and Personal narratives.",
+        site: "@WordsMatterIN",
+        images: ["https://wordsmatter.in/opengraph-image.png"],
     },
     alternates: {
-        canonical: "https://www.wordsmatter.in/founder/noopurr",
+        canonical: "https://wordsmatter.in/founder/noopurr-r-chablani",
     },
 };
 
