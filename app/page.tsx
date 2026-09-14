@@ -116,7 +116,7 @@ export default function Home() {
                   We don't just speak.<br /> We craft{" "}
 
                   {/* The Ticker Container: Set to inline-flex so it sits on the same line as "We craft" */}
-                  <span className="inline-flex flex-col h-[1.2em] overflow-hidden align-bottom text-left min-w-[150px] md:min-w-[200px]">
+                  <span className="inline-flex flex-col h-[1.2em] overflow-hidden align-bottom text-left min-w-38 md:min-w-50">
 
                     {/* The Animated Track */}
                     <span className="animate-slide-up flex flex-col">
