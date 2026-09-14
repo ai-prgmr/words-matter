@@ -14,3 +14,7 @@ Words Matter is a boutique strategic communications and image management agency 
 
 ## Full Site Context
 - [Full LLM Context](https://wordsmatter.in/llms-full.txt)
+
+## Contact
+- Email: connect@wordsmatter.in
+- Phone: +919810498751
